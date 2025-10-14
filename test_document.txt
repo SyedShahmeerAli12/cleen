@@ -1,0 +1,12 @@
+This is a test document for the Personal RAG system.
+
+It contains information about artificial intelligence and machine learning.
+The system should be able to chunk this text into smaller pieces and create embeddings.
+
+Key topics covered:
+- Document processing
+- Vector embeddings
+- Hybrid search
+- RAG (Retrieval-Augmented Generation)
+
+This document will be used to test the complete RAG pipeline.

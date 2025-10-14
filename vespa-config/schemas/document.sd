@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema name="document" version="1.0">
+    <document type="document" mode="index">
+        <field name="id" type="string" indexing="attribute" />
+        <field name="content" type="string" indexing="index" />
+        <field name="embedding" type="tensor<float>(x[768])" indexing="attribute" />
+        <field name="filename" type="string" indexing="attribute" />
+        <field name="chunk_index" type="int" indexing="attribute" />
+        <field name="total_chunks" type="int" indexing="attribute" />
+        
+        <field name="text_match" type="string" indexing="index | summary">
+            <alias>content</alias>
+        </field>
+    </document>
+    
+    <rank-profile default="default">
+        <first-phase ranking="nativeRank(text_match)" />
+    </rank-profile>
+    
+    <rank-profile name="hybrid_ranking" extends="default">
+        <first-phase ranking="nativeRank(text_match)" />
+        <second-phase ranking="nativeRank(text_match) + dotProduct(embedding,query_embedding)" />
+    </rank-profile>
+</schema>

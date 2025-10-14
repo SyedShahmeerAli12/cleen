@@ -1,0 +1,796 @@
+2025-10-14 12:28:09,481 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 12:28:09,484 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 12:28:09,486 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 12:28:09,489 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:28:09,535 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 12:28:09,536 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 12:28:09,545 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 12:28:09,545 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Starting document processing: conditions_acne.txt
+2025-10-14 12:28:09,546 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] File size: 5048 bytes
+2025-10-14 12:28:09,546 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Extracting text content...
+2025-10-14 12:28:09,547 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Text extracted: 4990 characters
+2025-10-14 12:28:09,549 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Cleaning text...
+2025-10-14 12:28:09,551 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Text cleaned: 4965 characters
+2025-10-14 12:28:09,553 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Starting text chunking...
+2025-10-14 12:28:09,580 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Text chunked: 3 chunks created
+2025-10-14 12:28:09,583 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 12:28:09,585 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 12:28:09,588 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 12:28:09,589 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 12:28:09,589 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Chunk 3: 44 tokens, 165 chars
+2025-10-14 12:28:09,590 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 12:28:09,591 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Generating embeddings...
+2025-10-14 12:28:09,594 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Embeddings generated: 3 vectors
+2025-10-14 12:28:09,596 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Creating document chunks...
+2025-10-14 12:28:09,598 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Created chunk 1: 500 tokens
+2025-10-14 12:28:09,600 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Created chunk 2: 511 tokens
+2025-10-14 12:28:09,601 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Created chunk 3: 44 tokens
+2025-10-14 12:28:09,602 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Document processing complete!
+2025-10-14 12:28:09,602 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Summary: 3 chunks, 1055 total tokens
+2025-10-14 12:28:09,603 - INDEXER - INFO - 📄 [PROCESS-c86bdccb] Processing time: 0.06 seconds
+2025-10-14 12:28:09,604 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 12:28:09,616 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 12:28:09,618 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 12:28:09,629 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 12:28:09,630 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Starting document processing: conditions_acne_causes.txt
+2025-10-14 12:28:09,631 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] File size: 4473 bytes
+2025-10-14 12:28:09,631 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Extracting text content...
+2025-10-14 12:28:09,632 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Text extracted: 4431 characters
+2025-10-14 12:28:09,632 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Cleaning text...
+2025-10-14 12:28:09,634 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Text cleaned: 4411 characters
+2025-10-14 12:28:09,634 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Starting text chunking...
+2025-10-14 12:28:09,666 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Text chunked: 2 chunks created
+2025-10-14 12:28:09,668 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 12:28:09,668 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 12:28:09,670 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 12:28:09,671 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 12:28:09,672 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Generating embeddings...
+2025-10-14 12:28:09,673 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Embeddings generated: 2 vectors
+2025-10-14 12:28:09,674 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Creating document chunks...
+2025-10-14 12:28:09,677 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Created chunk 1: 437 tokens
+2025-10-14 12:28:09,678 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Created chunk 2: 483 tokens
+2025-10-14 12:28:09,679 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Document processing complete!
+2025-10-14 12:28:09,680 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Summary: 2 chunks, 920 total tokens
+2025-10-14 12:28:09,682 - INDEXER - INFO - 📄 [PROCESS-8f960ebe] Processing time: 0.05 seconds
+2025-10-14 12:28:09,683 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 12:28:09,685 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 12:28:09,687 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 12:28:09,699 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 12:28:09,700 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Starting document processing: conditions_acne_complications.txt
+2025-10-14 12:28:09,701 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] File size: 5693 bytes
+2025-10-14 12:28:09,702 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Extracting text content...
+2025-10-14 12:28:09,703 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Text extracted: 5657 characters
+2025-10-14 12:28:09,705 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Cleaning text...
+2025-10-14 12:28:09,708 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Text cleaned: 5639 characters
+2025-10-14 12:28:09,710 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Starting text chunking...
+2025-10-14 12:28:09,739 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Text chunked: 3 chunks created
+2025-10-14 12:28:09,741 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 12:28:09,742 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 12:28:09,745 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 12:28:09,746 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 12:28:09,747 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Chunk 3: 184 tokens, 903 chars
+2025-10-14 12:28:09,747 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 12:28:09,747 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Generating embeddings...
+2025-10-14 12:28:09,748 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Embeddings generated: 3 vectors
+2025-10-14 12:28:09,749 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Creating document chunks...
+2025-10-14 12:28:09,752 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Created chunk 1: 456 tokens
+2025-10-14 12:28:09,756 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Created chunk 2: 497 tokens
+2025-10-14 12:28:09,759 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Created chunk 3: 184 tokens
+2025-10-14 12:28:09,760 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Document processing complete!
+2025-10-14 12:28:09,760 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Summary: 3 chunks, 1137 total tokens
+2025-10-14 12:28:09,761 - INDEXER - INFO - 📄 [PROCESS-1cecbeca] Processing time: 0.06 seconds
+2025-10-14 12:28:09,762 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 12:28:09,763 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 12:28:09,763 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 12:28:09,775 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 12:28:09,777 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 12:28:09,778 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] File size: 1436 bytes
+2025-10-14 12:28:09,778 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Extracting text content...
+2025-10-14 12:28:09,779 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Text extracted: 1423 characters
+2025-10-14 12:28:09,779 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Cleaning text...
+2025-10-14 12:28:09,780 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Text cleaned: 1407 characters
+2025-10-14 12:28:09,780 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Starting text chunking...
+2025-10-14 12:28:09,786 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Text chunked: 1 chunks created
+2025-10-14 12:28:09,789 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 12:28:09,790 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 12:28:09,790 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Generating embeddings...
+2025-10-14 12:28:09,791 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Embeddings generated: 1 vectors
+2025-10-14 12:28:09,791 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Creating document chunks...
+2025-10-14 12:28:09,793 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Created chunk 1: 318 tokens
+2025-10-14 12:28:09,794 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Document processing complete!
+2025-10-14 12:28:09,795 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Summary: 1 chunks, 318 total tokens
+2025-10-14 12:28:09,796 - INDEXER - INFO - 📄 [PROCESS-39c2cc45] Processing time: 0.02 seconds
+2025-10-14 12:28:09,797 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 12:28:09,798 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 12:28:09,799 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 12:28:09,809 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 12:28:09,811 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 12:28:09,811 - INDEXER - INFO - 📄 [PROCESS-62a6f404] File size: 8679 bytes
+2025-10-14 12:28:09,812 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Extracting text content...
+2025-10-14 12:28:09,813 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Text extracted: 8646 characters
+2025-10-14 12:28:09,813 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Cleaning text...
+2025-10-14 12:28:09,814 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Text cleaned: 8624 characters
+2025-10-14 12:28:09,815 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Starting text chunking...
+2025-10-14 12:28:09,878 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Text chunked: 4 chunks created
+2025-10-14 12:28:09,880 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 12:28:09,881 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 12:28:09,883 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 12:28:09,886 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 12:28:09,889 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 12:28:09,891 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 12:28:09,893 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 12:28:09,895 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 12:28:09,896 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Generating embeddings...
+2025-10-14 12:28:09,899 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Embeddings generated: 4 vectors
+2025-10-14 12:28:09,901 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Creating document chunks...
+2025-10-14 12:28:09,904 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Created chunk 1: 487 tokens
+2025-10-14 12:28:09,908 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Created chunk 2: 495 tokens
+2025-10-14 12:28:09,913 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Created chunk 3: 499 tokens
+2025-10-14 12:28:09,915 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Created chunk 4: 341 tokens
+2025-10-14 12:28:09,916 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Document processing complete!
+2025-10-14 12:28:09,919 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Summary: 4 chunks, 1822 total tokens
+2025-10-14 12:28:09,920 - INDEXER - INFO - 📄 [PROCESS-62a6f404] Processing time: 0.11 seconds
+2025-10-14 12:28:09,922 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 12:28:09,923 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 12:28:40,726 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 12:28:40,727 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 12:28:40,727 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 12:28:40,728 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:28:40,762 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 12:28:40,763 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 12:28:40,774 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 12:28:40,774 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Starting document processing: conditions_acne.txt
+2025-10-14 12:28:40,774 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] File size: 5048 bytes
+2025-10-14 12:28:40,775 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Extracting text content...
+2025-10-14 12:28:40,775 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Text extracted: 4990 characters
+2025-10-14 12:28:40,776 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Cleaning text...
+2025-10-14 12:28:40,776 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Text cleaned: 4965 characters
+2025-10-14 12:28:40,777 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Starting text chunking...
+2025-10-14 12:28:40,797 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Text chunked: 3 chunks created
+2025-10-14 12:28:40,800 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 12:28:40,802 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 12:28:40,804 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 12:28:40,805 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 12:28:40,806 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Chunk 3: 44 tokens, 165 chars
+2025-10-14 12:28:40,806 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 12:28:40,808 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Generating embeddings...
+2025-10-14 12:28:40,809 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Embeddings generated: 3 vectors
+2025-10-14 12:28:40,810 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Creating document chunks...
+2025-10-14 12:28:40,813 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Created chunk 1: 500 tokens
+2025-10-14 12:28:40,816 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Created chunk 2: 511 tokens
+2025-10-14 12:28:40,817 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Created chunk 3: 44 tokens
+2025-10-14 12:28:40,817 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Document processing complete!
+2025-10-14 12:28:40,818 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Summary: 3 chunks, 1055 total tokens
+2025-10-14 12:28:40,820 - INDEXER - INFO - 📄 [PROCESS-b7e1d351] Processing time: 0.04 seconds
+2025-10-14 12:28:40,822 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 12:28:40,825 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 12:28:40,826 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 12:28:40,844 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 12:28:40,846 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Starting document processing: conditions_acne_causes.txt
+2025-10-14 12:28:40,846 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] File size: 4473 bytes
+2025-10-14 12:28:40,847 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Extracting text content...
+2025-10-14 12:28:40,848 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Text extracted: 4431 characters
+2025-10-14 12:28:40,848 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Cleaning text...
+2025-10-14 12:28:40,849 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Text cleaned: 4411 characters
+2025-10-14 12:28:40,850 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Starting text chunking...
+2025-10-14 12:28:40,865 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Text chunked: 2 chunks created
+2025-10-14 12:28:40,868 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 12:28:40,869 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 12:28:40,870 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 12:28:40,871 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 12:28:40,872 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Generating embeddings...
+2025-10-14 12:28:40,873 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Embeddings generated: 2 vectors
+2025-10-14 12:28:40,874 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Creating document chunks...
+2025-10-14 12:28:40,876 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Created chunk 1: 437 tokens
+2025-10-14 12:28:40,879 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Created chunk 2: 483 tokens
+2025-10-14 12:28:40,880 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Document processing complete!
+2025-10-14 12:28:40,880 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Summary: 2 chunks, 920 total tokens
+2025-10-14 12:28:40,880 - INDEXER - INFO - 📄 [PROCESS-aed0bdd1] Processing time: 0.03 seconds
+2025-10-14 12:28:40,881 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 12:28:40,883 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 12:28:40,884 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 12:28:40,896 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 12:28:40,898 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Starting document processing: conditions_acne_complications.txt
+2025-10-14 12:28:40,899 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] File size: 5693 bytes
+2025-10-14 12:28:40,900 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Extracting text content...
+2025-10-14 12:28:40,900 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Text extracted: 5657 characters
+2025-10-14 12:28:40,901 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Cleaning text...
+2025-10-14 12:28:40,902 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Text cleaned: 5639 characters
+2025-10-14 12:28:40,903 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Starting text chunking...
+2025-10-14 12:28:40,924 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Text chunked: 3 chunks created
+2025-10-14 12:28:40,926 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 12:28:40,928 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 12:28:40,930 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 12:28:40,931 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 12:28:40,932 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Chunk 3: 184 tokens, 903 chars
+2025-10-14 12:28:40,932 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 12:28:40,933 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Generating embeddings...
+2025-10-14 12:28:40,933 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Embeddings generated: 3 vectors
+2025-10-14 12:28:40,934 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Creating document chunks...
+2025-10-14 12:28:40,936 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Created chunk 1: 456 tokens
+2025-10-14 12:28:40,939 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Created chunk 2: 497 tokens
+2025-10-14 12:28:40,941 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Created chunk 3: 184 tokens
+2025-10-14 12:28:40,942 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Document processing complete!
+2025-10-14 12:28:40,942 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Summary: 3 chunks, 1137 total tokens
+2025-10-14 12:28:40,943 - INDEXER - INFO - 📄 [PROCESS-b3b75d82] Processing time: 0.04 seconds
+2025-10-14 12:28:40,943 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 12:28:40,944 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 12:28:40,947 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 12:28:40,957 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 12:28:40,959 - INDEXER - INFO - 📄 [PROCESS-c8224110] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 12:28:40,960 - INDEXER - INFO - 📄 [PROCESS-c8224110] File size: 1436 bytes
+2025-10-14 12:28:40,962 - INDEXER - INFO - 📄 [PROCESS-c8224110] Extracting text content...
+2025-10-14 12:28:40,962 - INDEXER - INFO - 📄 [PROCESS-c8224110] Text extracted: 1423 characters
+2025-10-14 12:28:40,963 - INDEXER - INFO - 📄 [PROCESS-c8224110] Cleaning text...
+2025-10-14 12:28:40,964 - INDEXER - INFO - 📄 [PROCESS-c8224110] Text cleaned: 1407 characters
+2025-10-14 12:28:40,965 - INDEXER - INFO - 📄 [PROCESS-c8224110] Starting text chunking...
+2025-10-14 12:28:40,974 - INDEXER - INFO - 📄 [PROCESS-c8224110] Text chunked: 1 chunks created
+2025-10-14 12:28:40,975 - INDEXER - INFO - 📄 [PROCESS-c8224110] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 12:28:40,976 - INDEXER - INFO - 📄 [PROCESS-c8224110] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 12:28:40,976 - INDEXER - INFO - 📄 [PROCESS-c8224110] Generating embeddings...
+2025-10-14 12:28:40,977 - INDEXER - INFO - 📄 [PROCESS-c8224110] Embeddings generated: 1 vectors
+2025-10-14 12:28:40,978 - INDEXER - INFO - 📄 [PROCESS-c8224110] Creating document chunks...
+2025-10-14 12:28:40,980 - INDEXER - INFO - 📄 [PROCESS-c8224110] Created chunk 1: 318 tokens
+2025-10-14 12:28:40,982 - INDEXER - INFO - 📄 [PROCESS-c8224110] Document processing complete!
+2025-10-14 12:28:40,984 - INDEXER - INFO - 📄 [PROCESS-c8224110] Summary: 1 chunks, 318 total tokens
+2025-10-14 12:28:40,985 - INDEXER - INFO - 📄 [PROCESS-c8224110] Processing time: 0.02 seconds
+2025-10-14 12:28:40,985 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 12:28:40,986 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 12:28:40,987 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 12:28:41,003 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 12:28:41,005 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 12:28:41,005 - INDEXER - INFO - 📄 [PROCESS-6e0618da] File size: 8679 bytes
+2025-10-14 12:28:41,006 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Extracting text content...
+2025-10-14 12:28:41,006 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Text extracted: 8646 characters
+2025-10-14 12:28:41,007 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Cleaning text...
+2025-10-14 12:28:41,008 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Text cleaned: 8624 characters
+2025-10-14 12:28:41,009 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Starting text chunking...
+2025-10-14 12:28:41,057 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Text chunked: 4 chunks created
+2025-10-14 12:28:41,059 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 12:28:41,060 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 12:28:41,062 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 12:28:41,063 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 12:28:41,065 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 12:28:41,067 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 12:28:41,069 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 12:28:41,070 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 12:28:41,071 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Generating embeddings...
+2025-10-14 12:28:41,072 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Embeddings generated: 4 vectors
+2025-10-14 12:28:41,074 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Creating document chunks...
+2025-10-14 12:28:41,077 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Created chunk 1: 487 tokens
+2025-10-14 12:28:41,078 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Created chunk 2: 495 tokens
+2025-10-14 12:28:41,079 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Created chunk 3: 499 tokens
+2025-10-14 12:28:41,080 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Created chunk 4: 341 tokens
+2025-10-14 12:28:41,080 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Document processing complete!
+2025-10-14 12:28:41,081 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Summary: 4 chunks, 1822 total tokens
+2025-10-14 12:28:41,081 - INDEXER - INFO - 📄 [PROCESS-6e0618da] Processing time: 0.08 seconds
+2025-10-14 12:28:41,081 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 12:28:41,082 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 12:29:11,084 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:29:11,141 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:29:41,144 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:29:41,205 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:30:11,207 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:30:11,249 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:30:41,250 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:30:41,295 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:31:11,298 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:31:11,336 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:31:41,337 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:31:41,374 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:32:11,375 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:32:11,417 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:32:41,418 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:32:41,453 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:33:11,453 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:33:11,504 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:33:41,506 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:33:41,533 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:34:11,535 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:34:11,595 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:34:41,598 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:34:41,656 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:35:11,659 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:35:11,705 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:35:41,708 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:35:41,762 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:36:11,764 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:36:11,811 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:36:41,813 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:36:41,875 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:37:11,876 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:37:11,916 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:37:41,917 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:37:41,970 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:38:11,972 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:38:12,032 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:38:42,032 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:38:42,084 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:39:12,086 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:39:12,142 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:39:42,145 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:39:42,191 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:40:12,194 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:40:12,234 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:40:42,237 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:40:42,289 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:41:12,292 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:41:12,318 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:41:42,319 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:41:42,374 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:42:12,375 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:42:12,423 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:42:42,425 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:42:42,458 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:43:12,459 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:43:12,500 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:43:42,501 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:43:42,517 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:44:12,518 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:44:12,550 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:44:42,552 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:44:42,605 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:45:12,605 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:45:12,626 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:45:42,627 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:45:42,661 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:46:12,662 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:46:12,709 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:46:42,711 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:46:42,746 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:47:12,747 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:47:12,848 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:47:42,851 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:47:42,902 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:48:12,902 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:48:12,959 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:48:42,962 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:48:43,023 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:49:13,029 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:49:13,094 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:49:43,094 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:49:43,151 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:50:13,154 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:50:13,208 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:50:43,210 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:50:43,303 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:51:13,304 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:51:13,367 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:51:43,367 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:51:43,415 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:52:13,418 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:52:13,508 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:52:43,509 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:52:43,563 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:53:13,565 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:53:13,620 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:53:43,623 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:53:43,702 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:54:13,704 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:54:13,734 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:54:43,735 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:54:43,800 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:55:13,802 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:55:13,836 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:55:43,839 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:55:43,892 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:56:13,894 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:56:13,933 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:56:43,934 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:56:43,997 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:57:14,002 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:57:14,063 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:57:44,069 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:57:44,151 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:58:14,154 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:58:14,213 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:58:44,223 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:58:44,447 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:59:14,450 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:59:14,508 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 12:59:44,510 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 12:59:44,571 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:00:14,577 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:00:14,634 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:00:44,638 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:00:44,698 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:01:14,698 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:01:14,722 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:01:44,723 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:01:44,756 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:02:14,757 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:02:14,798 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:02:44,799 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:02:44,833 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:03:14,834 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:03:14,886 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:03:44,888 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:03:44,922 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:04:14,922 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:04:14,955 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:04:44,956 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:04:45,001 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:05:15,002 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:05:15,036 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:05:45,035 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:05:45,066 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:06:15,067 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:06:15,115 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:06:45,115 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:06:45,149 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:07:15,150 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:07:15,191 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:07:45,192 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:07:45,231 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:08:15,233 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:08:15,282 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:08:45,283 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:08:45,377 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:09:15,382 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:09:15,435 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:09:45,438 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:09:45,495 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:10:15,496 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:10:15,574 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:10:45,580 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:10:45,658 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:11:15,662 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:11:15,721 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:11:45,723 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:11:45,788 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:12:15,790 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:12:15,840 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:12:45,843 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:12:45,917 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:13:15,918 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:13:15,974 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:13:45,974 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:13:46,039 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:14:16,040 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:14:16,102 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:14:46,105 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:14:46,166 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:15:16,168 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:15:16,224 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:15:46,227 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:15:46,262 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:16:16,263 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:16:16,290 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:16:46,289 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:16:46,312 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:17:16,313 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:17:16,341 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:17:46,343 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:17:46,367 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:18:16,368 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:18:16,395 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:18:46,395 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:18:46,417 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:19:16,417 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:19:16,454 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:19:46,454 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:19:46,477 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:20:16,478 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:20:16,506 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:20:46,507 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:20:46,533 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:21:16,534 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:21:16,554 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:21:46,554 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:21:46,578 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:22:16,580 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:22:16,605 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:22:46,606 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:22:46,652 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:23:16,653 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:23:16,677 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:23:46,735 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:23:47,040 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:24:17,044 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:24:17,153 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:24:47,156 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:24:47,223 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:25:17,225 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:25:17,298 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:25:47,299 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:25:47,360 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:26:17,365 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:26:17,419 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:26:47,421 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:26:47,476 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:27:17,479 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:27:17,567 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:27:47,570 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:27:47,638 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:28:17,641 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:28:17,716 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:28:47,718 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:28:47,811 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:29:17,814 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:29:17,864 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:29:47,866 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:29:47,935 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:30:17,938 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:30:17,977 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:30:47,980 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:30:48,026 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:31:18,028 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:31:18,099 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:31:48,099 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:31:48,151 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:32:18,153 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:32:18,217 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:32:48,220 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:32:48,270 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:33:18,269 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:33:18,319 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:33:48,324 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:33:48,371 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:34:18,372 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:34:18,430 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:34:48,435 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:34:48,475 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:35:18,475 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:35:18,526 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:35:48,528 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:35:48,584 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:36:18,583 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:36:18,606 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:36:48,609 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:36:48,640 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:37:18,639 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:37:18,667 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:37:48,665 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:37:48,698 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:38:18,699 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:38:18,732 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:38:48,731 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:38:48,766 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:39:18,768 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:39:18,818 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:39:48,818 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:39:48,893 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:40:18,897 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:40:18,976 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:40:48,977 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:40:49,011 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:41:19,012 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:41:19,054 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:41:49,056 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:41:49,134 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:42:19,137 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:42:19,186 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:42:49,186 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:42:49,253 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:43:19,254 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:43:19,306 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:43:49,307 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:43:49,347 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:44:19,357 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:44:19,450 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:44:49,452 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:44:49,501 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:45:19,508 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:45:19,721 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:45:49,724 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:45:49,766 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:46:19,767 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:46:19,845 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:46:49,847 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:46:49,896 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:47:19,897 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:47:19,943 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:47:49,944 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:47:50,021 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:48:20,022 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:48:20,099 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:48:50,102 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:48:50,158 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:49:20,159 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:49:20,224 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:49:50,226 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:49:50,290 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:50:20,291 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:50:20,339 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:50:50,336 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:50:50,362 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:51:20,362 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:51:20,389 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:51:50,389 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:51:50,413 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:52:20,412 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:52:20,440 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:52:50,438 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:52:50,479 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:53:20,480 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:53:20,504 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:53:50,504 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:53:50,529 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:54:20,530 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:54:20,592 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:54:50,593 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:54:50,649 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:55:20,649 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:55:20,693 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:55:50,693 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:55:50,733 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:56:20,732 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:56:20,777 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:56:50,780 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:56:50,838 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:57:20,839 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:57:20,914 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:57:50,918 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:57:50,992 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:58:20,994 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:58:21,059 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:58:51,062 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:58:51,130 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:59:21,131 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:59:21,198 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 13:59:51,203 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 13:59:51,285 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:00:21,287 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:00:21,359 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:00:51,378 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:00:51,517 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:01:21,519 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:01:21,576 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:01:51,577 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:01:51,633 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:02:21,636 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:02:21,708 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:02:51,708 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:02:51,778 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:03:21,775 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:03:21,826 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:03:51,830 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:03:51,907 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:04:21,908 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:04:21,970 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:04:51,969 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:04:52,058 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:05:22,059 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:05:22,098 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:05:52,100 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:05:52,144 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:06:22,145 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:06:22,188 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:06:52,188 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:06:52,233 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:07:22,233 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:07:22,276 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:07:52,275 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:07:52,302 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:08:22,302 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:08:22,340 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:08:52,340 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:08:52,371 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:09:22,372 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:09:22,415 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:09:52,416 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:09:52,446 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:10:22,446 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:10:22,483 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:10:52,483 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:10:52,512 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:11:22,512 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:11:22,536 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:11:52,536 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:11:52,564 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:12:22,564 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:12:22,587 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:12:52,586 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:12:52,605 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:13:22,605 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:13:22,644 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:13:52,644 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:13:52,670 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:14:22,668 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:14:22,717 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:14:52,717 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:14:52,738 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:15:22,739 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:15:22,786 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:15:52,786 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:15:52,826 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:16:22,828 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:16:22,874 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:16:52,876 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:16:52,926 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:17:22,926 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:17:22,956 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:17:52,957 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:17:52,989 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:18:22,989 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:18:23,024 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:18:53,025 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:18:53,068 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:19:23,068 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:19:23,108 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:19:53,117 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:19:53,178 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:20:23,181 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:20:23,214 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:20:53,214 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:20:53,247 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:21:23,247 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:21:23,286 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:21:53,289 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:21:53,338 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:22:23,339 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:22:23,377 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:22:53,378 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:22:53,426 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:23:23,427 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:23:23,478 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:23:53,480 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:23:53,511 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:24:23,513 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:24:23,551 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:24:53,552 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:24:53,601 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:25:23,602 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:25:23,649 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:25:53,649 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:25:53,695 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:26:23,696 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:26:23,776 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:26:53,777 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:26:53,809 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:27:23,809 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:27:23,835 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:27:53,835 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:27:53,879 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:28:23,882 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:28:23,934 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:28:53,935 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:28:53,966 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:29:23,965 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:29:24,011 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:29:54,013 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:29:54,051 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:30:24,052 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:30:24,106 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:30:54,106 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:30:54,163 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:31:24,166 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:31:24,201 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:31:54,203 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:31:54,253 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:32:24,254 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:32:24,307 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:32:54,307 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:32:54,346 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:33:24,347 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:33:24,395 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:33:54,395 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:33:54,428 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:34:24,430 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:34:24,456 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:34:54,458 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:34:54,495 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:35:24,495 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:35:24,533 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:35:54,533 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:35:54,572 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:36:24,573 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:36:24,612 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:36:54,613 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:36:54,635 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:37:24,635 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:37:24,654 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:37:54,654 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:37:54,678 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:38:24,677 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:38:24,705 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:38:54,708 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:38:54,733 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:39:24,732 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:39:24,786 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:39:54,788 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:39:54,844 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:40:24,846 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:40:24,890 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 14:40:54,891 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 14:40:54,950 - INDEXER - INFO - 📁 No new or changed files found

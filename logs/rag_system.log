@@ -1,0 +1,201 @@
+2025-10-14 12:28:04,732 - main - INFO - 🚀 Backend starting up...
+2025-10-14 12:28:04,735 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 12:28:04,757 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 12:28:04,762 - main - INFO - 📊 Current vector count: 0
+2025-10-14 12:28:04,763 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 12:28:41,159 - main - INFO - 🚀 Backend starting up...
+2025-10-14 12:28:41,168 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 12:28:41,176 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 12:28:41,178 - main - INFO - 📊 Current vector count: 0
+2025-10-14 12:28:41,179 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 12:29:25,221 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-14 12:29:44,842 - main - INFO - 🔍 [QUERY-1113cb37] Starting query: 'What is acne treatment?'
+2025-10-14 12:29:44,844 - main - INFO - 🔍 [QUERY-1113cb37] Generating query embedding...
+2025-10-14 12:29:44,846 - main - INFO - 🔍 [QUERY-1113cb37] Query embedding generated: 768 dimensions
+2025-10-14 12:29:44,848 - main - INFO - 🔍 [QUERY-1113cb37] Performing hybrid search in Qdrant...
+2025-10-14 12:29:44,882 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 12:29:44,886 - main - INFO - 🔍 [QUERY-1113cb37] Search completed: 0 results found
+2025-10-14 12:29:44,888 - main - INFO - 🔍 [QUERY-1113cb37] No relevant documents found, using general knowledge
+2025-10-14 12:30:04,907 - main - INFO - 🔍 [QUERY-1113cb37] General answer generated: 5379 characters
+2025-10-14 12:30:04,908 - main - INFO - 🔍 [QUERY-1113cb37] Query complete in 20.07s
+2025-10-14 12:30:04,909 - main - INFO - 🔍 [QUERY-bc7b74d9] Starting query: 'What is acne treatment?'
+2025-10-14 12:30:04,909 - main - INFO - 🔍 [QUERY-bc7b74d9] Generating query embedding...
+2025-10-14 12:30:04,910 - main - INFO - 🔍 [QUERY-bc7b74d9] Query embedding generated: 768 dimensions
+2025-10-14 12:30:04,910 - main - INFO - 🔍 [QUERY-bc7b74d9] Performing hybrid search in Qdrant...
+2025-10-14 12:30:04,917 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 12:30:04,920 - main - INFO - 🔍 [QUERY-bc7b74d9] Search completed: 0 results found
+2025-10-14 12:30:04,921 - main - INFO - 🔍 [QUERY-bc7b74d9] No relevant documents found, using general knowledge
+2025-10-14 12:30:27,652 - main - INFO - 🔍 [QUERY-bc7b74d9] General answer generated: 6546 characters
+2025-10-14 12:30:27,652 - main - INFO - 🔍 [QUERY-bc7b74d9] Query complete in 22.74s
+2025-10-14 12:54:30,763 - main - INFO - 🔍 [QUERY-29539116] Starting query: 'tell me something about acne?'
+2025-10-14 12:54:30,765 - main - INFO - 🔍 [QUERY-29539116] Generating query embedding...
+2025-10-14 12:54:30,766 - main - INFO - 🔍 [QUERY-29539116] Query embedding generated: 768 dimensions
+2025-10-14 12:54:30,767 - main - INFO - 🔍 [QUERY-29539116] Performing hybrid search in Qdrant...
+2025-10-14 12:54:30,787 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 12:54:30,788 - main - INFO - 🔍 [QUERY-29539116] Search completed: 0 results found
+2025-10-14 12:54:30,789 - main - INFO - 🔍 [QUERY-29539116] No relevant documents found, using general knowledge
+2025-10-14 12:54:48,145 - main - INFO - 🔍 [QUERY-29539116] General answer generated: 3455 characters
+2025-10-14 12:54:48,146 - main - INFO - 🔍 [QUERY-29539116] Query complete in 17.38s
+2025-10-14 13:02:24,045 - main - INFO - 🔍 [QUERY-35e837bc] Starting query: 'tell me something about acne '
+2025-10-14 13:02:24,046 - main - INFO - 🔍 [QUERY-35e837bc] Generating query embedding...
+2025-10-14 13:02:24,046 - main - INFO - 🔍 [QUERY-35e837bc] Query embedding generated: 768 dimensions
+2025-10-14 13:02:24,047 - main - INFO - 🔍 [QUERY-35e837bc] Performing hybrid search in Qdrant...
+2025-10-14 13:02:24,057 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 13:02:24,059 - main - INFO - 🔍 [QUERY-35e837bc] Search completed: 0 results found
+2025-10-14 13:02:24,059 - main - INFO - 🔍 [QUERY-35e837bc] No relevant documents found, using general knowledge
+2025-10-14 13:02:42,072 - main - INFO - 🔍 [QUERY-35e837bc] General answer generated: 2561 characters
+2025-10-14 13:02:42,073 - main - INFO - 🔍 [QUERY-35e837bc] Query complete in 18.03s
+2025-10-14 13:26:50,115 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Starting document processing: conditions_acne.txt
+2025-10-14 13:26:50,117 - document_processor - INFO - 📄 [PROCESS-6b1650a1] File size: 5048 bytes
+2025-10-14 13:26:50,118 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Extracting text content...
+2025-10-14 13:26:50,119 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Text extracted: 4990 characters
+2025-10-14 13:26:50,121 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Cleaning text...
+2025-10-14 13:26:50,125 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Text cleaned: 4965 characters
+2025-10-14 13:26:50,127 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Starting text chunking...
+2025-10-14 13:26:50,206 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Text chunked: 3 chunks created
+2025-10-14 13:26:50,208 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 13:26:50,209 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 13:26:50,211 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 13:26:50,213 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 13:26:50,214 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Chunk 3: 44 tokens, 165 chars
+2025-10-14 13:26:50,215 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 13:26:50,216 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Generating embeddings...
+2025-10-14 13:26:50,219 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Embeddings generated: 3 vectors
+2025-10-14 13:26:50,220 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Creating document chunks...
+2025-10-14 13:26:50,222 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Created chunk 1: 500 tokens
+2025-10-14 13:26:50,224 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Created chunk 2: 511 tokens
+2025-10-14 13:26:50,226 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Created chunk 3: 44 tokens
+2025-10-14 13:26:50,228 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Document processing complete!
+2025-10-14 13:26:50,229 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Summary: 3 chunks, 1055 total tokens
+2025-10-14 13:26:50,231 - document_processor - INFO - 📄 [PROCESS-6b1650a1] Processing time: 0.11 seconds
+2025-10-14 13:26:50,307 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,348 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,363 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,367 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Starting document processing: conditions_acne_causes.txt
+2025-10-14 13:26:50,367 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] File size: 4473 bytes
+2025-10-14 13:26:50,368 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Extracting text content...
+2025-10-14 13:26:50,368 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Text extracted: 4431 characters
+2025-10-14 13:26:50,368 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Cleaning text...
+2025-10-14 13:26:50,369 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Text cleaned: 4411 characters
+2025-10-14 13:26:50,369 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Starting text chunking...
+2025-10-14 13:26:50,393 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Text chunked: 2 chunks created
+2025-10-14 13:26:50,395 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 13:26:50,396 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 13:26:50,398 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 13:26:50,399 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 13:26:50,400 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Generating embeddings...
+2025-10-14 13:26:50,401 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Embeddings generated: 2 vectors
+2025-10-14 13:26:50,402 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Creating document chunks...
+2025-10-14 13:26:50,403 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Created chunk 1: 437 tokens
+2025-10-14 13:26:50,405 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Created chunk 2: 483 tokens
+2025-10-14 13:26:50,405 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Document processing complete!
+2025-10-14 13:26:50,405 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Summary: 2 chunks, 920 total tokens
+2025-10-14 13:26:50,406 - document_processor - INFO - 📄 [PROCESS-ddf35cbb] Processing time: 0.04 seconds
+2025-10-14 13:26:50,418 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,423 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,431 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Starting document processing: conditions_acne_complications.txt
+2025-10-14 13:26:50,432 - document_processor - INFO - 📄 [PROCESS-f3c8e498] File size: 5693 bytes
+2025-10-14 13:26:50,433 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Extracting text content...
+2025-10-14 13:26:50,434 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Text extracted: 5657 characters
+2025-10-14 13:26:50,435 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Cleaning text...
+2025-10-14 13:26:50,436 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Text cleaned: 5639 characters
+2025-10-14 13:26:50,436 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Starting text chunking...
+2025-10-14 13:26:50,462 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Text chunked: 3 chunks created
+2025-10-14 13:26:50,463 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 13:26:50,464 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 13:26:50,466 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 13:26:50,469 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 13:26:50,469 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Chunk 3: 184 tokens, 903 chars
+2025-10-14 13:26:50,470 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 13:26:50,470 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Generating embeddings...
+2025-10-14 13:26:50,471 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Embeddings generated: 3 vectors
+2025-10-14 13:26:50,471 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Creating document chunks...
+2025-10-14 13:26:50,472 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Created chunk 1: 456 tokens
+2025-10-14 13:26:50,473 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Created chunk 2: 497 tokens
+2025-10-14 13:26:50,474 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Created chunk 3: 184 tokens
+2025-10-14 13:26:50,476 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Document processing complete!
+2025-10-14 13:26:50,478 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Summary: 3 chunks, 1137 total tokens
+2025-10-14 13:26:50,479 - document_processor - INFO - 📄 [PROCESS-f3c8e498] Processing time: 0.04 seconds
+2025-10-14 13:26:50,488 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,496 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,505 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,509 - document_processor - INFO - 📄 [PROCESS-aec11399] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 13:26:50,510 - document_processor - INFO - 📄 [PROCESS-aec11399] File size: 1436 bytes
+2025-10-14 13:26:50,511 - document_processor - INFO - 📄 [PROCESS-aec11399] Extracting text content...
+2025-10-14 13:26:50,512 - document_processor - INFO - 📄 [PROCESS-aec11399] Text extracted: 1423 characters
+2025-10-14 13:26:50,512 - document_processor - INFO - 📄 [PROCESS-aec11399] Cleaning text...
+2025-10-14 13:26:50,512 - document_processor - INFO - 📄 [PROCESS-aec11399] Text cleaned: 1407 characters
+2025-10-14 13:26:50,513 - document_processor - INFO - 📄 [PROCESS-aec11399] Starting text chunking...
+2025-10-14 13:26:50,517 - document_processor - INFO - 📄 [PROCESS-aec11399] Text chunked: 1 chunks created
+2025-10-14 13:26:50,519 - document_processor - INFO - 📄 [PROCESS-aec11399] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 13:26:50,519 - document_processor - INFO - 📄 [PROCESS-aec11399] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 13:26:50,520 - document_processor - INFO - 📄 [PROCESS-aec11399] Generating embeddings...
+2025-10-14 13:26:50,520 - document_processor - INFO - 📄 [PROCESS-aec11399] Embeddings generated: 1 vectors
+2025-10-14 13:26:50,521 - document_processor - INFO - 📄 [PROCESS-aec11399] Creating document chunks...
+2025-10-14 13:26:50,521 - document_processor - INFO - 📄 [PROCESS-aec11399] Created chunk 1: 318 tokens
+2025-10-14 13:26:50,522 - document_processor - INFO - 📄 [PROCESS-aec11399] Document processing complete!
+2025-10-14 13:26:50,522 - document_processor - INFO - 📄 [PROCESS-aec11399] Summary: 1 chunks, 318 total tokens
+2025-10-14 13:26:50,522 - document_processor - INFO - 📄 [PROCESS-aec11399] Processing time: 0.01 seconds
+2025-10-14 13:26:50,531 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,536 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 13:26:50,536 - document_processor - INFO - 📄 [PROCESS-5c0e2824] File size: 8679 bytes
+2025-10-14 13:26:50,537 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Extracting text content...
+2025-10-14 13:26:50,537 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Text extracted: 8646 characters
+2025-10-14 13:26:50,537 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Cleaning text...
+2025-10-14 13:26:50,538 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Text cleaned: 8624 characters
+2025-10-14 13:26:50,539 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Starting text chunking...
+2025-10-14 13:26:50,579 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Text chunked: 4 chunks created
+2025-10-14 13:26:50,581 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 13:26:50,582 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 13:26:50,585 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 13:26:50,585 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 13:26:50,586 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 13:26:50,587 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 13:26:50,587 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 13:26:50,588 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 13:26:50,588 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Generating embeddings...
+2025-10-14 13:26:50,589 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Embeddings generated: 4 vectors
+2025-10-14 13:26:50,589 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Creating document chunks...
+2025-10-14 13:26:50,590 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Created chunk 1: 487 tokens
+2025-10-14 13:26:50,594 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Created chunk 2: 495 tokens
+2025-10-14 13:26:50,596 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Created chunk 3: 499 tokens
+2025-10-14 13:26:50,597 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Created chunk 4: 341 tokens
+2025-10-14 13:26:50,598 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Document processing complete!
+2025-10-14 13:26:50,599 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Summary: 4 chunks, 1822 total tokens
+2025-10-14 13:26:50,600 - document_processor - INFO - 📄 [PROCESS-5c0e2824] Processing time: 0.06 seconds
+2025-10-14 13:26:50,605 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,616 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,623 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:26:50,635 - httpx - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 13:34:22,404 - main - INFO - 🔍 [QUERY-5bfd33cb] Starting query: 'what is acne treatment '
+2025-10-14 13:34:22,406 - main - INFO - 🔍 [QUERY-5bfd33cb] Generating query embedding...
+2025-10-14 13:34:22,407 - main - INFO - 🔍 [QUERY-5bfd33cb] Query embedding generated: 768 dimensions
+2025-10-14 13:34:22,408 - main - INFO - 🔍 [QUERY-5bfd33cb] Performing hybrid search in Qdrant...
+2025-10-14 13:34:22,443 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 13:34:22,444 - main - INFO - 🔍 [QUERY-5bfd33cb] Search completed: 5 results found
+2025-10-14 13:34:22,445 - main - INFO - 🔍 [QUERY-5bfd33cb] Context sources: ['conditions_acne.txt', 'conditions_acne_treatment.txt', 'conditions_acne_complications.txt']
+2025-10-14 13:34:22,446 - main - INFO - 🔍 [QUERY-5bfd33cb] Total context length: 9017 characters
+2025-10-14 13:34:22,448 - main - INFO - 🔍 [QUERY-5bfd33cb] Generating answer with Gemini LLM...
+2025-10-14 13:34:36,050 - main - INFO - 🔍 [QUERY-5bfd33cb] Answer generated: 3047 characters
+2025-10-14 13:34:36,052 - main - INFO - 🔍 [QUERY-5bfd33cb] Query complete in 13.65s
+2025-10-14 14:14:21,034 - main - INFO - 🚀 Backend starting up...
+2025-10-14 14:14:21,035 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 14:14:21,055 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 14:14:21,058 - main - INFO - 📊 Current vector count: 13
+2025-10-14 14:14:21,059 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 14:14:30,387 - main - INFO - 🚀 Backend starting up...
+2025-10-14 14:14:30,387 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 14:14:30,400 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 14:14:30,402 - main - INFO - 📊 Current vector count: 13
+2025-10-14 14:14:30,403 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 14:16:10,214 - main - INFO - 🔍 [QUERY-3b7e7b87] Starting query: 'what is acne treatment?'
+2025-10-14 14:16:10,215 - main - INFO - 🔍 [QUERY-3b7e7b87] Generating query embedding...
+2025-10-14 14:16:10,216 - main - INFO - 🔍 [QUERY-3b7e7b87] Query embedding generated: 768 dimensions
+2025-10-14 14:16:10,216 - main - INFO - 🔍 [QUERY-3b7e7b87] Performing hybrid search in Qdrant...
+2025-10-14 14:16:10,230 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 14:16:10,233 - main - INFO - 🔍 [QUERY-3b7e7b87] Search completed: 5 results found
+2025-10-14 14:16:10,234 - main - INFO - 🔍 [QUERY-3b7e7b87] Context sources: ['conditions_acne.txt', 'conditions_acne_treatment.txt', 'conditions_acne_complications.txt']
+2025-10-14 14:16:10,235 - main - INFO - 🔍 [QUERY-3b7e7b87] Total context length: 11070 characters
+2025-10-14 14:16:10,235 - main - INFO - 🔍 [QUERY-3b7e7b87] Generating answer with Gemini LLM...
+2025-10-14 14:16:15,139 - main - INFO - 🔍 [QUERY-3b7e7b87] Answer generated: 612 characters
+2025-10-14 14:16:15,139 - main - INFO - 🔍 [QUERY-3b7e7b87] Query complete in 4.93s
