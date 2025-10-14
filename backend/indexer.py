@@ -54,7 +54,7 @@ class DocumentIndexer:
         
         return False  # File unchanged
     
-    def index_file(self, file_path: Path) -> bool:
+    async def index_file(self, file_path: Path) -> bool:
         """Index a single file"""
         filename = file_path.name
         logger.info(f"📄 Indexing: {filename}")
@@ -77,7 +77,7 @@ class DocumentIndexer:
             stored_count = 0
             for i, chunk in enumerate(chunks):
                 deterministic_id = f"{filename}_{i}"
-                success = qdrant_client.store_document(chunk, deterministic_id)
+                success = await qdrant_client.store_document(chunk, deterministic_id)
                 if success:
                     stored_count += 1
             
@@ -91,7 +91,7 @@ class DocumentIndexer:
             logger.error(f"📄 ❌ Failed to index {filename}: {e}")
             return False
     
-    def scan_and_index(self):
+    async def scan_and_index(self):
         """Scan documents directory and index new/changed files"""
         if not self.docs_dir.exists():
             logger.warning(f"📁 Documents directory not found: {self.docs_dir}")
@@ -114,7 +114,7 @@ class DocumentIndexer:
         
         # Process each file
         for file_path in files_to_process:
-            self.index_file(file_path)
+            await self.index_file(file_path)
     
     def run_continuous(self, scan_interval: int = 30):
         """Run continuous monitoring"""
@@ -122,16 +122,21 @@ class DocumentIndexer:
         logger.info(f"📁 Monitoring: {self.docs_dir}")
         logger.info(f"⏰ Scan interval: {scan_interval} seconds")
         
-        while True:
-            try:
-                self.scan_and_index()
-                time.sleep(scan_interval)
-            except KeyboardInterrupt:
-                logger.info("🛑 Indexing service stopped")
-                break
-            except Exception as e:
-                logger.error(f"💥 Indexing service error: {e}")
-                time.sleep(scan_interval)
+        import asyncio
+        
+        async def async_loop():
+            while True:
+                try:
+                    await self.scan_and_index()
+                    await asyncio.sleep(scan_interval)
+                except KeyboardInterrupt:
+                    logger.info("🛑 Indexing service stopped")
+                    break
+                except Exception as e:
+                    logger.error(f"💥 Indexing service error: {e}")
+                    await asyncio.sleep(scan_interval)
+        
+        asyncio.run(async_loop())
 
 if __name__ == "__main__":
     indexer = DocumentIndexer()

@@ -868,3 +868,842 @@
 2025-10-14 14:58:56,859 - INDEXER - INFO - 📁 No new or changed files found
 2025-10-14 14:59:26,860 - INDEXER - INFO - 📁 Scanning: /app/data/documents
 2025-10-14 14:59:26,924 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:52:00,276 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 19:52:00,277 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 19:52:00,278 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 19:52:00,280 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:52:00,344 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 19:52:00,344 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 19:52:00,357 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 19:52:00,358 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Starting document processing: conditions_acne.txt
+2025-10-14 19:52:00,358 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] File size: 5048 bytes
+2025-10-14 19:52:00,359 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Extracting text content...
+2025-10-14 19:52:00,360 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Text extracted: 4990 characters
+2025-10-14 19:52:00,360 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Cleaning text...
+2025-10-14 19:52:00,363 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Text cleaned: 4965 characters
+2025-10-14 19:52:00,364 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Starting text chunking...
+2025-10-14 19:52:00,391 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Text chunked: 3 chunks created
+2025-10-14 19:52:00,393 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 19:52:00,393 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 19:52:00,394 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 19:52:00,395 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 19:52:00,395 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Chunk 3: 44 tokens, 165 chars
+2025-10-14 19:52:00,396 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 19:52:00,397 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Generating embeddings...
+2025-10-14 19:52:00,398 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Embeddings generated: 3 vectors
+2025-10-14 19:52:00,398 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Creating document chunks...
+2025-10-14 19:52:00,400 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Created chunk 1: 500 tokens
+2025-10-14 19:52:00,401 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Created chunk 2: 511 tokens
+2025-10-14 19:52:00,402 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Created chunk 3: 44 tokens
+2025-10-14 19:52:00,403 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Document processing complete!
+2025-10-14 19:52:00,404 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Summary: 3 chunks, 1055 total tokens
+2025-10-14 19:52:00,404 - INDEXER - INFO - 📄 [PROCESS-4f6201c2] Processing time: 0.05 seconds
+2025-10-14 19:52:00,405 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 19:52:00,415 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 19:52:00,416 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 19:52:00,429 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 19:52:00,429 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Starting document processing: conditions_acne_causes.txt
+2025-10-14 19:52:00,430 - INDEXER - INFO - 📄 [PROCESS-9131b01d] File size: 4473 bytes
+2025-10-14 19:52:00,430 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Extracting text content...
+2025-10-14 19:52:00,431 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Text extracted: 4431 characters
+2025-10-14 19:52:00,432 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Cleaning text...
+2025-10-14 19:52:00,432 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Text cleaned: 4411 characters
+2025-10-14 19:52:00,433 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Starting text chunking...
+2025-10-14 19:52:00,445 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Text chunked: 2 chunks created
+2025-10-14 19:52:00,446 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 19:52:00,446 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 19:52:00,448 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 19:52:00,448 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 19:52:00,449 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Generating embeddings...
+2025-10-14 19:52:00,450 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Embeddings generated: 2 vectors
+2025-10-14 19:52:00,450 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Creating document chunks...
+2025-10-14 19:52:00,452 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Created chunk 1: 437 tokens
+2025-10-14 19:52:00,454 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Created chunk 2: 483 tokens
+2025-10-14 19:52:00,454 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Document processing complete!
+2025-10-14 19:52:00,455 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Summary: 2 chunks, 920 total tokens
+2025-10-14 19:52:00,456 - INDEXER - INFO - 📄 [PROCESS-9131b01d] Processing time: 0.02 seconds
+2025-10-14 19:52:00,456 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 19:52:00,457 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 19:52:00,457 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 19:52:00,471 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 19:52:00,472 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Starting document processing: conditions_acne_complications.txt
+2025-10-14 19:52:00,472 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] File size: 5693 bytes
+2025-10-14 19:52:00,473 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Extracting text content...
+2025-10-14 19:52:00,474 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Text extracted: 5657 characters
+2025-10-14 19:52:00,474 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Cleaning text...
+2025-10-14 19:52:00,475 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Text cleaned: 5639 characters
+2025-10-14 19:52:00,476 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Starting text chunking...
+2025-10-14 19:52:00,488 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Text chunked: 3 chunks created
+2025-10-14 19:52:00,490 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 19:52:00,490 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 19:52:00,491 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 19:52:00,492 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 19:52:00,493 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Chunk 3: 184 tokens, 903 chars
+2025-10-14 19:52:00,494 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 19:52:00,494 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Generating embeddings...
+2025-10-14 19:52:00,495 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Embeddings generated: 3 vectors
+2025-10-14 19:52:00,496 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Creating document chunks...
+2025-10-14 19:52:00,497 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Created chunk 1: 456 tokens
+2025-10-14 19:52:00,498 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Created chunk 2: 497 tokens
+2025-10-14 19:52:00,499 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Created chunk 3: 184 tokens
+2025-10-14 19:52:00,499 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Document processing complete!
+2025-10-14 19:52:00,500 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Summary: 3 chunks, 1137 total tokens
+2025-10-14 19:52:00,500 - INDEXER - INFO - 📄 [PROCESS-8d46eedb] Processing time: 0.03 seconds
+2025-10-14 19:52:00,501 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 19:52:00,502 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 19:52:00,502 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 19:52:00,516 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 19:52:00,517 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 19:52:00,518 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] File size: 1436 bytes
+2025-10-14 19:52:00,518 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Extracting text content...
+2025-10-14 19:52:00,519 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Text extracted: 1423 characters
+2025-10-14 19:52:00,519 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Cleaning text...
+2025-10-14 19:52:00,520 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Text cleaned: 1407 characters
+2025-10-14 19:52:00,521 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Starting text chunking...
+2025-10-14 19:52:00,523 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Text chunked: 1 chunks created
+2025-10-14 19:52:00,524 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 19:52:00,525 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 19:52:00,526 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Generating embeddings...
+2025-10-14 19:52:00,526 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Embeddings generated: 1 vectors
+2025-10-14 19:52:00,527 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Creating document chunks...
+2025-10-14 19:52:00,528 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Created chunk 1: 318 tokens
+2025-10-14 19:52:00,528 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Document processing complete!
+2025-10-14 19:52:00,529 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Summary: 1 chunks, 318 total tokens
+2025-10-14 19:52:00,529 - INDEXER - INFO - 📄 [PROCESS-65deb9b9] Processing time: 0.01 seconds
+2025-10-14 19:52:00,530 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 19:52:00,531 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 19:52:00,531 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 19:52:00,544 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 19:52:00,545 - INDEXER - INFO - 📄 [PROCESS-b50da487] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 19:52:00,545 - INDEXER - INFO - 📄 [PROCESS-b50da487] File size: 8679 bytes
+2025-10-14 19:52:00,546 - INDEXER - INFO - 📄 [PROCESS-b50da487] Extracting text content...
+2025-10-14 19:52:00,546 - INDEXER - INFO - 📄 [PROCESS-b50da487] Text extracted: 8646 characters
+2025-10-14 19:52:00,547 - INDEXER - INFO - 📄 [PROCESS-b50da487] Cleaning text...
+2025-10-14 19:52:00,548 - INDEXER - INFO - 📄 [PROCESS-b50da487] Text cleaned: 8624 characters
+2025-10-14 19:52:00,548 - INDEXER - INFO - 📄 [PROCESS-b50da487] Starting text chunking...
+2025-10-14 19:52:00,568 - INDEXER - INFO - 📄 [PROCESS-b50da487] Text chunked: 4 chunks created
+2025-10-14 19:52:00,570 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 19:52:00,571 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 19:52:00,572 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 19:52:00,572 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 19:52:00,574 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 19:52:00,574 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 19:52:00,575 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 19:52:00,576 - INDEXER - INFO - 📄 [PROCESS-b50da487] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 19:52:00,576 - INDEXER - INFO - 📄 [PROCESS-b50da487] Generating embeddings...
+2025-10-14 19:52:00,577 - INDEXER - INFO - 📄 [PROCESS-b50da487] Embeddings generated: 4 vectors
+2025-10-14 19:52:00,578 - INDEXER - INFO - 📄 [PROCESS-b50da487] Creating document chunks...
+2025-10-14 19:52:00,579 - INDEXER - INFO - 📄 [PROCESS-b50da487] Created chunk 1: 487 tokens
+2025-10-14 19:52:00,580 - INDEXER - INFO - 📄 [PROCESS-b50da487] Created chunk 2: 495 tokens
+2025-10-14 19:52:00,581 - INDEXER - INFO - 📄 [PROCESS-b50da487] Created chunk 3: 499 tokens
+2025-10-14 19:52:00,582 - INDEXER - INFO - 📄 [PROCESS-b50da487] Created chunk 4: 341 tokens
+2025-10-14 19:52:00,583 - INDEXER - INFO - 📄 [PROCESS-b50da487] Document processing complete!
+2025-10-14 19:52:00,584 - INDEXER - INFO - 📄 [PROCESS-b50da487] Summary: 4 chunks, 1822 total tokens
+2025-10-14 19:52:00,584 - INDEXER - INFO - 📄 [PROCESS-b50da487] Processing time: 0.04 seconds
+2025-10-14 19:52:00,585 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 19:52:00,586 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 19:52:30,585 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:52:30,746 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:53:00,756 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:53:00,872 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:53:30,871 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:53:30,981 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:54:00,982 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:54:01,092 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:54:31,093 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:54:31,209 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:55:01,216 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:55:01,401 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:55:31,405 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:55:31,612 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:56:01,615 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:56:01,767 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:56:31,775 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:56:31,980 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:57:01,984 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:57:02,136 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:57:32,140 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:57:32,288 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:58:02,291 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:58:02,388 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:58:32,388 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:58:32,497 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:59:02,499 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:59:02,614 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 19:59:32,619 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 19:59:32,790 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:00:02,793 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:00:02,947 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:00:32,951 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:00:33,130 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:01:03,136 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:01:03,316 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:01:33,316 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:01:33,474 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:02:03,478 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:02:03,646 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:02:33,651 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:02:33,831 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:03:03,835 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:03:04,022 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:03:34,016 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:03:34,124 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:04:04,137 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:04:04,296 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:04:34,299 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:04:34,488 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:04:52,521 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 20:04:52,523 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 20:04:52,526 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 20:04:52,534 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:04:52,644 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 20:04:52,645 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 20:04:52,672 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 20:04:52,673 - INDEXER - INFO - 📄 [PROCESS-214115db] Starting document processing: conditions_acne.txt
+2025-10-14 20:04:52,675 - INDEXER - INFO - 📄 [PROCESS-214115db] File size: 5048 bytes
+2025-10-14 20:04:52,677 - INDEXER - INFO - 📄 [PROCESS-214115db] Extracting text content...
+2025-10-14 20:04:52,679 - INDEXER - INFO - 📄 [PROCESS-214115db] Text extracted: 4990 characters
+2025-10-14 20:04:52,680 - INDEXER - INFO - 📄 [PROCESS-214115db] Cleaning text...
+2025-10-14 20:04:52,683 - INDEXER - INFO - 📄 [PROCESS-214115db] Text cleaned: 4965 characters
+2025-10-14 20:04:52,687 - INDEXER - INFO - 📄 [PROCESS-214115db] Starting text chunking...
+2025-10-14 20:04:52,795 - INDEXER - INFO - 📄 [PROCESS-214115db] Text chunked: 3 chunks created
+2025-10-14 20:04:52,799 - INDEXER - INFO - 📄 [PROCESS-214115db] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 20:04:52,801 - INDEXER - INFO - 📄 [PROCESS-214115db] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 20:04:52,808 - INDEXER - INFO - 📄 [PROCESS-214115db] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 20:04:52,810 - INDEXER - INFO - 📄 [PROCESS-214115db] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 20:04:52,813 - INDEXER - INFO - 📄 [PROCESS-214115db] Chunk 3: 44 tokens, 165 chars
+2025-10-14 20:04:52,815 - INDEXER - INFO - 📄 [PROCESS-214115db] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 20:04:52,816 - INDEXER - INFO - 📄 [PROCESS-214115db] Generating embeddings...
+2025-10-14 20:04:52,839 - INDEXER - ERROR - Error generating nomic-ai embeddings: cannot import name 'embed' from 'nomic' (/usr/local/lib/python3.11/site-packages/nomic/__init__.py)
+2025-10-14 20:04:52,840 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:04:52,844 - INDEXER - INFO - 📄 [PROCESS-214115db] Embeddings generated: 3 vectors
+2025-10-14 20:04:52,845 - INDEXER - INFO - 📄 [PROCESS-214115db] Creating document chunks...
+2025-10-14 20:04:52,853 - INDEXER - INFO - 📄 [PROCESS-214115db] Created chunk 1: 500 tokens
+2025-10-14 20:04:52,858 - INDEXER - INFO - 📄 [PROCESS-214115db] Created chunk 2: 511 tokens
+2025-10-14 20:04:52,860 - INDEXER - INFO - 📄 [PROCESS-214115db] Created chunk 3: 44 tokens
+2025-10-14 20:04:52,863 - INDEXER - INFO - 📄 [PROCESS-214115db] Document processing complete!
+2025-10-14 20:04:52,864 - INDEXER - INFO - 📄 [PROCESS-214115db] Summary: 3 chunks, 1055 total tokens
+2025-10-14 20:04:52,865 - INDEXER - INFO - 📄 [PROCESS-214115db] Processing time: 0.19 seconds
+2025-10-14 20:04:52,866 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:04:52,906 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 20:04:52,908 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 20:04:52,926 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 20:04:52,927 - INDEXER - INFO - 📄 [PROCESS-144d0146] Starting document processing: conditions_acne_causes.txt
+2025-10-14 20:04:52,928 - INDEXER - INFO - 📄 [PROCESS-144d0146] File size: 4473 bytes
+2025-10-14 20:04:52,929 - INDEXER - INFO - 📄 [PROCESS-144d0146] Extracting text content...
+2025-10-14 20:04:52,931 - INDEXER - INFO - 📄 [PROCESS-144d0146] Text extracted: 4431 characters
+2025-10-14 20:04:52,932 - INDEXER - INFO - 📄 [PROCESS-144d0146] Cleaning text...
+2025-10-14 20:04:52,934 - INDEXER - INFO - 📄 [PROCESS-144d0146] Text cleaned: 4411 characters
+2025-10-14 20:04:52,935 - INDEXER - INFO - 📄 [PROCESS-144d0146] Starting text chunking...
+2025-10-14 20:04:52,971 - INDEXER - INFO - 📄 [PROCESS-144d0146] Text chunked: 2 chunks created
+2025-10-14 20:04:52,974 - INDEXER - INFO - 📄 [PROCESS-144d0146] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 20:04:52,975 - INDEXER - INFO - 📄 [PROCESS-144d0146] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 20:04:52,978 - INDEXER - INFO - 📄 [PROCESS-144d0146] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 20:04:52,979 - INDEXER - INFO - 📄 [PROCESS-144d0146] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 20:04:52,980 - INDEXER - INFO - 📄 [PROCESS-144d0146] Generating embeddings...
+2025-10-14 20:04:52,981 - INDEXER - ERROR - Error generating nomic-ai embeddings: cannot import name 'embed' from 'nomic' (/usr/local/lib/python3.11/site-packages/nomic/__init__.py)
+2025-10-14 20:04:52,982 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:04:52,985 - INDEXER - INFO - 📄 [PROCESS-144d0146] Embeddings generated: 2 vectors
+2025-10-14 20:04:52,986 - INDEXER - INFO - 📄 [PROCESS-144d0146] Creating document chunks...
+2025-10-14 20:04:52,990 - INDEXER - INFO - 📄 [PROCESS-144d0146] Created chunk 1: 437 tokens
+2025-10-14 20:04:52,993 - INDEXER - INFO - 📄 [PROCESS-144d0146] Created chunk 2: 483 tokens
+2025-10-14 20:04:52,994 - INDEXER - INFO - 📄 [PROCESS-144d0146] Document processing complete!
+2025-10-14 20:04:52,995 - INDEXER - INFO - 📄 [PROCESS-144d0146] Summary: 2 chunks, 920 total tokens
+2025-10-14 20:04:52,996 - INDEXER - INFO - 📄 [PROCESS-144d0146] Processing time: 0.07 seconds
+2025-10-14 20:04:52,998 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 20:04:53,001 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 20:04:53,003 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 20:04:53,023 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 20:04:53,026 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Starting document processing: conditions_acne_complications.txt
+2025-10-14 20:04:53,028 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] File size: 5693 bytes
+2025-10-14 20:04:53,029 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Extracting text content...
+2025-10-14 20:04:53,030 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Text extracted: 5657 characters
+2025-10-14 20:04:53,032 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Cleaning text...
+2025-10-14 20:04:53,034 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Text cleaned: 5639 characters
+2025-10-14 20:04:53,035 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Starting text chunking...
+2025-10-14 20:04:53,084 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Text chunked: 3 chunks created
+2025-10-14 20:04:53,089 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 20:04:53,090 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 20:04:53,094 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 20:04:53,096 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 20:04:53,098 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Chunk 3: 184 tokens, 903 chars
+2025-10-14 20:04:53,100 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 20:04:53,101 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Generating embeddings...
+2025-10-14 20:04:53,102 - INDEXER - ERROR - Error generating nomic-ai embeddings: cannot import name 'embed' from 'nomic' (/usr/local/lib/python3.11/site-packages/nomic/__init__.py)
+2025-10-14 20:04:53,103 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:04:53,104 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Embeddings generated: 3 vectors
+2025-10-14 20:04:53,105 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Creating document chunks...
+2025-10-14 20:04:53,108 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Created chunk 1: 456 tokens
+2025-10-14 20:04:53,110 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Created chunk 2: 497 tokens
+2025-10-14 20:04:53,112 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Created chunk 3: 184 tokens
+2025-10-14 20:04:53,113 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Document processing complete!
+2025-10-14 20:04:53,114 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Summary: 3 chunks, 1137 total tokens
+2025-10-14 20:04:53,115 - INDEXER - INFO - 📄 [PROCESS-6f2e73a6] Processing time: 0.09 seconds
+2025-10-14 20:04:53,116 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:04:53,116 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 20:04:53,117 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 20:04:53,129 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 20:04:53,130 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 20:04:53,131 - INDEXER - INFO - 📄 [PROCESS-07662ef7] File size: 1436 bytes
+2025-10-14 20:04:53,132 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Extracting text content...
+2025-10-14 20:04:53,133 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Text extracted: 1423 characters
+2025-10-14 20:04:53,133 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Cleaning text...
+2025-10-14 20:04:53,135 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Text cleaned: 1407 characters
+2025-10-14 20:04:53,135 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Starting text chunking...
+2025-10-14 20:04:53,141 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Text chunked: 1 chunks created
+2025-10-14 20:04:53,143 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 20:04:53,144 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 20:04:53,145 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Generating embeddings...
+2025-10-14 20:04:53,146 - INDEXER - ERROR - Error generating nomic-ai embeddings: cannot import name 'embed' from 'nomic' (/usr/local/lib/python3.11/site-packages/nomic/__init__.py)
+2025-10-14 20:04:53,146 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:04:53,148 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Embeddings generated: 1 vectors
+2025-10-14 20:04:53,149 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Creating document chunks...
+2025-10-14 20:04:53,151 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Created chunk 1: 318 tokens
+2025-10-14 20:04:53,152 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Document processing complete!
+2025-10-14 20:04:53,153 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Summary: 1 chunks, 318 total tokens
+2025-10-14 20:04:53,153 - INDEXER - INFO - 📄 [PROCESS-07662ef7] Processing time: 0.02 seconds
+2025-10-14 20:04:53,154 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 20:04:53,155 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 20:04:53,156 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 20:04:53,167 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 20:04:53,168 - INDEXER - INFO - 📄 [PROCESS-864e5955] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 20:04:53,168 - INDEXER - INFO - 📄 [PROCESS-864e5955] File size: 8679 bytes
+2025-10-14 20:04:53,169 - INDEXER - INFO - 📄 [PROCESS-864e5955] Extracting text content...
+2025-10-14 20:04:53,170 - INDEXER - INFO - 📄 [PROCESS-864e5955] Text extracted: 8646 characters
+2025-10-14 20:04:53,171 - INDEXER - INFO - 📄 [PROCESS-864e5955] Cleaning text...
+2025-10-14 20:04:53,173 - INDEXER - INFO - 📄 [PROCESS-864e5955] Text cleaned: 8624 characters
+2025-10-14 20:04:53,173 - INDEXER - INFO - 📄 [PROCESS-864e5955] Starting text chunking...
+2025-10-14 20:04:53,205 - INDEXER - INFO - 📄 [PROCESS-864e5955] Text chunked: 4 chunks created
+2025-10-14 20:04:53,207 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 20:04:53,208 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 20:04:53,209 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 20:04:53,210 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 20:04:53,211 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 20:04:53,211 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 20:04:53,213 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 20:04:53,214 - INDEXER - INFO - 📄 [PROCESS-864e5955] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 20:04:53,214 - INDEXER - INFO - 📄 [PROCESS-864e5955] Generating embeddings...
+2025-10-14 20:04:53,215 - INDEXER - ERROR - Error generating nomic-ai embeddings: cannot import name 'embed' from 'nomic' (/usr/local/lib/python3.11/site-packages/nomic/__init__.py)
+2025-10-14 20:04:53,216 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:04:53,217 - INDEXER - INFO - 📄 [PROCESS-864e5955] Embeddings generated: 4 vectors
+2025-10-14 20:04:53,218 - INDEXER - INFO - 📄 [PROCESS-864e5955] Creating document chunks...
+2025-10-14 20:04:53,220 - INDEXER - INFO - 📄 [PROCESS-864e5955] Created chunk 1: 487 tokens
+2025-10-14 20:04:53,222 - INDEXER - INFO - 📄 [PROCESS-864e5955] Created chunk 2: 495 tokens
+2025-10-14 20:04:53,223 - INDEXER - INFO - 📄 [PROCESS-864e5955] Created chunk 3: 499 tokens
+2025-10-14 20:04:53,224 - INDEXER - INFO - 📄 [PROCESS-864e5955] Created chunk 4: 341 tokens
+2025-10-14 20:04:53,225 - INDEXER - INFO - 📄 [PROCESS-864e5955] Document processing complete!
+2025-10-14 20:04:53,226 - INDEXER - INFO - 📄 [PROCESS-864e5955] Summary: 4 chunks, 1822 total tokens
+2025-10-14 20:04:53,226 - INDEXER - INFO - 📄 [PROCESS-864e5955] Processing time: 0.06 seconds
+2025-10-14 20:04:53,227 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 20:04:53,228 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 20:05:23,226 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:05:23,341 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:05:53,345 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:05:53,482 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:06:23,482 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:06:23,609 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:06:53,614 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:06:53,797 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:07:23,801 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:07:24,001 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:07:54,007 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:07:54,152 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:08:24,156 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:08:24,326 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:08:52,527 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 20:08:52,528 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 20:08:52,529 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 20:08:52,532 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:08:52,620 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 20:08:52,621 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 20:08:52,640 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 20:08:52,641 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Starting document processing: conditions_acne.txt
+2025-10-14 20:08:52,642 - INDEXER - INFO - 📄 [PROCESS-2d21a924] File size: 5048 bytes
+2025-10-14 20:08:52,643 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Extracting text content...
+2025-10-14 20:08:52,643 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Text extracted: 4990 characters
+2025-10-14 20:08:52,644 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Cleaning text...
+2025-10-14 20:08:52,645 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Text cleaned: 4965 characters
+2025-10-14 20:08:52,646 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Starting text chunking...
+2025-10-14 20:08:52,680 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Text chunked: 3 chunks created
+2025-10-14 20:08:52,682 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 20:08:52,682 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 20:08:52,685 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 20:08:52,687 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 20:08:52,688 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Chunk 3: 44 tokens, 165 chars
+2025-10-14 20:08:52,689 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 20:08:52,689 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Generating embeddings...
+2025-10-14 20:08:52,694 - INDEXER - ERROR - Error generating nomic-ai embeddings: module 'nomic' has no attribute 'login'
+2025-10-14 20:08:52,695 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:08:52,697 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Embeddings generated: 3 vectors
+2025-10-14 20:08:52,698 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Creating document chunks...
+2025-10-14 20:08:52,701 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Created chunk 1: 500 tokens
+2025-10-14 20:08:52,705 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Created chunk 2: 511 tokens
+2025-10-14 20:08:52,707 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Created chunk 3: 44 tokens
+2025-10-14 20:08:52,708 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Document processing complete!
+2025-10-14 20:08:52,709 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Summary: 3 chunks, 1055 total tokens
+2025-10-14 20:08:52,710 - INDEXER - INFO - 📄 [PROCESS-2d21a924] Processing time: 0.07 seconds
+2025-10-14 20:08:52,711 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:08:52,733 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 20:08:52,734 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 20:08:52,753 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 20:08:52,754 - INDEXER - INFO - 📄 [PROCESS-a641c401] Starting document processing: conditions_acne_causes.txt
+2025-10-14 20:08:52,755 - INDEXER - INFO - 📄 [PROCESS-a641c401] File size: 4473 bytes
+2025-10-14 20:08:52,755 - INDEXER - INFO - 📄 [PROCESS-a641c401] Extracting text content...
+2025-10-14 20:08:52,756 - INDEXER - INFO - 📄 [PROCESS-a641c401] Text extracted: 4431 characters
+2025-10-14 20:08:52,757 - INDEXER - INFO - 📄 [PROCESS-a641c401] Cleaning text...
+2025-10-14 20:08:52,758 - INDEXER - INFO - 📄 [PROCESS-a641c401] Text cleaned: 4411 characters
+2025-10-14 20:08:52,759 - INDEXER - INFO - 📄 [PROCESS-a641c401] Starting text chunking...
+2025-10-14 20:08:52,779 - INDEXER - INFO - 📄 [PROCESS-a641c401] Text chunked: 2 chunks created
+2025-10-14 20:08:52,781 - INDEXER - INFO - 📄 [PROCESS-a641c401] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 20:08:52,782 - INDEXER - INFO - 📄 [PROCESS-a641c401] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 20:08:52,784 - INDEXER - INFO - 📄 [PROCESS-a641c401] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 20:08:52,785 - INDEXER - INFO - 📄 [PROCESS-a641c401] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 20:08:52,786 - INDEXER - INFO - 📄 [PROCESS-a641c401] Generating embeddings...
+2025-10-14 20:08:52,786 - INDEXER - ERROR - Error generating nomic-ai embeddings: module 'nomic' has no attribute 'login'
+2025-10-14 20:08:52,787 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:08:52,789 - INDEXER - INFO - 📄 [PROCESS-a641c401] Embeddings generated: 2 vectors
+2025-10-14 20:08:52,789 - INDEXER - INFO - 📄 [PROCESS-a641c401] Creating document chunks...
+2025-10-14 20:08:52,791 - INDEXER - INFO - 📄 [PROCESS-a641c401] Created chunk 1: 437 tokens
+2025-10-14 20:08:52,793 - INDEXER - INFO - 📄 [PROCESS-a641c401] Created chunk 2: 483 tokens
+2025-10-14 20:08:52,794 - INDEXER - INFO - 📄 [PROCESS-a641c401] Document processing complete!
+2025-10-14 20:08:52,795 - INDEXER - INFO - 📄 [PROCESS-a641c401] Summary: 2 chunks, 920 total tokens
+2025-10-14 20:08:52,796 - INDEXER - INFO - 📄 [PROCESS-a641c401] Processing time: 0.04 seconds
+2025-10-14 20:08:52,797 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 20:08:52,798 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 20:08:52,799 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 20:08:52,818 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 20:08:52,819 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Starting document processing: conditions_acne_complications.txt
+2025-10-14 20:08:52,820 - INDEXER - INFO - 📄 [PROCESS-a8f89599] File size: 5693 bytes
+2025-10-14 20:08:52,821 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Extracting text content...
+2025-10-14 20:08:52,822 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Text extracted: 5657 characters
+2025-10-14 20:08:52,823 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Cleaning text...
+2025-10-14 20:08:52,825 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Text cleaned: 5639 characters
+2025-10-14 20:08:52,825 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Starting text chunking...
+2025-10-14 20:08:52,851 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Text chunked: 3 chunks created
+2025-10-14 20:08:52,854 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 20:08:52,854 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 20:08:52,857 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 20:08:52,857 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 20:08:52,859 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Chunk 3: 184 tokens, 903 chars
+2025-10-14 20:08:52,860 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 20:08:52,861 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Generating embeddings...
+2025-10-14 20:08:52,862 - INDEXER - ERROR - Error generating nomic-ai embeddings: module 'nomic' has no attribute 'login'
+2025-10-14 20:08:52,863 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:08:52,864 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Embeddings generated: 3 vectors
+2025-10-14 20:08:52,865 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Creating document chunks...
+2025-10-14 20:08:52,868 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Created chunk 1: 456 tokens
+2025-10-14 20:08:52,870 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Created chunk 2: 497 tokens
+2025-10-14 20:08:52,872 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Created chunk 3: 184 tokens
+2025-10-14 20:08:52,873 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Document processing complete!
+2025-10-14 20:08:52,874 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Summary: 3 chunks, 1137 total tokens
+2025-10-14 20:08:52,874 - INDEXER - INFO - 📄 [PROCESS-a8f89599] Processing time: 0.05 seconds
+2025-10-14 20:08:52,875 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:08:52,877 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 20:08:52,878 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 20:08:52,899 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 20:08:52,900 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 20:08:52,901 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] File size: 1436 bytes
+2025-10-14 20:08:52,902 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Extracting text content...
+2025-10-14 20:08:52,903 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Text extracted: 1423 characters
+2025-10-14 20:08:52,904 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Cleaning text...
+2025-10-14 20:08:52,905 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Text cleaned: 1407 characters
+2025-10-14 20:08:52,906 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Starting text chunking...
+2025-10-14 20:08:52,911 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Text chunked: 1 chunks created
+2025-10-14 20:08:52,913 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 20:08:52,914 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 20:08:52,915 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Generating embeddings...
+2025-10-14 20:08:52,916 - INDEXER - ERROR - Error generating nomic-ai embeddings: module 'nomic' has no attribute 'login'
+2025-10-14 20:08:52,917 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:08:52,918 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Embeddings generated: 1 vectors
+2025-10-14 20:08:52,919 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Creating document chunks...
+2025-10-14 20:08:52,921 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Created chunk 1: 318 tokens
+2025-10-14 20:08:52,922 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Document processing complete!
+2025-10-14 20:08:52,923 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Summary: 1 chunks, 318 total tokens
+2025-10-14 20:08:52,924 - INDEXER - INFO - 📄 [PROCESS-fa5e0aa7] Processing time: 0.02 seconds
+2025-10-14 20:08:52,925 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 20:08:52,926 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 20:08:52,927 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 20:08:52,949 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 20:08:52,950 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 20:08:52,951 - INDEXER - INFO - 📄 [PROCESS-58c036ad] File size: 8679 bytes
+2025-10-14 20:08:52,952 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Extracting text content...
+2025-10-14 20:08:52,953 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Text extracted: 8646 characters
+2025-10-14 20:08:52,954 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Cleaning text...
+2025-10-14 20:08:52,956 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Text cleaned: 8624 characters
+2025-10-14 20:08:52,957 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Starting text chunking...
+2025-10-14 20:08:53,022 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Text chunked: 4 chunks created
+2025-10-14 20:08:53,024 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 20:08:53,025 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 20:08:53,028 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 20:08:53,030 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 20:08:53,032 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 20:08:53,034 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 20:08:53,036 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 20:08:53,038 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 20:08:53,039 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Generating embeddings...
+2025-10-14 20:08:53,040 - INDEXER - ERROR - Error generating nomic-ai embeddings: module 'nomic' has no attribute 'login'
+2025-10-14 20:08:53,041 - INDEXER - WARNING - Falling back to hash-based embeddings
+2025-10-14 20:08:53,045 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Embeddings generated: 4 vectors
+2025-10-14 20:08:53,046 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Creating document chunks...
+2025-10-14 20:08:53,049 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Created chunk 1: 487 tokens
+2025-10-14 20:08:53,052 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Created chunk 2: 495 tokens
+2025-10-14 20:08:53,055 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Created chunk 3: 499 tokens
+2025-10-14 20:08:53,058 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Created chunk 4: 341 tokens
+2025-10-14 20:08:53,059 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Document processing complete!
+2025-10-14 20:08:53,061 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Summary: 4 chunks, 1822 total tokens
+2025-10-14 20:08:53,062 - INDEXER - INFO - 📄 [PROCESS-58c036ad] Processing time: 0.11 seconds
+2025-10-14 20:08:53,064 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 20:08:53,065 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 20:09:23,072 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:09:23,280 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:09:53,278 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:09:53,468 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:10:23,471 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:10:23,539 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:10:41,065 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 20:10:41,066 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 20:10:41,067 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 20:10:41,070 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:10:41,139 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 20:10:41,140 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 20:10:41,154 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 20:10:41,155 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Starting document processing: conditions_acne.txt
+2025-10-14 20:10:41,156 - INDEXER - INFO - 📄 [PROCESS-83b8c823] File size: 5048 bytes
+2025-10-14 20:10:41,157 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Extracting text content...
+2025-10-14 20:10:41,158 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Text extracted: 4990 characters
+2025-10-14 20:10:41,159 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Cleaning text...
+2025-10-14 20:10:41,160 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Text cleaned: 4965 characters
+2025-10-14 20:10:41,161 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Starting text chunking...
+2025-10-14 20:10:41,230 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Text chunked: 3 chunks created
+2025-10-14 20:10:41,237 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 20:10:41,239 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 20:10:41,246 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 20:10:41,249 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 20:10:41,251 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Chunk 3: 44 tokens, 165 chars
+2025-10-14 20:10:41,253 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 20:10:41,255 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Generating embeddings...
+2025-10-14 20:10:42,617 - INDEXER - INFO - Generated 3 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:10:42,627 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Embeddings generated: 3 vectors
+2025-10-14 20:10:42,630 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Creating document chunks...
+2025-10-14 20:10:42,634 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Created chunk 1: 500 tokens
+2025-10-14 20:10:42,645 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Created chunk 2: 511 tokens
+2025-10-14 20:10:42,647 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Created chunk 3: 44 tokens
+2025-10-14 20:10:42,648 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Document processing complete!
+2025-10-14 20:10:42,649 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Summary: 3 chunks, 1055 total tokens
+2025-10-14 20:10:42,650 - INDEXER - INFO - 📄 [PROCESS-83b8c823] Processing time: 1.49 seconds
+2025-10-14 20:10:42,651 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:10:42,689 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 20:10:42,698 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 20:10:42,725 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 20:10:42,727 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Starting document processing: conditions_acne_causes.txt
+2025-10-14 20:10:42,728 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] File size: 4473 bytes
+2025-10-14 20:10:42,730 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Extracting text content...
+2025-10-14 20:10:42,731 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Text extracted: 4431 characters
+2025-10-14 20:10:42,732 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Cleaning text...
+2025-10-14 20:10:42,733 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Text cleaned: 4411 characters
+2025-10-14 20:10:42,734 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Starting text chunking...
+2025-10-14 20:10:42,783 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Text chunked: 2 chunks created
+2025-10-14 20:10:42,787 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 20:10:42,790 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 20:10:42,794 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 20:10:42,796 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 20:10:42,798 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Generating embeddings...
+2025-10-14 20:10:44,013 - INDEXER - INFO - Generated 2 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:10:44,023 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Embeddings generated: 2 vectors
+2025-10-14 20:10:44,027 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Creating document chunks...
+2025-10-14 20:10:44,031 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Created chunk 1: 437 tokens
+2025-10-14 20:10:44,041 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Created chunk 2: 483 tokens
+2025-10-14 20:10:44,045 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Document processing complete!
+2025-10-14 20:10:44,046 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Summary: 2 chunks, 920 total tokens
+2025-10-14 20:10:44,047 - INDEXER - INFO - 📄 [PROCESS-71aa9dde] Processing time: 1.32 seconds
+2025-10-14 20:10:44,049 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 20:10:44,050 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 20:10:44,053 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 20:10:44,074 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 20:10:44,076 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Starting document processing: conditions_acne_complications.txt
+2025-10-14 20:10:44,078 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] File size: 5693 bytes
+2025-10-14 20:10:44,079 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Extracting text content...
+2025-10-14 20:10:44,081 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Text extracted: 5657 characters
+2025-10-14 20:10:44,082 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Cleaning text...
+2025-10-14 20:10:44,084 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Text cleaned: 5639 characters
+2025-10-14 20:10:44,088 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Starting text chunking...
+2025-10-14 20:10:44,158 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Text chunked: 3 chunks created
+2025-10-14 20:10:44,164 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 20:10:44,165 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 20:10:44,167 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 20:10:44,172 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 20:10:44,174 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Chunk 3: 184 tokens, 903 chars
+2025-10-14 20:10:44,175 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 20:10:44,181 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Generating embeddings...
+2025-10-14 20:10:44,843 - INDEXER - INFO - Generated 3 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:10:44,859 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Embeddings generated: 3 vectors
+2025-10-14 20:10:44,862 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Creating document chunks...
+2025-10-14 20:10:44,870 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Created chunk 1: 456 tokens
+2025-10-14 20:10:44,881 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Created chunk 2: 497 tokens
+2025-10-14 20:10:44,894 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Created chunk 3: 184 tokens
+2025-10-14 20:10:44,898 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Document processing complete!
+2025-10-14 20:10:44,901 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Summary: 3 chunks, 1137 total tokens
+2025-10-14 20:10:44,904 - INDEXER - INFO - 📄 [PROCESS-0fb59daf] Processing time: 0.82 seconds
+2025-10-14 20:10:44,907 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:10:44,910 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 20:10:44,913 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 20:10:44,963 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 20:10:44,967 - INDEXER - INFO - 📄 [PROCESS-06902c11] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 20:10:44,970 - INDEXER - INFO - 📄 [PROCESS-06902c11] File size: 1436 bytes
+2025-10-14 20:10:44,974 - INDEXER - INFO - 📄 [PROCESS-06902c11] Extracting text content...
+2025-10-14 20:10:44,978 - INDEXER - INFO - 📄 [PROCESS-06902c11] Text extracted: 1423 characters
+2025-10-14 20:10:44,983 - INDEXER - INFO - 📄 [PROCESS-06902c11] Cleaning text...
+2025-10-14 20:10:44,987 - INDEXER - INFO - 📄 [PROCESS-06902c11] Text cleaned: 1407 characters
+2025-10-14 20:10:44,991 - INDEXER - INFO - 📄 [PROCESS-06902c11] Starting text chunking...
+2025-10-14 20:10:45,013 - INDEXER - INFO - 📄 [PROCESS-06902c11] Text chunked: 1 chunks created
+2025-10-14 20:10:45,022 - INDEXER - INFO - 📄 [PROCESS-06902c11] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 20:10:45,028 - INDEXER - INFO - 📄 [PROCESS-06902c11] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 20:10:45,034 - INDEXER - INFO - 📄 [PROCESS-06902c11] Generating embeddings...
+2025-10-14 20:10:45,788 - INDEXER - INFO - Generated 1 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:10:45,795 - INDEXER - INFO - 📄 [PROCESS-06902c11] Embeddings generated: 1 vectors
+2025-10-14 20:10:45,798 - INDEXER - INFO - 📄 [PROCESS-06902c11] Creating document chunks...
+2025-10-14 20:10:45,801 - INDEXER - INFO - 📄 [PROCESS-06902c11] Created chunk 1: 318 tokens
+2025-10-14 20:10:45,803 - INDEXER - INFO - 📄 [PROCESS-06902c11] Document processing complete!
+2025-10-14 20:10:45,805 - INDEXER - INFO - 📄 [PROCESS-06902c11] Summary: 1 chunks, 318 total tokens
+2025-10-14 20:10:45,807 - INDEXER - INFO - 📄 [PROCESS-06902c11] Processing time: 0.84 seconds
+2025-10-14 20:10:45,809 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 20:10:45,811 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 20:10:45,815 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 20:10:45,847 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 20:10:45,849 - INDEXER - INFO - 📄 [PROCESS-687b2486] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 20:10:45,851 - INDEXER - INFO - 📄 [PROCESS-687b2486] File size: 8679 bytes
+2025-10-14 20:10:45,853 - INDEXER - INFO - 📄 [PROCESS-687b2486] Extracting text content...
+2025-10-14 20:10:45,854 - INDEXER - INFO - 📄 [PROCESS-687b2486] Text extracted: 8646 characters
+2025-10-14 20:10:45,856 - INDEXER - INFO - 📄 [PROCESS-687b2486] Cleaning text...
+2025-10-14 20:10:45,860 - INDEXER - INFO - 📄 [PROCESS-687b2486] Text cleaned: 8624 characters
+2025-10-14 20:10:45,862 - INDEXER - INFO - 📄 [PROCESS-687b2486] Starting text chunking...
+2025-10-14 20:10:45,964 - INDEXER - INFO - 📄 [PROCESS-687b2486] Text chunked: 4 chunks created
+2025-10-14 20:10:45,976 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 20:10:45,982 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 20:10:45,989 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 20:10:45,991 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 20:10:45,997 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 20:10:45,998 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 20:10:46,001 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 20:10:46,002 - INDEXER - INFO - 📄 [PROCESS-687b2486] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 20:10:46,005 - INDEXER - INFO - 📄 [PROCESS-687b2486] Generating embeddings...
+2025-10-14 20:10:46,746 - INDEXER - INFO - Generated 4 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:10:46,759 - INDEXER - INFO - 📄 [PROCESS-687b2486] Embeddings generated: 4 vectors
+2025-10-14 20:10:46,763 - INDEXER - INFO - 📄 [PROCESS-687b2486] Creating document chunks...
+2025-10-14 20:10:46,770 - INDEXER - INFO - 📄 [PROCESS-687b2486] Created chunk 1: 487 tokens
+2025-10-14 20:10:46,778 - INDEXER - INFO - 📄 [PROCESS-687b2486] Created chunk 2: 495 tokens
+2025-10-14 20:10:46,787 - INDEXER - INFO - 📄 [PROCESS-687b2486] Created chunk 3: 499 tokens
+2025-10-14 20:10:46,794 - INDEXER - INFO - 📄 [PROCESS-687b2486] Created chunk 4: 341 tokens
+2025-10-14 20:10:46,797 - INDEXER - INFO - 📄 [PROCESS-687b2486] Document processing complete!
+2025-10-14 20:10:46,799 - INDEXER - INFO - 📄 [PROCESS-687b2486] Summary: 4 chunks, 1822 total tokens
+2025-10-14 20:10:46,801 - INDEXER - INFO - 📄 [PROCESS-687b2486] Processing time: 0.95 seconds
+2025-10-14 20:10:46,804 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 20:10:46,806 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 20:11:16,814 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:11:16,953 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:11:46,958 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:11:47,136 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:12:17,132 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:12:17,290 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:12:47,294 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:12:47,449 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:13:17,449 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:13:17,584 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:13:47,582 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:13:47,745 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:14:17,737 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:14:17,789 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:14:41,393 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-14 20:14:41,394 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-14 20:14:41,395 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-14 20:14:41,398 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:14:41,462 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-14 20:14:41,463 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-14 20:14:41,480 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-14 20:14:41,481 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Starting document processing: conditions_acne.txt
+2025-10-14 20:14:41,482 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] File size: 5048 bytes
+2025-10-14 20:14:41,482 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Extracting text content...
+2025-10-14 20:14:41,483 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Text extracted: 4990 characters
+2025-10-14 20:14:41,484 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Cleaning text...
+2025-10-14 20:14:41,486 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Text cleaned: 4965 characters
+2025-10-14 20:14:41,487 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Starting text chunking...
+2025-10-14 20:14:41,518 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Text chunked: 3 chunks created
+2025-10-14 20:14:41,521 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Chunk 1: 500 tokens, 2322 chars
+2025-10-14 20:14:41,521 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-14 20:14:41,523 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Chunk 2: 511 tokens, 2456 chars
+2025-10-14 20:14:41,524 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-14 20:14:41,525 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Chunk 3: 44 tokens, 165 chars
+2025-10-14 20:14:41,526 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-14 20:14:41,527 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Generating embeddings...
+2025-10-14 20:14:42,728 - INDEXER - INFO - Generated 3 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:14:42,732 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Embeddings generated: 3 vectors
+2025-10-14 20:14:42,733 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Creating document chunks...
+2025-10-14 20:14:42,736 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Created chunk 1: 500 tokens
+2025-10-14 20:14:42,738 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Created chunk 2: 511 tokens
+2025-10-14 20:14:42,740 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Created chunk 3: 44 tokens
+2025-10-14 20:14:42,741 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Document processing complete!
+2025-10-14 20:14:42,742 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Summary: 3 chunks, 1055 total tokens
+2025-10-14 20:14:42,742 - INDEXER - INFO - 📄 [PROCESS-abbb23b0] Processing time: 1.26 seconds
+2025-10-14 20:14:42,743 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:14:42,906 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:42,928 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:42,951 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:42,955 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-14 20:14:42,962 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-14 20:14:42,984 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-14 20:14:42,985 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Starting document processing: conditions_acne_causes.txt
+2025-10-14 20:14:42,986 - INDEXER - INFO - 📄 [PROCESS-99fa127f] File size: 4473 bytes
+2025-10-14 20:14:42,987 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Extracting text content...
+2025-10-14 20:14:42,989 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Text extracted: 4431 characters
+2025-10-14 20:14:42,991 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Cleaning text...
+2025-10-14 20:14:42,996 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Text cleaned: 4411 characters
+2025-10-14 20:14:42,997 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Starting text chunking...
+2025-10-14 20:14:43,033 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Text chunked: 2 chunks created
+2025-10-14 20:14:43,036 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Chunk 1: 437 tokens, 2097 chars
+2025-10-14 20:14:43,038 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-14 20:14:43,040 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Chunk 2: 483 tokens, 2296 chars
+2025-10-14 20:14:43,041 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-14 20:14:43,042 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Generating embeddings...
+2025-10-14 20:14:43,656 - INDEXER - INFO - Generated 2 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:14:43,666 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Embeddings generated: 2 vectors
+2025-10-14 20:14:43,670 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Creating document chunks...
+2025-10-14 20:14:43,677 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Created chunk 1: 437 tokens
+2025-10-14 20:14:43,685 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Created chunk 2: 483 tokens
+2025-10-14 20:14:43,688 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Document processing complete!
+2025-10-14 20:14:43,690 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Summary: 2 chunks, 920 total tokens
+2025-10-14 20:14:43,694 - INDEXER - INFO - 📄 [PROCESS-99fa127f] Processing time: 0.70 seconds
+2025-10-14 20:14:43,698 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-14 20:14:43,729 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:43,753 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:43,757 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-14 20:14:43,759 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-14 20:14:43,796 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-14 20:14:43,799 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Starting document processing: conditions_acne_complications.txt
+2025-10-14 20:14:43,801 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] File size: 5693 bytes
+2025-10-14 20:14:43,803 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Extracting text content...
+2025-10-14 20:14:43,805 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Text extracted: 5657 characters
+2025-10-14 20:14:43,808 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Cleaning text...
+2025-10-14 20:14:43,811 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Text cleaned: 5639 characters
+2025-10-14 20:14:43,814 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Starting text chunking...
+2025-10-14 20:14:43,870 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Text chunked: 3 chunks created
+2025-10-14 20:14:43,874 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Chunk 1: 456 tokens, 2259 chars
+2025-10-14 20:14:43,877 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-14 20:14:43,883 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Chunk 2: 497 tokens, 2451 chars
+2025-10-14 20:14:43,885 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-14 20:14:43,889 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Chunk 3: 184 tokens, 903 chars
+2025-10-14 20:14:43,891 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-14 20:14:43,894 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Generating embeddings...
+2025-10-14 20:14:44,608 - INDEXER - INFO - Generated 3 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:14:44,619 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Embeddings generated: 3 vectors
+2025-10-14 20:14:44,623 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Creating document chunks...
+2025-10-14 20:14:44,632 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Created chunk 1: 456 tokens
+2025-10-14 20:14:44,643 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Created chunk 2: 497 tokens
+2025-10-14 20:14:44,648 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Created chunk 3: 184 tokens
+2025-10-14 20:14:44,651 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Document processing complete!
+2025-10-14 20:14:44,654 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Summary: 3 chunks, 1137 total tokens
+2025-10-14 20:14:44,657 - INDEXER - INFO - 📄 [PROCESS-a5f18d9a] Processing time: 0.85 seconds
+2025-10-14 20:14:44,662 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-14 20:14:44,699 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:44,734 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:44,755 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:44,757 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-14 20:14:44,760 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-14 20:14:44,787 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-14 20:14:44,788 - INDEXER - INFO - 📄 [PROCESS-3847391f] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-14 20:14:44,790 - INDEXER - INFO - 📄 [PROCESS-3847391f] File size: 1436 bytes
+2025-10-14 20:14:44,791 - INDEXER - INFO - 📄 [PROCESS-3847391f] Extracting text content...
+2025-10-14 20:14:44,794 - INDEXER - INFO - 📄 [PROCESS-3847391f] Text extracted: 1423 characters
+2025-10-14 20:14:44,796 - INDEXER - INFO - 📄 [PROCESS-3847391f] Cleaning text...
+2025-10-14 20:14:44,798 - INDEXER - INFO - 📄 [PROCESS-3847391f] Text cleaned: 1407 characters
+2025-10-14 20:14:44,799 - INDEXER - INFO - 📄 [PROCESS-3847391f] Starting text chunking...
+2025-10-14 20:14:44,807 - INDEXER - INFO - 📄 [PROCESS-3847391f] Text chunked: 1 chunks created
+2025-10-14 20:14:44,812 - INDEXER - INFO - 📄 [PROCESS-3847391f] Chunk 1: 318 tokens, 1403 chars
+2025-10-14 20:14:44,814 - INDEXER - INFO - 📄 [PROCESS-3847391f] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-14 20:14:44,816 - INDEXER - INFO - 📄 [PROCESS-3847391f] Generating embeddings...
+2025-10-14 20:14:45,437 - INDEXER - INFO - Generated 1 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:14:45,453 - INDEXER - INFO - 📄 [PROCESS-3847391f] Embeddings generated: 1 vectors
+2025-10-14 20:14:45,458 - INDEXER - INFO - 📄 [PROCESS-3847391f] Creating document chunks...
+2025-10-14 20:14:45,466 - INDEXER - INFO - 📄 [PROCESS-3847391f] Created chunk 1: 318 tokens
+2025-10-14 20:14:45,469 - INDEXER - INFO - 📄 [PROCESS-3847391f] Document processing complete!
+2025-10-14 20:14:45,473 - INDEXER - INFO - 📄 [PROCESS-3847391f] Summary: 1 chunks, 318 total tokens
+2025-10-14 20:14:45,475 - INDEXER - INFO - 📄 [PROCESS-3847391f] Processing time: 0.68 seconds
+2025-10-14 20:14:45,480 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-14 20:14:45,505 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:45,507 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-14 20:14:45,510 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-14 20:14:45,537 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-14 20:14:45,538 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Starting document processing: conditions_acne_treatment.txt
+2025-10-14 20:14:45,539 - INDEXER - INFO - 📄 [PROCESS-e46da30b] File size: 8679 bytes
+2025-10-14 20:14:45,540 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Extracting text content...
+2025-10-14 20:14:45,541 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Text extracted: 8646 characters
+2025-10-14 20:14:45,544 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Cleaning text...
+2025-10-14 20:14:45,547 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Text cleaned: 8624 characters
+2025-10-14 20:14:45,550 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Starting text chunking...
+2025-10-14 20:14:45,598 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Text chunked: 4 chunks created
+2025-10-14 20:14:45,600 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 1: 487 tokens, 2326 chars
+2025-10-14 20:14:45,601 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-14 20:14:45,603 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 2: 495 tokens, 2376 chars
+2025-10-14 20:14:45,604 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-14 20:14:45,606 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 3: 499 tokens, 2285 chars
+2025-10-14 20:14:45,607 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-14 20:14:45,613 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 4: 341 tokens, 1619 chars
+2025-10-14 20:14:45,614 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-14 20:14:45,616 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Generating embeddings...
+2025-10-14 20:14:46,292 - INDEXER - INFO - Generated 4 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:14:46,302 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Embeddings generated: 4 vectors
+2025-10-14 20:14:46,305 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Creating document chunks...
+2025-10-14 20:14:46,310 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Created chunk 1: 487 tokens
+2025-10-14 20:14:46,315 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Created chunk 2: 495 tokens
+2025-10-14 20:14:46,321 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Created chunk 3: 499 tokens
+2025-10-14 20:14:46,325 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Created chunk 4: 341 tokens
+2025-10-14 20:14:46,327 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Document processing complete!
+2025-10-14 20:14:46,329 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Summary: 4 chunks, 1822 total tokens
+2025-10-14 20:14:46,331 - INDEXER - INFO - 📄 [PROCESS-e46da30b] Processing time: 0.79 seconds
+2025-10-14 20:14:46,333 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-14 20:14:46,363 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:46,388 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:46,411 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:46,433 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-14 20:14:46,437 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-14 20:15:16,467 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:15:16,666 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:15:46,698 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:15:46,838 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:16:16,869 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:16:17,049 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:16:47,083 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:16:47,258 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:17:17,266 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:17:17,347 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:17:47,366 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:17:47,522 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:18:17,548 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:18:17,629 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:18:47,659 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:18:47,858 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:19:17,888 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:19:18,058 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:19:48,061 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:19:48,252 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:20:18,271 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:20:18,449 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:20:48,459 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:20:48,612 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:21:18,635 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:21:18,789 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:21:48,817 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:21:48,991 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:22:19,024 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:22:19,197 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:22:49,226 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:22:49,400 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:23:19,418 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:23:19,592 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:23:49,599 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:23:49,791 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:24:19,796 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:24:20,004 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:24:50,031 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:24:50,189 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-14 20:25:20,227 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-14 20:25:20,423 - INDEXER - INFO - 📁 No new or changed files found

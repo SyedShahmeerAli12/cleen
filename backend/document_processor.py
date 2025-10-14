@@ -67,8 +67,39 @@ class DocumentProcessor:
     def generate_query_embedding(self, query: str) -> List[float]:
         """Generate embedding for a search query"""
         try:
-            # For now, use the same hash-based approach as document embeddings
-            # In production, you'd use the same nomic-ai model
+            # Use nomic-ai API via HTTP requests
+            import requests
+            
+            nomic_api_key = os.getenv("NOMIC_API_KEY")
+            if not nomic_api_key:
+                raise ValueError("NOMIC_API_KEY not found")
+            
+            # Call nomic-ai API
+            url = "https://api-atlas.nomic.ai/v1/embedding/text"
+            headers = {
+                "Authorization": f"Bearer {nomic_api_key}",
+                "Content-Type": "application/json"
+            }
+            
+            data = {
+                "texts": [query],
+                "model": "nomic-embed-text-v1"
+            }
+            
+            response = requests.post(url, headers=headers, json=data)
+            response.raise_for_status()
+            
+            result = response.json()
+            embedding = result['embeddings'][0]
+            
+            logger.info(f"Generated query embedding using {EMBEDDING_MODEL}")
+            return embedding
+            
+        except Exception as e:
+            logger.error(f"Error generating nomic-ai query embedding: {e}")
+            logger.warning("Falling back to hash-based query embedding")
+            
+            # Fallback to hash-based embedding
             import hashlib
             hash_obj = hashlib.md5(query.encode())
             hash_bytes = hash_obj.digest()
@@ -78,17 +109,44 @@ class DocumentProcessor:
                 byte_idx = i % len(hash_bytes)
                 embedding.append(float(hash_bytes[byte_idx]) / 255.0)
             return embedding
-        except Exception as e:
-            print(f"Error generating query embedding: {e}")
-            return [0.0] * EMBEDDING_DIM
     
     def _generate_embeddings(self, texts: List[str]) -> List[List[float]]:
         try:
-            # For now, return dummy embeddings to avoid API key issues
-            # In production, you'd use: embed.text(texts=texts, model=EMBEDDING_MODEL)
+            # Use nomic-ai API via HTTP requests
+            import requests
+            
+            nomic_api_key = os.getenv("NOMIC_API_KEY")
+            if not nomic_api_key:
+                raise ValueError("NOMIC_API_KEY not found")
+            
+            # Call nomic-ai API
+            url = "https://api-atlas.nomic.ai/v1/embedding/text"
+            headers = {
+                "Authorization": f"Bearer {nomic_api_key}",
+                "Content-Type": "application/json"
+            }
+            
+            data = {
+                "texts": texts,
+                "model": "nomic-embed-text-v1"
+            }
+            
+            response = requests.post(url, headers=headers, json=data)
+            response.raise_for_status()
+            
+            result = response.json()
+            embeddings = result['embeddings']
+            
+            logger.info(f"Generated {len(embeddings)} real embeddings using {EMBEDDING_MODEL}")
+            return embeddings
+            
+        except Exception as e:
+            logger.error(f"Error generating nomic-ai embeddings: {e}")
+            logger.warning("Falling back to hash-based embeddings")
+            
+            # Fallback to hash-based embeddings
             embeddings = []
             for text in texts:
-                # Generate a simple hash-based embedding for testing
                 import hashlib
                 hash_obj = hashlib.md5(text.encode())
                 hash_bytes = hash_obj.digest()
@@ -99,10 +157,6 @@ class DocumentProcessor:
                     embedding.append(float(hash_bytes[byte_idx]) / 255.0)
                 embeddings.append(embedding)
             return embeddings
-        except Exception as e:
-            print(f"Error generating embeddings: {e}")
-            # Return zero embeddings as fallback
-            return [[0.0] * EMBEDDING_DIM for _ in texts]
     
     def _extract_text_from_pdf(self, file_content: bytes) -> str:
         """Extract text from PDF"""

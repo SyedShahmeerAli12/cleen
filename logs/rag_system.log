@@ -199,3 +199,62 @@
 2025-10-14 14:16:10,235 - main - INFO - 🔍 [QUERY-3b7e7b87] Generating answer with Gemini LLM...
 2025-10-14 14:16:15,139 - main - INFO - 🔍 [QUERY-3b7e7b87] Answer generated: 612 characters
 2025-10-14 14:16:15,139 - main - INFO - 🔍 [QUERY-3b7e7b87] Query complete in 4.93s
+2025-10-14 19:51:05,186 - main - INFO - 🚀 Backend starting up...
+2025-10-14 19:51:05,188 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 19:51:05,245 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 19:51:05,249 - main - INFO - 📊 Current vector count: 0
+2025-10-14 19:51:05,251 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 19:51:37,338 - main - INFO - 🚀 Backend starting up...
+2025-10-14 19:51:37,340 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 19:51:37,398 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 19:51:37,401 - main - INFO - 📊 Current vector count: 0
+2025-10-14 19:51:37,403 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 19:52:30,285 - main - INFO - 🔍 [QUERY-9e300a84] Starting query: 'hello tell me some about acne?'
+2025-10-14 19:52:30,286 - main - INFO - 🔍 [QUERY-9e300a84] Generating query embedding...
+2025-10-14 19:52:30,287 - main - INFO - 🔍 [QUERY-9e300a84] Query embedding generated: 768 dimensions
+2025-10-14 19:52:30,287 - main - INFO - 🔍 [QUERY-9e300a84] Performing hybrid search in Qdrant...
+2025-10-14 19:52:30,366 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 19:52:30,372 - main - INFO - 🔍 [QUERY-9e300a84] Search completed: 0 results found
+2025-10-14 19:52:30,372 - main - INFO - 🔍 [QUERY-9e300a84] No relevant documents found, using general knowledge
+2025-10-14 19:52:34,227 - main - INFO - 🔍 [QUERY-9e300a84] General answer generated: 312 characters
+2025-10-14 19:52:34,229 - main - INFO - 🔍 [QUERY-9e300a84] Query complete in 3.94s
+2025-10-14 19:53:51,477 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-14 20:04:57,632 - main - INFO - 🚀 Backend starting up...
+2025-10-14 20:04:57,634 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 20:04:57,877 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 20:04:57,886 - main - INFO - 📊 Current vector count: 0
+2025-10-14 20:04:57,888 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 20:08:55,608 - main - INFO - 🚀 Backend starting up...
+2025-10-14 20:08:55,609 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 20:08:55,653 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 20:08:55,656 - main - INFO - 📊 Current vector count: 0
+2025-10-14 20:08:55,657 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 20:10:44,079 - main - INFO - 🚀 Backend starting up...
+2025-10-14 20:10:44,081 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-14 20:10:44,163 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-14 20:10:44,168 - main - INFO - 📊 Current vector count: 0
+2025-10-14 20:10:44,172 - main - INFO - 💡 Backend ready for queries!
+2025-10-14 20:17:57,948 - main - INFO - 🔍 [QUERY-c23a0594] Starting query: 'What are the side effects of acne treatment?'
+2025-10-14 20:17:57,949 - main - INFO - 🔍 [QUERY-c23a0594] Generating query embedding...
+2025-10-14 20:17:59,291 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:17:59,298 - main - INFO - 🔍 [QUERY-c23a0594] Query embedding generated: 768 dimensions
+2025-10-14 20:17:59,302 - main - INFO - 🔍 [QUERY-c23a0594] Performing hybrid search in Qdrant...
+2025-10-14 20:17:59,402 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 20:17:59,449 - main - INFO - 🔍 [QUERY-c23a0594] Search completed: 5 results found
+2025-10-14 20:17:59,451 - main - INFO - 🔍 [QUERY-c23a0594] Context sources: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_treatment.txt']
+2025-10-14 20:17:59,453 - main - INFO - 🔍 [QUERY-c23a0594] Total context length: 10915 characters
+2025-10-14 20:17:59,455 - main - INFO - 🔍 [QUERY-c23a0594] Generating answer with Gemini LLM...
+2025-10-14 20:18:04,866 - main - INFO - 🔍 [QUERY-c23a0594] Answer generated: 663 characters
+2025-10-14 20:18:04,867 - main - INFO - 🔍 [QUERY-c23a0594] Query complete in 6.92s
+2025-10-14 20:18:25,503 - main - INFO - 🔍 [QUERY-0f04b155] Starting query: 'what causes acne?'
+2025-10-14 20:18:25,505 - main - INFO - 🔍 [QUERY-0f04b155] Generating query embedding...
+2025-10-14 20:18:26,206 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-14 20:18:26,214 - main - INFO - 🔍 [QUERY-0f04b155] Query embedding generated: 768 dimensions
+2025-10-14 20:18:26,220 - main - INFO - 🔍 [QUERY-0f04b155] Performing hybrid search in Qdrant...
+2025-10-14 20:18:26,313 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-14 20:18:26,319 - main - INFO - 🔍 [QUERY-0f04b155] Search completed: 5 results found
+2025-10-14 20:18:26,321 - main - INFO - 🔍 [QUERY-0f04b155] Context sources: ['conditions_acne.txt', 'conditions_acne_causes.txt']
+2025-10-14 20:18:26,323 - main - INFO - 🔍 [QUERY-0f04b155] Total context length: 9336 characters
+2025-10-14 20:18:26,325 - main - INFO - 🔍 [QUERY-0f04b155] Generating answer with Gemini LLM...
+2025-10-14 20:18:29,272 - main - INFO - 🔍 [QUERY-0f04b155] Answer generated: 707 characters
+2025-10-14 20:18:29,274 - main - INFO - 🔍 [QUERY-0f04b155] Query complete in 3.77s

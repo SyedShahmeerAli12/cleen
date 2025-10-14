@@ -1,0 +1,32 @@
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+
+# Data files
+data/
+
+# Docker volumes
+docker-volumes/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if any)
+node_modules/
