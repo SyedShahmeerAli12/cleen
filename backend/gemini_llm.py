@@ -50,5 +50,5 @@ Answer briefly (max 100 words):"""
         except Exception as e:
             return f"Error generating summary: {str(e)}"
 
-# Global instance
-gemini_llm = GeminiLLM(api_key="AIzaSyBCOeL_Tele48KJAq4tJs7HId9Fh5ai24E")
+# Global instance - requires GEMINI_API_KEY environment variable
+gemini_llm = GeminiLLM()

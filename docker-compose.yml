@@ -25,16 +25,17 @@ services:
     restart: unless-stopped
 
   # FastAPI Backend (Python) - Building with latest code
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-    environment:
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/personal_rag
-      - QDRANT_HOST=qdrant
-      - QDRANT_PORT=6333
+        backend:
+          build:
+            context: ./backend
+            dockerfile: Dockerfile
+          ports:
+            - "8000:8000"
+          environment:
+            - DATABASE_URL=postgresql://postgres:password@postgres:5432/personal_rag
+            - QDRANT_HOST=qdrant
+            - QDRANT_PORT=6333
+            - GEMINI_API_KEY=${GEMINI_API_KEY}
     depends_on:
       - postgres
       - qdrant

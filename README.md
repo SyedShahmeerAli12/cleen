@@ -71,14 +71,23 @@ git clone <your-repo-url>
 cd personal-rag
 ```
 
-2. **Add your documents:**
+2. **Set up environment variables:**
+```bash
+# Create .env file in the root directory (same level as docker-compose.yml)
+cp env.example .env
+
+# Edit .env file and add your API key:
+# GEMINI_API_KEY=your_actual_gemini_api_key_here
+```
+
+3. **Add your documents:**
 ```bash
 # Place your PDF, DOCX, TXT files in:
 mkdir -p data/documents
 cp your-files.pdf data/documents/
 ```
 
-3. **Start the system:**
+4. **Start the system:**
 ```bash
 docker-compose up -d
 ```
@@ -164,15 +173,35 @@ def _generate_embeddings(self, texts: List[str]) -> List[List[float]]:
 
 ### Environment Variables
 
-```bash
-# Backend
-DATABASE_URL=postgresql://postgres:password@postgres:5432/personal_rag
-QDRANT_HOST=qdrant
-QDRANT_PORT=6333
-GEMINI_API_KEY=your_gemini_api_key
+**📁 Create `.env` file in the root directory** (same folder as `docker-compose.yml`):
 
-# Frontend
-REACT_APP_API_URL=http://localhost:8000
+```bash
+# Location: personal-rag/.env
+# Copy from: personal-rag/env.example
+
+# Required: Gemini API Key
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+
+# Optional: Nomic AI API Key (for real embeddings)
+# NOMIC_API_KEY=your_nomic_api_key_here
+```
+
+**🔑 How to get Gemini API Key:**
+1. Go to: https://makersuite.google.com/app/apikey
+2. Sign in with Google account
+3. Click "Create API Key"
+4. Copy the key and paste in `.env` file
+
+**📂 File structure after setup:**
+```
+personal-rag/
+├── .env                    # ← Create this file here
+├── docker-compose.yml
+├── env.example            # ← Template file
+├── README.md
+├── backend/
+├── frontend/
+└── data/
 ```
 
 ### Docker Compose Services
@@ -384,6 +413,8 @@ User Query → Embedding → Search → Context → Gemini → Answer
 - **Memory issues**: Increase Docker memory limit
 - **Slow responses**: Check Gemini API key and rate limits
 - **No documents found**: Verify files in `data/documents/`
+- **API key error**: Make sure `.env` file exists in root directory
+- **Missing .env file**: Run `cp env.example .env` and add your API key
 
 ---
 
