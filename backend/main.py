@@ -93,52 +93,192 @@ def add_message_to_session(session_id: str, role: str, content: str, sources: Li
         chat_sessions[session_id]["messages"] = chat_sessions[session_id]["messages"][-10:]
 
 def classify_user_intent(query: str) -> Dict[str, any]:
-    """Classify user intent based on the Cleen prompt taxonomy"""
+    """Enhanced intent classification with client's detailed prompts and Jobs-to-Be-Done analysis"""
     
-    # Define intent patterns for each segment
+    # Enhanced intent patterns with client's specific prompts
     intent_patterns = {
         "acne_prone_consumers": {
-            "keywords": ["teen", "teenage", "young", "hormonal", "breakout", "pimple", "blackhead", "oily skin", "mild acne"],
-            "emotional": ["safe", "gentle", "simple", "easy", "confidence", "worried", "frustrated"],
-            "social": ["dermatologist", "recommend", "reviews", "people", "most", "usually"],
-            "situational": ["fast", "quick", "overnight", "tomorrow", "event", "sudden"],
-            "risk": ["sensitive", "side effects", "damage", "irritate", "tested", "non-comedogenic"]
+            "functional": [
+                "effective treatment", "mild hormonal acne", "doesn't dry out skin", "clear forehead", "chin breakouts", 
+                "fast without irritating", "daily cleanser", "prevent new pimples", "blackheads and oily skin",
+                "reduce acne", "prescription medication", "simple three-step", "acne-prone skin"
+            ],
+            "emotional": [
+                "safest for teenage", "stop breakouts", "damaging skin barrier", "simple routine", 
+                "safe ingredients", "keeps breaking out", "gentle", "confidence", "peace of mind"
+            ],
+            "social": [
+                "dermatologists recommend", "teenage acne", "most people", "acne-prone skin", 
+                "best online reviews", "peer validation", "expert recommendations"
+            ],
+            "situational": [
+                "calm acne before event", "tomorrow", "sudden breakouts", "fast at home", 
+                "overnight treatment", "reduce spots quickly", "urgent", "convenience"
+            ],
+            "risk_mitigation": [
+                "safest for sensitive skin", "non-comedogenic", "dermatologist tested", 
+                "gentle way to start", "without side effects", "safe", "tested"
+            ],
+            "cognitive": [
+                "clinically proven", "reduce acne", "science-based routine", "control breakouts", 
+                "research says", "effective ingredients", "evidence", "proven"
+            ]
         },
         "science_first_enthusiasts": {
-            "keywords": ["research", "study", "clinical", "evidence", "scientifically", "formulation", "ingredients", "percentage"],
-            "cognitive": ["proven", "data", "literature", "peer-reviewed", "clinical trial", "efficacy"],
-            "functional": ["concentration", "pH", "interaction", "balance", "unclogging", "barrier function"]
+            "functional": [
+                "effective formulation", "unclogging pores", "over-drying", "balance oil production", 
+                "skin barrier function", "percentage of active ingredients", "comedonal acne", 
+                "concentration", "pH", "interaction", "balance"
+            ],
+            "emotional": [
+                "evidence-based skincare", "adult acne", "supported by dermatology research", 
+                "measurable improvement", "within a month", "trust", "confidence"
+            ],
+            "social": [
+                "recommended by cosmetic chemists", "dermatology experts", "adult acne naturally", 
+                "scientifically proven ingredients", "trending in professional skincare", 
+                "expert recommendations"
+            ],
+            "situational": [
+                "adjust acne routine", "seasonal skin changes", "humid environments", 
+                "polluted environments", "travel", "environmental factors"
+            ],
+            "risk_mitigation": [
+                "least likely to irritate", "sensitive skin", "combined", "test new products safely", 
+                "using retinoids", "safe combinations", "gentle"
+            ],
+            "cognitive": [
+                "peer-reviewed studies", "topical treatments for acne", "highest evidence level", 
+                "acne reduction", "clinically validated alternatives", "antibiotics for acne", 
+                "research", "clinical trials", "scientific evidence"
+            ]
         },
         "busy_professionals": {
-            "keywords": ["busy", "quick", "simple", "minimal", "multitasking", "stress", "professional", "routine"],
-            "functional": ["easy", "manage", "minimal products", "time", "efficient"],
-            "emotional": ["confident", "meetings", "lifestyle", "maintain"]
+            "functional": [
+                "easiest acne routine", "busy people", "manage adult acne", "minimal products", 
+                "multitasking skincare products", "prevent breakouts", "time-efficient", "simple"
+            ],
+            "emotional": [
+                "quick routine", "confident before meetings", "maintain clear skin", 
+                "high-stress lifestyle", "confidence", "peace of mind"
+            ],
+            "social": [
+                "professionals with busy schedules", "clearer skin", "simple skincare steps", 
+                "recommended by dermatologists", "adults", "peer validation"
+            ],
+            "situational": [
+                "breakouts caused by travel", "masks", "prevent stress-related acne", 
+                "without changing schedule", "urgent", "convenience"
+            ],
+            "risk_mitigation": [
+                "dermatologist-approved treatments", "minimal side effects", "safe acne routine", 
+                "during pregnancy", "while on medication", "safe", "tested"
+            ],
+            "cognitive": [
+                "research supports", "niacinamide", "azelaic acid", "proven ingredients", 
+                "adult women", "hormonal breakouts", "evidence", "scientific"
+            ]
         },
         "mens_skincare_beginners": {
-            "keywords": ["men", "male", "shaving", "razor", "bumps", "grooming", "simple", "beginner"],
-            "functional": ["easiest", "minimal", "simple", "shaving", "workout", "sweat"],
-            "emotional": ["confident", "clean", "complicated", "easy"]
+            "functional": [
+                "simplest way to treat", "acne and razor bumps", "clear breakouts", 
+                "without adding lots of products", "face wash", "prevent shaving irritation", 
+                "easiest", "minimal", "simple"
+            ],
+            "emotional": [
+                "easy routine", "look clean and confident", "take care of skin", 
+                "without feeling complicated", "confidence", "simple"
+            ],
+            "social": [
+                "skincare routine", "most men follow", "acne control", "barbers recommend", 
+                "grooming experts", "clear skin", "peer validation"
+            ],
+            "situational": [
+                "after workouts", "prevent breakouts", "acne caused by sweat", 
+                "shaving", "workout", "sweat"
+            ],
+            "risk_mitigation": [
+                "gentle options", "without causing dryness", "redness", "safe for daily shaving", 
+                "routines", "safe", "gentle"
+            ],
+            "cognitive": [
+                "dermatologist-backed steps", "reduce acne", "scientifically support", 
+                "clearer skin for men", "evidence", "research"
+            ]
         },
         "post_acne_healers": {
-            "keywords": ["scar", "mark", "hyperpigmentation", "heal", "repair", "recovery", "fade", "texture"],
-            "emotional": ["confidence", "restore", "gentle", "sensitive"],
-            "functional": ["repair", "prevent", "heal", "brighten", "collagen"]
+            "functional": [
+                "fade dark marks", "acne scars effectively", "repair skin texture", 
+                "after breakouts", "routine prevents new acne", "healing old scars", 
+                "repair", "prevent", "heal", "brighten"
+            ],
+            "emotional": [
+                "restore confidence", "after long-term acne", "gentle brightening ingredients", 
+                "safe for sensitive skin", "confidence", "restore", "gentle"
+            ],
+            "social": [
+                "dermatologists recommend", "post-acne hyperpigmentation", "routines", 
+                "real people used", "heal acne scars successfully", "peer validation"
+            ],
+            "situational": [
+                "repair skin after", "prescription acne treatments", "prevent dryness", 
+                "peeling during retinoid recovery", "recovery", "healing"
+            ],
+            "risk_mitigation": [
+                "post-acne treatments", "safe for sensitive", "reactive skin", 
+                "routines prevent scarring", "after active acne clears", "safe", "gentle"
+            ],
+            "cognitive": [
+                "proven clinical efficacy", "post-acne marks", "research says", 
+                "niacinamide", "retinol", "azelaic acid", "healing skin", 
+                "scientific evidence", "collagen-boosting skincare", "after acne", 
+                "research", "clinical evidence"
+            ]
         }
     }
     
-    # Define intent categories
-    intent_categories = {
-        "functional": ["effective", "works", "quality", "performance", "price", "routine", "ingredients"],
-        "emotional": ["safe", "gentle", "confidence", "peace of mind", "trust", "easy", "simple"],
-        "social": ["dermatologist", "recommend", "reviews", "people", "experts", "trending"],
-        "situational": ["fast", "quick", "urgent", "tomorrow", "event", "travel", "seasonal"],
-        "risk_mitigation": ["sensitive", "side effects", "safe", "tested", "gentle", "pregnancy"],
-        "cognitive": ["research", "study", "evidence", "proven", "scientific", "clinical", "data"]
+    # Jobs-to-Be-Done patterns for each segment
+    jobs_to_be_done = {
+        "acne_prone_consumers": {
+            "identify_acne_cause": ["cause", "type of acne", "what's causing", "why am I breaking out", "acne type"],
+            "learn_effective_ingredients": ["ingredients", "most effective", "work for my skin", "what ingredients", "best ingredients"],
+            "build_simple_routine": ["routine", "simple routine", "three-step", "daily routine", "skincare routine"],
+            "find_affordable_products": ["affordable", "budget", "cheap", "price", "cost-effective"],
+            "track_skin_progress": ["progress", "track", "improvement", "results", "before and after"]
+        },
+        "science_first_enthusiasts": {
+            "validate_with_science": ["research", "studies", "clinical", "evidence", "peer-reviewed", "scientific"],
+            "evaluate_ingredient_efficacy": ["efficacy", "effectiveness", "data", "proven", "clinical trial"],
+            "compare_formulations": ["formulation", "concentration", "percentage", "compare", "different brands"],
+            "understand_interactions": ["interaction", "pH", "balance", "combine", "layering"],
+            "stay_updated_on_science": ["latest", "new research", "recent studies", "updated", "current"]
+        },
+        "busy_professionals": {
+            "quick_identification": ["quick", "fast", "easy", "simple", "minimal"],
+            "maintain_clear_skin": ["maintain", "keep clear", "prevent", "manage", "control"],
+            "simplify_routine": ["simple", "minimal", "multitasking", "fewer products", "streamlined"],
+            "save_time": ["time", "efficient", "quick", "fast", "busy"],
+            "avoid_trial_error": ["proven", "tested", "reliable", "trusted", "recommended"]
+        },
+        "mens_skincare_beginners": {
+            "understand_basics": ["basics", "beginner", "simple", "easy", "start"],
+            "fix_acne_razor_bumps": ["acne", "razor bumps", "ingrown hairs", "shaving", "irritation"],
+            "adopt_minimal_routine": ["minimal", "simple", "daily", "routine", "basic"],
+            "buy_effective_products": ["effective", "works", "affordable", "easy to use", "simple"],
+            "blend_grooming_skincare": ["grooming", "shaving", "skincare", "routine", "daily"]
+        },
+        "post_acne_healers": {
+            "fade_scars_marks": ["fade", "scars", "dark marks", "hyperpigmentation", "spots"],
+            "rebuild_skin_barrier": ["skin barrier", "repair", "strengthen", "rebuild", "restore"],
+            "prevent_future_breakouts": ["prevent", "future breakouts", "new acne", "while healing"],
+            "identify_safe_actives": ["safe", "retinoids", "acids", "niacinamide", "actives"],
+            "evidence_based_layering": ["layering", "sequencing", "combine", "routine", "evidence"]
+        }
     }
     
     query_lower = query.lower()
     
-    # Score each segment
+    # Score each segment with enhanced patterns
     segment_scores = {}
     for segment, patterns in intent_patterns.items():
         score = 0
@@ -152,6 +292,15 @@ def classify_user_intent(query: str) -> Dict[str, any]:
     primary_segment = max(segment_scores, key=segment_scores.get) if segment_scores else "general"
     
     # Score intent categories
+    intent_categories = {
+        "functional": ["effective", "works", "quality", "performance", "price", "routine", "ingredients", "treatment", "prevent"],
+        "emotional": ["safe", "gentle", "confidence", "peace of mind", "trust", "easy", "simple", "comfortable"],
+        "social": ["dermatologist", "recommend", "reviews", "people", "experts", "trending", "most"],
+        "situational": ["fast", "quick", "urgent", "tomorrow", "event", "travel", "seasonal", "before"],
+        "risk_mitigation": ["sensitive", "side effects", "safe", "tested", "gentle", "pregnancy", "non-comedogenic"],
+        "cognitive": ["research", "study", "evidence", "proven", "scientific", "clinical", "data", "studies"]
+    }
+    
     category_scores = {}
     for category, keywords in intent_categories.items():
         score = sum(1 for keyword in keywords if keyword in query_lower)
@@ -160,13 +309,72 @@ def classify_user_intent(query: str) -> Dict[str, any]:
     # Find primary intent category
     primary_category = max(category_scores, key=category_scores.get) if category_scores else "functional"
     
+    # Identify Job-to-Be-Done
+    job_scores = {}
+    if primary_segment in jobs_to_be_done:
+        for job, keywords in jobs_to_be_done[primary_segment].items():
+            score = sum(1 for keyword in keywords if keyword in query_lower)
+            job_scores[job] = score
+    
+    primary_job = max(job_scores, key=job_scores.get) if job_scores else "general_inquiry"
+    
     return {
         "primary_segment": primary_segment,
         "primary_intent_category": primary_category,
+        "primary_job_to_be_done": primary_job,
         "segment_scores": segment_scores,
         "category_scores": category_scores,
+        "job_scores": job_scores,
         "confidence": max(segment_scores.values()) / len(query.split()) if query.split() else 0
     }
+
+def extract_url_from_content(content: str) -> str:
+    """Extract clean, complete URL from document content with improved patterns"""
+    
+    # Look for PMID: pattern first and construct PubMed URL
+    pmid_match = re.search(r'PMID:\s*(\d+)', content, re.IGNORECASE)
+    if pmid_match:
+        pmid = pmid_match.group(1)
+        return f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+    
+    # Look for DOI pattern with complete URL construction
+    doi_match = re.search(r'doi:\s*([^\s\n]+)', content, re.IGNORECASE)
+    if doi_match:
+        doi = doi_match.group(1).strip()
+        if not doi.startswith('http'):
+            return f"https://doi.org/{doi}"
+        return doi
+    
+    # Look for complete URL patterns (more restrictive to avoid truncation)
+    complete_url_patterns = [
+        r'https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:/[^\s\n,;.!?()]*)?',  # Complete URLs
+        r'https?://pubmed\.ncbi\.nlm\.nih\.gov/\d+/',  # Complete PubMed URLs
+        r'https?://doi\.org/[^\s\n,;.!?()]+',  # Complete DOI URLs
+        r'https?://dermnetnz\.org/[^\s\n,;.!?()]*',  # Complete DermNet URLs
+        r'https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/[^\s\n,;.!?()]*',  # URLs with paths
+    ]
+    
+    for pattern in complete_url_patterns:
+        match = re.search(pattern, content)
+        if match:
+            url = match.group(0).strip()
+            # Clean up any trailing punctuation
+            url = re.sub(r'[.,;!?]+$', '', url)
+            # Ensure URL is complete (has proper domain)
+            if '.' in url.split('://')[1] and len(url.split('://')[1].split('.')[0]) > 0:
+                return url
+    
+    # Look for URL: pattern with better cleaning
+    url_match = re.search(r'URL:\s*(https?://[^\s\n]+)', content, re.IGNORECASE)
+    if url_match:
+        url = url_match.group(1).strip()
+        # Clean up any trailing punctuation
+        url = re.sub(r'[.,;!?]+$', '', url)
+        # Ensure URL is complete
+        if '.' in url.split('://')[1] and len(url.split('://')[1].split('.')[0]) > 0:
+            return url
+    
+    return None
 
 def should_fetch_documents(query: str, session: Dict) -> bool:
     """Determine if we should fetch new documents or use chat context"""
@@ -405,7 +613,7 @@ async def query_documents(request: QueryRequest):
         
         # Classify user intent
         intent_analysis = classify_user_intent(request.query)
-        logger.info(f"🔍 [QUERY-{query_id}] Intent Analysis: {intent_analysis['primary_segment']} - {intent_analysis['primary_intent_category']} (confidence: {intent_analysis['confidence']:.2f})")
+        logger.info(f"🔍 [QUERY-{query_id}] Intent Analysis: {intent_analysis['primary_segment']} - {intent_analysis['primary_intent_category']} - Job: {intent_analysis['primary_job_to_be_done']} (confidence: {intent_analysis['confidence']:.2f})")
         
         # Determine if we should fetch documents or use chat context
         should_fetch = should_fetch_documents(request.query, session)
@@ -436,63 +644,113 @@ async def query_documents(request: QueryRequest):
                 # Generate segment-specific answer using Gemini with document context
                 logger.info(f"🔍 [QUERY-{query_id}] Generating segment-specific answer with Gemini LLM...")
                 
-                # Create segment-specific prompt
+                # Create enhanced segment-specific prompt with Jobs-to-Be-Done
                 segment = intent_analysis["primary_segment"]
                 intent_category = intent_analysis["primary_intent_category"]
+                job_to_be_done = intent_analysis["primary_job_to_be_done"]
                 
-                segment_prompts = {
-                    "acne_prone_consumers": "Focus on safe, gentle, simple solutions suitable for teens and young adults. Emphasize non-irritating ingredients and easy-to-follow routines.",
-                    "science_first_enthusiasts": "Provide detailed scientific information, research data, and evidence-based recommendations. Include specific studies, percentages, and clinical data.",
-                    "busy_professionals": "Give practical, time-efficient solutions. Focus on minimal steps, multitasking products, and routines that fit busy schedules.",
-                    "mens_skincare_beginners": "Provide straightforward, no-nonsense advice. Focus on simple routines, easy-to-use products, and practical solutions.",
-                    "post_acne_healers": "Focus on gentle healing, scar reduction, and prevention. Emphasize safe ingredients and gradual improvement."
+                # Enhanced segment-specific guidance with Jobs-to-Be-Done
+                segment_job_guidance = {
+                    "acne_prone_consumers": {
+                        "identify_acne_cause": "Help identify the specific type and cause of acne. Explain hormonal vs bacterial vs comedonal acne. Provide clear identification criteria.",
+                        "learn_effective_ingredients": "Focus on safe, gentle ingredients suitable for teens. Explain salicylic acid, benzoyl peroxide, niacinamide. Emphasize non-irritating formulations.",
+                        "build_simple_routine": "Provide a simple 3-step routine: cleanse, treat, moisturize. Focus on consistency and gentle products. Avoid overwhelming with too many steps.",
+                        "find_affordable_products": "Recommend budget-friendly options. Mention drugstore brands, generic alternatives, and cost-effective ingredient concentrations.",
+                        "track_skin_progress": "Explain how to track improvement, what to expect timeline-wise, and when to adjust the routine."
+                    },
+                    "science_first_enthusiasts": {
+                        "validate_with_science": "Provide detailed scientific information, research data, and evidence-based recommendations. Include specific studies, percentages, and clinical data.",
+                        "evaluate_ingredient_efficacy": "Compare ingredient concentrations, formulations, and clinical trial results. Explain mechanism of action and efficacy data.",
+                        "compare_formulations": "Analyze different formulations, pH levels, and ingredient interactions. Provide scientific comparisons between products.",
+                        "understand_interactions": "Explain ingredient interactions, layering protocols, and pH considerations. Provide evidence-based combination strategies.",
+                        "stay_updated_on_science": "Reference latest research, clinical trials, and emerging ingredients. Provide current scientific consensus."
+                    },
+                    "busy_professionals": {
+                        "quick_identification": "Provide fast, accurate product identification with specific brand names, concentrations, and travel-friendly options. Include morning/evening timing and workday integration tips.",
+                        "maintain_clear_skin": "Emphasize maintenance strategies with specific product recommendations, application techniques, and consistency tips for 12-hour workdays.",
+                        "simplify_routine": "Provide minimal, effective routines with exact product names, concentrations (e.g., 2.5% benzoyl peroxide), and step-by-step instructions. Include travel-size recommendations.",
+                        "save_time": "Focus on time-efficient solutions with specific timing (e.g., 2-minute morning routine), quick application techniques, and products that work during work hours. Include travel-friendly formats.",
+                        "avoid_trial_error": "Provide proven, reliable recommendations with specific brand names, concentrations, and dermatologist-tested options. Include TSA-friendly travel sizes and workday application tips."
+                    },
+                    "mens_skincare_beginners": {
+                        "understand_basics": "Provide straightforward, no-nonsense advice. Focus on simple routines, easy-to-use products, and practical solutions.",
+                        "fix_acne_razor_bumps": "Address both acne and shaving-related issues. Provide solutions for ingrown hairs and razor irritation.",
+                        "adopt_minimal_routine": "Suggest a simple daily routine that fits into existing habits. Focus on ease of use and consistency.",
+                        "buy_effective_products": "Recommend effective, affordable products that are easy to use. Avoid complicated formulations.",
+                        "blend_grooming_skincare": "Integrate skincare with grooming routines. Focus on post-shave care and workout skincare."
+                    },
+                    "post_acne_healers": {
+                        "fade_scars_marks": "Focus on gentle healing, scar reduction, and hyperpigmentation treatment. Emphasize safe ingredients and gradual improvement.",
+                        "rebuild_skin_barrier": "Provide barrier repair strategies. Focus on gentle, hydrating ingredients and avoiding further damage.",
+                        "prevent_future_breakouts": "Explain maintenance strategies while healing. Balance treatment with prevention.",
+                        "identify_safe_actives": "Guide on safe use of retinoids, acids, and other actives during recovery. Emphasize gradual introduction.",
+                        "evidence_based_layering": "Provide evidence-based layering strategies for post-acne care. Focus on ingredient compatibility and efficacy."
+                    }
                 }
                 
+                # Intent category guidance
                 intent_guidance = {
-                    "functional": "Focus on effectiveness, performance, and practical results.",
-                    "emotional": "Emphasize safety, gentleness, and peace of mind.",
-                    "social": "Include expert recommendations and peer validation.",
-                    "situational": "Address urgency and convenience factors.",
-                    "risk_mitigation": "Highlight safety, testing, and side effect considerations.",
-                    "cognitive": "Provide research, data, and scientific evidence."
+                    "functional": "Focus on effectiveness, performance, and practical results. Provide specific product recommendations with exact brand names, concentrations, and usage instructions. Include timing, application techniques, and expected results.",
+                    "emotional": "Emphasize safety, gentleness, and peace of mind. Address concerns about side effects and skin sensitivity.",
+                    "social": "Include expert recommendations, peer validation, and dermatologist-approved options. Reference trusted sources.",
+                    "situational": "Address urgency and convenience factors. Provide quick solutions and immediate relief strategies.",
+                    "risk_mitigation": "Highlight safety, testing, and side effect considerations. Emphasize gentle, tested formulations.",
+                    "cognitive": "Provide research, data, and scientific evidence. Include clinical studies and evidence-based recommendations."
                 }
                 
-                segment_guidance = segment_prompts.get(segment, "")
+                # Get specific guidance for this user's job-to-be-done
+                job_guidance = segment_job_guidance.get(segment, {}).get(job_to_be_done, "Provide helpful, personalized advice based on the user's needs.")
                 intent_guidance_text = intent_guidance.get(intent_category, "")
                 
                 enhanced_prompt = f"""
-You are a skincare expert responding to a {segment.replace('_', ' ')} user with {intent_category} intent.
+You are Cleen, an expert AI skincare assistant. Provide specific, actionable recommendations based on scientific research.
 
-User Question: {request.query}
+User Profile: {segment.replace('_', ' ')} with {intent_category} intent
+User's Goal: {job_to_be_done.replace('_', ' ')}
+Question: {request.query}
 
-Guidance for this user type: {segment_guidance}
+CRITICAL INSTRUCTIONS:
+- Provide SPECIFIC product names, concentrations, and brands
+- Give EXACT usage instructions with timing
+- Include travel-friendly and workday integration tips
+- DO NOT suggest consulting professionals - provide direct recommendations
+- Be practical and actionable, not generic advice
+
+Guidance for this user: {job_guidance}
 Intent guidance: {intent_guidance_text}
 
-Based on the document context below, provide a helpful, personalized answer that addresses their specific needs and concerns.
-
-Document Context:
+Research Context:
 {chr(10).join(context_chunks)}
 
-Answer:"""
+Provide a detailed, specific answer with exact product recommendations:"""
                 
                 answer = gemini_llm.generate_answer(enhanced_prompt, [])
                 logger.info(f"🔍 [QUERY-{query_id}] Segment-specific answer generated: {len(answer)} characters")
                 
-                # Extract URLs using fast regex from search results only
+                # Extract URLs using improved regex from search results only
                 if len(session["messages"]) <= 2:  # Only extract URLs for first question
-                    logger.info(f"🔍 [QUERY-{query_id}] Using fast regex to extract URLs from {len(search_results)} search results...")
+                    logger.info(f"🔍 [QUERY-{query_id}] Using improved regex to extract URLs from {len(search_results)} search results...")
                     
-                    sources = []
+                    # Extract URLs and filter for completeness
+                    url_sources = []
                     for result in search_results:
                         url = extract_url_from_content(result["content"])
-                        if url:
-                            sources.append(url)
-                            logger.info(f"🔍 [QUERY-{query_id}] Extracted URL from {result['filename']}: {url}")
-                        else:
-                            sources.append(result["filename"])
-                            logger.info(f"🔍 [QUERY-{query_id}] No URL found in {result['filename']}, using filename")
+                        if url and url.startswith('http') and '.' in url.split('://')[1]:
+                            # Validate URL completeness
+                            domain_part = url.split('://')[1].split('/')[0]
+                            if '.' in domain_part and len(domain_part.split('.')[0]) > 0:
+                                url_sources.append({
+                                    'url': url,
+                                    'filename': result['filename'],
+                                    'score': result.get('score', 0)
+                                })
+                                logger.info(f"🔍 [QUERY-{query_id}] Valid URL extracted from {result['filename']}: {url}")
                     
-                    logger.info(f"🔍 [QUERY-{query_id}] Fast regex extraction completed: {len(sources)} URLs extracted")
+                    # Sort by relevance score and take only top 2 URLs
+                    url_sources.sort(key=lambda x: x['score'], reverse=True)
+                    sources = [source['url'] for source in url_sources[:2]]  # Only top 2 URLs
+                    
+                    logger.info(f"🔍 [QUERY-{query_id}] Improved URL extraction completed: {len(sources)} valid URLs selected")
                 else:
                     # Use cached sources from previous questions for follow-ups
                     sources = session.get("sources", [])
@@ -516,7 +774,10 @@ Answer:"""
                     "search_results": search_results,
                     "session_id": session_id,
                     "used_documents": True,
-                    "intent_analysis": intent_analysis
+                    "intent_analysis": intent_analysis,
+                    "user_segment": intent_analysis["primary_segment"],
+                    "intent_category": intent_analysis["primary_intent_category"],
+                    "job_to_be_done": intent_analysis["primary_job_to_be_done"]
                 }
             else:
                 # No documents found, use Gemini without context
@@ -537,7 +798,10 @@ Answer:"""
                     "search_results": [],
                     "session_id": session_id,
                     "used_documents": False,
-                    "intent_analysis": intent_analysis
+                    "intent_analysis": intent_analysis,
+                    "user_segment": intent_analysis["primary_segment"],
+                    "intent_category": intent_analysis["primary_intent_category"],
+                    "job_to_be_done": intent_analysis["primary_job_to_be_done"]
                 }
         else:
             # Use chat context instead of fetching documents
@@ -573,7 +837,10 @@ Answer:"""
                 "session_id": session_id,
                 "used_documents": False,
                 "used_chat_context": True,
-                "intent_analysis": intent_analysis
+                "intent_analysis": intent_analysis,
+                "user_segment": intent_analysis["primary_segment"],
+                "intent_category": intent_analysis["primary_intent_category"],
+                "job_to_be_done": intent_analysis["primary_job_to_be_done"]
             }
     except Exception as e:
         end_time = datetime.now()

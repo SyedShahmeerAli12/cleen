@@ -258,3 +258,198 @@
 2025-10-14 20:18:26,325 - main - INFO - 🔍 [QUERY-0f04b155] Generating answer with Gemini LLM...
 2025-10-14 20:18:29,272 - main - INFO - 🔍 [QUERY-0f04b155] Answer generated: 707 characters
 2025-10-14 20:18:29,274 - main - INFO - 🔍 [QUERY-0f04b155] Query complete in 3.77s
+2025-10-15 18:03:45,461 - main - INFO - 🚀 Backend starting up...
+2025-10-15 18:03:45,462 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 18:03:45,474 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 18:03:45,477 - main - INFO - 📊 Current vector count: 13
+2025-10-15 18:03:45,478 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 18:13:43,798 - main - INFO - 🚀 Backend starting up...
+2025-10-15 18:13:43,799 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 18:13:43,837 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 18:13:43,840 - main - INFO - 📊 Current vector count: 483
+2025-10-15 18:13:43,841 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 18:15:44,767 - main - INFO - 🔍 [QUERY-a3bc2e49] Starting query: 'what caused of acne?' (Session: 4a747df0)
+2025-10-15 18:15:44,768 - main - INFO - 🔍 [QUERY-a3bc2e49] Created new chat session: 4a747df0
+2025-10-15 18:15:44,770 - main - INFO - 🔍 [QUERY-a3bc2e49] Intent Analysis: acne_prone_consumers - functional (confidence: 0.00)
+2025-10-15 18:15:44,771 - main - INFO - 🔍 [QUERY-a3bc2e49] Should fetch documents: True
+2025-10-15 18:15:44,772 - main - INFO - 🔍 [QUERY-a3bc2e49] Generating query embedding...
+2025-10-15 18:15:45,526 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 18:15:45,533 - main - INFO - 🔍 [QUERY-a3bc2e49] Query embedding generated: 768 dimensions
+2025-10-15 18:15:45,535 - main - INFO - 🔍 [QUERY-a3bc2e49] Performing hybrid search in Qdrant...
+2025-10-15 18:15:45,640 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 18:15:45,645 - main - INFO - 🔍 [QUERY-a3bc2e49] Search completed: 5 results found
+2025-10-15 18:15:45,647 - main - INFO - 🔍 [QUERY-a3bc2e49] Total context length: 8838 characters
+2025-10-15 18:15:45,648 - main - INFO - 🔍 [QUERY-a3bc2e49] Generating segment-specific answer with Gemini LLM...
+2025-10-15 18:15:53,469 - main - INFO - 🔍 [QUERY-a3bc2e49] Segment-specific answer generated: 308 characters
+2025-10-15 18:15:53,470 - main - INFO - 🔍 [QUERY-a3bc2e49] Using fast regex to extract URLs from 5 search results...
+2025-10-15 18:15:53,471 - main - INFO - 🔍 [QUERY-a3bc2e49] Extracted URL from 161830.txt: https://pubmed.ncbi.nlm.nih.gov/161830/
+2025-10-15 18:15:53,472 - main - INFO - 🔍 [QUERY-a3bc2e49] Extracted URL from 24719062.txt: https://pubmed.ncbi.nlm.nih.gov/24719062/
+2025-10-15 18:15:53,475 - main - INFO - 🔍 [QUERY-a3bc2e49] No URL found in conditions_acne_causes.txt, using filename
+2025-10-15 18:15:53,476 - main - INFO - 🔍 [QUERY-a3bc2e49] Extracted URL from conditions_acne_causes.txt: https://www
+2025-10-15 18:15:53,477 - main - INFO - 🔍 [QUERY-a3bc2e49] Extracted URL from 31351501.txt: https://pubmed.ncbi.nlm.nih.gov/31351501/
+2025-10-15 18:15:53,477 - main - INFO - 🔍 [QUERY-a3bc2e49] Fast regex extraction completed: 5 URLs extracted
+2025-10-15 18:15:53,478 - main - INFO - 🔍 [QUERY-a3bc2e49] Final sources: ['https://www', 'https://pubmed.ncbi.nlm.nih.gov/31351501/', 'conditions_acne_causes.txt', 'https://pubmed.ncbi.nlm.nih.gov/161830/', 'https://pubmed.ncbi.nlm.nih.gov/24719062/']
+2025-10-15 18:15:53,478 - main - INFO - 🔍 [QUERY-a3bc2e49] Query complete in 8.71s
+2025-10-15 18:31:12,718 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-15 18:33:38,420 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-15 18:42:02,565 - main - INFO - 🚀 Backend starting up...
+2025-10-15 18:42:02,566 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 18:42:02,573 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 18:42:02,582 - main - INFO - 📊 Current vector count: 816
+2025-10-15 18:42:02,582 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 18:42:24,259 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-15 18:44:14,661 - main - INFO - 🔍 [QUERY-1db7ae52] Starting query: 'What is the most effective treatment for mild hormonal acne that does not dry out skin?' (Session: f8119bc0)
+2025-10-15 18:44:14,662 - main - INFO - 🔍 [QUERY-1db7ae52] Created new chat session: f8119bc0
+2025-10-15 18:44:14,663 - main - INFO - 🔍 [QUERY-1db7ae52] Intent Analysis: acne_prone_consumers - functional - Job: learn_effective_ingredients (confidence: 0.12)
+2025-10-15 18:44:14,663 - main - INFO - 🔍 [QUERY-1db7ae52] Should fetch documents: True
+2025-10-15 18:44:14,664 - main - INFO - 🔍 [QUERY-1db7ae52] Generating query embedding...
+2025-10-15 18:44:16,256 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 18:44:16,259 - main - INFO - 🔍 [QUERY-1db7ae52] Query embedding generated: 768 dimensions
+2025-10-15 18:44:16,260 - main - INFO - 🔍 [QUERY-1db7ae52] Performing hybrid search in Qdrant...
+2025-10-15 18:44:16,351 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 18:44:16,390 - main - INFO - 🔍 [QUERY-1db7ae52] Search completed: 5 results found
+2025-10-15 18:44:16,391 - main - INFO - 🔍 [QUERY-1db7ae52] Total context length: 8569 characters
+2025-10-15 18:44:16,393 - main - INFO - 🔍 [QUERY-1db7ae52] Generating segment-specific answer with Gemini LLM...
+2025-10-15 18:44:31,356 - main - INFO - 🔍 [QUERY-1db7ae52] Segment-specific answer generated: 318 characters
+2025-10-15 18:44:31,357 - main - INFO - 🔍 [QUERY-1db7ae52] Using fast regex to extract URLs from 5 search results...
+2025-10-15 18:44:31,360 - main - INFO - 🔍 [QUERY-1db7ae52] No URL found in topics_acne.txt, using filename
+2025-10-15 18:44:31,361 - main - INFO - 🔍 [QUERY-1db7ae52] No URL found in conditions_acne.txt, using filename
+2025-10-15 18:44:31,362 - main - INFO - 🔍 [QUERY-1db7ae52] Extracted URL from zh-hans_diseases-conditions_acne_symptoms-causes_syc-20368047.txt: https://doi.org/10
+2025-10-15 18:44:31,363 - main - INFO - 🔍 [QUERY-1db7ae52] Extracted URL from 38402012.txt: https://pubmed.ncbi.nlm.nih.gov/38402012/
+2025-10-15 18:44:31,364 - main - INFO - 🔍 [QUERY-1db7ae52] Extracted URL from topics_topical-treatment-for-acne.txt: https://dermnetnz
+2025-10-15 18:44:31,364 - main - INFO - 🔍 [QUERY-1db7ae52] Fast regex extraction completed: 5 URLs extracted
+2025-10-15 18:44:31,365 - main - INFO - 🔍 [QUERY-1db7ae52] Final sources: ['https://doi.org/10', 'conditions_acne.txt', 'https://pubmed.ncbi.nlm.nih.gov/38402012/', 'https://dermnetnz', 'topics_acne.txt']
+2025-10-15 18:44:31,366 - main - INFO - 🔍 [QUERY-1db7ae52] Query complete in 16.70s
+2025-10-15 18:45:27,011 - main - INFO - 🔍 [QUERY-e5c6fe19] Starting query: 'What is the most effective treatment for mild hormonal acne that does not dry out skin?' (Session: 8e5ba14c)
+2025-10-15 18:45:27,012 - main - INFO - 🔍 [QUERY-e5c6fe19] Created new chat session: 8e5ba14c
+2025-10-15 18:45:27,014 - main - INFO - 🔍 [QUERY-e5c6fe19] Intent Analysis: acne_prone_consumers - functional - Job: learn_effective_ingredients (confidence: 0.12)
+2025-10-15 18:45:27,015 - main - INFO - 🔍 [QUERY-e5c6fe19] Should fetch documents: True
+2025-10-15 18:45:27,016 - main - INFO - 🔍 [QUERY-e5c6fe19] Generating query embedding...
+2025-10-15 18:45:28,679 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 18:45:28,682 - main - INFO - 🔍 [QUERY-e5c6fe19] Query embedding generated: 768 dimensions
+2025-10-15 18:45:28,683 - main - INFO - 🔍 [QUERY-e5c6fe19] Performing hybrid search in Qdrant...
+2025-10-15 18:45:28,705 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 18:45:28,707 - main - INFO - 🔍 [QUERY-e5c6fe19] Search completed: 5 results found
+2025-10-15 18:45:28,708 - main - INFO - 🔍 [QUERY-e5c6fe19] Total context length: 8569 characters
+2025-10-15 18:45:28,709 - main - INFO - 🔍 [QUERY-e5c6fe19] Generating segment-specific answer with Gemini LLM...
+2025-10-15 18:45:38,841 - main - INFO - 🔍 [QUERY-e5c6fe19] Segment-specific answer generated: 334 characters
+2025-10-15 18:45:38,842 - main - INFO - 🔍 [QUERY-e5c6fe19] Using fast regex to extract URLs from 5 search results...
+2025-10-15 18:45:38,844 - main - INFO - 🔍 [QUERY-e5c6fe19] No URL found in topics_acne.txt, using filename
+2025-10-15 18:45:38,845 - main - INFO - 🔍 [QUERY-e5c6fe19] No URL found in conditions_acne.txt, using filename
+2025-10-15 18:45:38,847 - main - INFO - 🔍 [QUERY-e5c6fe19] Extracted URL from zh-hans_diseases-conditions_acne_symptoms-causes_syc-20368047.txt: https://doi.org/10
+2025-10-15 18:45:38,848 - main - INFO - 🔍 [QUERY-e5c6fe19] Extracted URL from 38402012.txt: https://pubmed.ncbi.nlm.nih.gov/38402012/
+2025-10-15 18:45:38,850 - main - INFO - 🔍 [QUERY-e5c6fe19] Extracted URL from topics_topical-treatment-for-acne.txt: https://dermnetnz
+2025-10-15 18:45:38,851 - main - INFO - 🔍 [QUERY-e5c6fe19] Fast regex extraction completed: 5 URLs extracted
+2025-10-15 18:45:38,852 - main - INFO - 🔍 [QUERY-e5c6fe19] Final sources: ['https://doi.org/10', 'conditions_acne.txt', 'https://pubmed.ncbi.nlm.nih.gov/38402012/', 'https://dermnetnz', 'topics_acne.txt']
+2025-10-15 18:45:38,853 - main - INFO - 🔍 [QUERY-e5c6fe19] Query complete in 11.84s
+2025-10-15 19:05:53,401 - main - INFO - 🔍 [QUERY-a369d0fb] Starting query: 'I'm a 35-year-old executive with stress-induced acne flare-ups. What evidence-based, time-efficient routine can I follow that won't interfere with my 12-hour workdays and frequent travel schedule?' (Session: 166db3fa)
+2025-10-15 19:05:53,405 - main - INFO - 🔍 [QUERY-a369d0fb] Created new chat session: 166db3fa
+2025-10-15 19:05:53,408 - main - INFO - 🔍 [QUERY-a369d0fb] Intent Analysis: busy_professionals - functional - Job: save_time (confidence: 0.08)
+2025-10-15 19:05:53,412 - main - INFO - 🔍 [QUERY-a369d0fb] Should fetch documents: True
+2025-10-15 19:05:53,414 - main - INFO - 🔍 [QUERY-a369d0fb] Generating query embedding...
+2025-10-15 19:05:54,955 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 19:05:54,967 - main - INFO - 🔍 [QUERY-a369d0fb] Query embedding generated: 768 dimensions
+2025-10-15 19:05:54,971 - main - INFO - 🔍 [QUERY-a369d0fb] Performing hybrid search in Qdrant...
+2025-10-15 19:05:55,079 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 19:05:55,085 - main - INFO - 🔍 [QUERY-a369d0fb] Search completed: 5 results found
+2025-10-15 19:05:55,086 - main - INFO - 🔍 [QUERY-a369d0fb] Total context length: 6667 characters
+2025-10-15 19:05:55,087 - main - INFO - 🔍 [QUERY-a369d0fb] Generating segment-specific answer with Gemini LLM...
+2025-10-15 19:06:05,270 - main - INFO - 🔍 [QUERY-a369d0fb] Segment-specific answer generated: 335 characters
+2025-10-15 19:06:05,271 - main - INFO - 🔍 [QUERY-a369d0fb] Using fast regex to extract URLs from 5 search results...
+2025-10-15 19:06:05,273 - main - INFO - 🔍 [QUERY-a369d0fb] No URL found in conditions_acne.txt, using filename
+2025-10-15 19:06:05,275 - main - INFO - 🔍 [QUERY-a369d0fb] No URL found in conditions_acne_causes.txt, using filename
+2025-10-15 19:06:05,276 - main - INFO - 🔍 [QUERY-a369d0fb] Extracted URL from 30633393.txt: https://pubmed.ncbi.nlm.nih.gov/30633393/
+2025-10-15 19:06:05,276 - main - INFO - 🔍 [QUERY-a369d0fb] Extracted URL from 22565434.txt: https://pubmed.ncbi.nlm.nih.gov/22565434/
+2025-10-15 19:06:05,277 - main - INFO - 🔍 [QUERY-a369d0fb] Extracted URL from diseases-conditions_acne_diagnosis-treatment_drc-20368048.txt: https://doi
+2025-10-15 19:06:05,278 - main - INFO - 🔍 [QUERY-a369d0fb] Fast regex extraction completed: 5 URLs extracted
+2025-10-15 19:06:05,278 - main - INFO - 🔍 [QUERY-a369d0fb] Final sources: ['conditions_acne.txt', 'https://doi', 'https://pubmed.ncbi.nlm.nih.gov/22565434/', 'conditions_acne_causes.txt', 'https://pubmed.ncbi.nlm.nih.gov/30633393/']
+2025-10-15 19:06:05,279 - main - INFO - 🔍 [QUERY-a369d0fb] Query complete in 11.88s
+2025-10-15 19:08:34,524 - main - INFO - 🚀 Backend starting up...
+2025-10-15 19:08:34,525 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 19:08:34,529 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:08:34,531 - main - INFO - 📊 Current vector count: 816
+2025-10-15 19:08:34,531 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 19:11:20,079 - main - INFO - 🚀 Backend starting up...
+2025-10-15 19:11:20,080 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 19:11:20,084 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:11:20,087 - main - INFO - 📊 Current vector count: 816
+2025-10-15 19:11:20,088 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 19:15:09,087 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-15 19:20:40,985 - main - INFO - 🔍 [QUERY-ac0732f3] Starting query: 'I am a 35-year-old executive with stress-induced acne flare-ups. What evidence-based, time-efficient routine can I follow that will not interfere with my 12-hour workdays and frequent travel schedule' (Session: 944569a4)
+2025-10-15 19:20:40,987 - main - INFO - 🔍 [QUERY-ac0732f3] Created new chat session: 944569a4
+2025-10-15 19:20:40,991 - main - INFO - 🔍 [QUERY-ac0732f3] Intent Analysis: busy_professionals - functional - Job: save_time (confidence: 0.07)
+2025-10-15 19:20:40,994 - main - INFO - 🔍 [QUERY-ac0732f3] Should fetch documents: True
+2025-10-15 19:20:40,996 - main - INFO - 🔍 [QUERY-ac0732f3] Generating query embedding...
+2025-10-15 19:20:43,163 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 19:20:43,173 - main - INFO - 🔍 [QUERY-ac0732f3] Query embedding generated: 768 dimensions
+2025-10-15 19:20:43,176 - main - INFO - 🔍 [QUERY-ac0732f3] Performing hybrid search in Qdrant...
+2025-10-15 19:20:43,240 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 19:20:43,315 - main - INFO - 🔍 [QUERY-ac0732f3] Search completed: 5 results found
+2025-10-15 19:20:43,321 - main - INFO - 🔍 [QUERY-ac0732f3] Total context length: 6628 characters
+2025-10-15 19:20:43,323 - main - INFO - 🔍 [QUERY-ac0732f3] Generating segment-specific answer with Gemini LLM...
+2025-10-15 19:20:52,999 - main - INFO - 🔍 [QUERY-ac0732f3] Segment-specific answer generated: 356 characters
+2025-10-15 19:20:53,004 - main - INFO - 🔍 [QUERY-ac0732f3] Using improved regex to extract URLs from 5 search results...
+2025-10-15 19:20:53,014 - main - INFO - 🔍 [QUERY-ac0732f3] Valid URL extracted from 30633393.txt: https://pubmed.ncbi.nlm.nih.gov/30633393/
+2025-10-15 19:20:53,018 - main - INFO - 🔍 [QUERY-ac0732f3] Valid URL extracted from 22565434.txt: https://pubmed.ncbi.nlm.nih.gov/22565434/
+2025-10-15 19:20:53,022 - main - INFO - 🔍 [QUERY-ac0732f3] Improved URL extraction completed: 2 valid URLs selected
+2025-10-15 19:20:53,024 - main - INFO - 🔍 [QUERY-ac0732f3] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/22565434/', 'https://pubmed.ncbi.nlm.nih.gov/30633393/']
+2025-10-15 19:20:53,027 - main - INFO - 🔍 [QUERY-ac0732f3] Query complete in 12.04s
+2025-10-15 19:24:23,144 - main - INFO - 🔍 [QUERY-abd2cbc2] Starting query: 'i am a 35-year-old executive with stress-induced acne flare-ups. What evidence-based, time-efficient routine can I follow that will not interfere with my 12-hour workdays and frequent travel schedule' (Session: 944569a4)
+2025-10-15 19:24:23,145 - main - INFO - 🔍 [QUERY-abd2cbc2] Using existing chat session: 944569a4 (2 messages)
+2025-10-15 19:24:23,147 - main - INFO - 🔍 [QUERY-abd2cbc2] Intent Analysis: busy_professionals - functional - Job: save_time (confidence: 0.07)
+2025-10-15 19:24:23,149 - main - INFO - 🔍 [QUERY-abd2cbc2] Should fetch documents: True
+2025-10-15 19:24:23,150 - main - INFO - 🔍 [QUERY-abd2cbc2] Generating query embedding...
+2025-10-15 19:24:24,718 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 19:24:24,729 - main - INFO - 🔍 [QUERY-abd2cbc2] Query embedding generated: 768 dimensions
+2025-10-15 19:24:24,732 - main - INFO - 🔍 [QUERY-abd2cbc2] Performing hybrid search in Qdrant...
+2025-10-15 19:24:24,771 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 19:24:24,775 - main - INFO - 🔍 [QUERY-abd2cbc2] Search completed: 5 results found
+2025-10-15 19:24:24,777 - main - INFO - 🔍 [QUERY-abd2cbc2] Total context length: 6628 characters
+2025-10-15 19:24:24,779 - main - INFO - 🔍 [QUERY-abd2cbc2] Generating segment-specific answer with Gemini LLM...
+2025-10-15 19:24:33,076 - main - INFO - 🔍 [QUERY-abd2cbc2] Segment-specific answer generated: 365 characters
+2025-10-15 19:24:33,080 - main - INFO - 🔍 [QUERY-abd2cbc2] Using cached sources for follow-up question: 2 URLs
+2025-10-15 19:24:33,086 - main - INFO - 🔍 [QUERY-abd2cbc2] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/30633393/', 'https://pubmed.ncbi.nlm.nih.gov/22565434/']
+2025-10-15 19:24:33,089 - main - INFO - 🔍 [QUERY-abd2cbc2] Query complete in 9.95s
+2025-10-15 19:32:02,407 - main - INFO - 🔍 [QUERY-c5dc7d3f] Starting query: 'I am a 35-year-old executive with stress-induced acne flare-ups. What evidence-based, time-efficient routine can I follow that will not interfere with my 12-hour workdays and frequent travel schedule' (Session: 92a7c177)
+2025-10-15 19:32:02,419 - main - INFO - 🔍 [QUERY-c5dc7d3f] Created new chat session: 92a7c177
+2025-10-15 19:32:02,425 - main - INFO - 🔍 [QUERY-c5dc7d3f] Intent Analysis: busy_professionals - functional - Job: save_time (confidence: 0.07)
+2025-10-15 19:32:02,428 - main - INFO - 🔍 [QUERY-c5dc7d3f] Should fetch documents: True
+2025-10-15 19:32:02,431 - main - INFO - 🔍 [QUERY-c5dc7d3f] Generating query embedding...
+2025-10-15 19:32:04,111 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 19:32:04,117 - main - INFO - 🔍 [QUERY-c5dc7d3f] Query embedding generated: 768 dimensions
+2025-10-15 19:32:04,119 - main - INFO - 🔍 [QUERY-c5dc7d3f] Performing hybrid search in Qdrant...
+2025-10-15 19:32:04,289 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 19:32:04,302 - main - INFO - 🔍 [QUERY-c5dc7d3f] Search completed: 5 results found
+2025-10-15 19:32:04,303 - main - INFO - 🔍 [QUERY-c5dc7d3f] Total context length: 6628 characters
+2025-10-15 19:32:04,304 - main - INFO - 🔍 [QUERY-c5dc7d3f] Generating segment-specific answer with Gemini LLM...
+2025-10-15 19:32:12,406 - main - INFO - 🔍 [QUERY-c5dc7d3f] Segment-specific answer generated: 293 characters
+2025-10-15 19:32:12,409 - main - INFO - 🔍 [QUERY-c5dc7d3f] Using improved regex to extract URLs from 5 search results...
+2025-10-15 19:32:12,422 - main - INFO - 🔍 [QUERY-c5dc7d3f] Valid URL extracted from 30633393.txt: https://pubmed.ncbi.nlm.nih.gov/30633393/
+2025-10-15 19:32:12,424 - main - INFO - 🔍 [QUERY-c5dc7d3f] Valid URL extracted from 22565434.txt: https://pubmed.ncbi.nlm.nih.gov/22565434/
+2025-10-15 19:32:12,428 - main - INFO - 🔍 [QUERY-c5dc7d3f] Improved URL extraction completed: 2 valid URLs selected
+2025-10-15 19:32:12,431 - main - INFO - 🔍 [QUERY-c5dc7d3f] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/22565434/', 'https://pubmed.ncbi.nlm.nih.gov/30633393/']
+2025-10-15 19:32:12,433 - main - INFO - 🔍 [QUERY-c5dc7d3f] Query complete in 10.09s
+2025-10-15 19:44:04,404 - main - INFO - 🚀 Backend starting up...
+2025-10-15 19:44:04,405 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 19:44:04,414 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:44:04,425 - main - INFO - 📊 Current vector count: 816
+2025-10-15 19:44:04,426 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 19:45:10,789 - main - INFO - 🔍 [QUERY-4bdaf4f1] Starting query: 'I am a 35-year-old executive with stress-induced acne flare-ups. What evidence-based, time-efficient routine can I follow that will not interfere with my 12-hour workdays and frequent travel schedule' (Session: 3589e08f)
+2025-10-15 19:45:10,790 - main - INFO - 🔍 [QUERY-4bdaf4f1] Created new chat session: 3589e08f
+2025-10-15 19:45:10,792 - main - INFO - 🔍 [QUERY-4bdaf4f1] Intent Analysis: busy_professionals - functional - Job: save_time (confidence: 0.07)
+2025-10-15 19:45:10,793 - main - INFO - 🔍 [QUERY-4bdaf4f1] Should fetch documents: True
+2025-10-15 19:45:10,794 - main - INFO - 🔍 [QUERY-4bdaf4f1] Generating query embedding...
+2025-10-15 19:45:14,847 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 19:45:14,851 - main - INFO - 🔍 [QUERY-4bdaf4f1] Query embedding generated: 768 dimensions
+2025-10-15 19:45:14,853 - main - INFO - 🔍 [QUERY-4bdaf4f1] Performing hybrid search in Qdrant...
+2025-10-15 19:45:14,917 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 19:45:14,949 - main - INFO - 🔍 [QUERY-4bdaf4f1] Search completed: 5 results found
+2025-10-15 19:45:14,951 - main - INFO - 🔍 [QUERY-4bdaf4f1] Total context length: 6628 characters
+2025-10-15 19:45:14,953 - main - INFO - 🔍 [QUERY-4bdaf4f1] Generating segment-specific answer with Gemini LLM...
+2025-10-15 19:45:29,601 - main - INFO - 🔍 [QUERY-4bdaf4f1] Segment-specific answer generated: 368 characters
+2025-10-15 19:45:29,605 - main - INFO - 🔍 [QUERY-4bdaf4f1] Using improved regex to extract URLs from 5 search results...
+2025-10-15 19:45:29,609 - main - INFO - 🔍 [QUERY-4bdaf4f1] Valid URL extracted from 30633393.txt: https://pubmed.ncbi.nlm.nih.gov/30633393/
+2025-10-15 19:45:29,609 - main - INFO - 🔍 [QUERY-4bdaf4f1] Valid URL extracted from 22565434.txt: https://pubmed.ncbi.nlm.nih.gov/22565434/
+2025-10-15 19:45:29,610 - main - INFO - 🔍 [QUERY-4bdaf4f1] Improved URL extraction completed: 2 valid URLs selected
+2025-10-15 19:45:29,611 - main - INFO - 🔍 [QUERY-4bdaf4f1] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/22565434/', 'https://pubmed.ncbi.nlm.nih.gov/30633393/']
+2025-10-15 19:45:29,612 - main - INFO - 🔍 [QUERY-4bdaf4f1] Query complete in 18.82s

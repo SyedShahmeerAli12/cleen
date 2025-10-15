@@ -16,6 +16,7 @@ import {
   Brain,
   Search
 } from 'lucide-react';
+import TypingAnimation from './TypingAnimation';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
@@ -25,10 +26,25 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [sessionId, setSessionId] = useState(null);
+  const [typingMessages, setTypingMessages] = useState(new Set());
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleTypingComplete = (messageId) => {
+    setTypingMessages(prev => {
+      const newSet = new Set(prev);
+      newSet.delete(messageId);
+      return newSet;
+    });
+    
+    setMessages(prev => prev.map(msg => 
+      msg.id === messageId 
+        ? { ...msg, isTyping: false }
+        : msg
+    ));
   };
 
   useEffect(() => {
@@ -85,19 +101,26 @@ function App() {
       const usedDocuments = response.data.used_documents;
       const usedChatContext = response.data.used_chat_context;
       
-      // Show answer instantly for better UX (no typing animation delay)
+      // Add typing animation for AI responses
       setMessages(prev => prev.map(msg => 
         msg.id === aiMessageId 
           ? { 
               ...msg, 
               content: fullAnswer, 
-              isTyping: false, 
+              isTyping: true, 
               sources: sources,
               usedDocuments: usedDocuments,
-              usedChatContext: usedChatContext
+              usedChatContext: usedChatContext,
+              intentAnalysis: response.data.intent_analysis || null,
+              userSegment: response.data.user_segment || null,
+              intentCategory: response.data.intent_category || null,
+              jobToBeDone: response.data.job_to_be_done || null
             }
           : msg
       ));
+      
+      // Mark this message as typing
+      setTypingMessages(prev => new Set([...prev, aiMessageId]));
 
     } catch (error) {
       const errorMessage = {
@@ -253,10 +276,10 @@ function App() {
               </div>
               
               <h1 className="text-4xl font-bold gradient-text mb-4 text-shadow-lg">
-                Welcome to Personal RAG
+                Welcome to Cleen
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Your intelligent document assistant powered by AI. Ask me anything about your documents!
+                Your intelligent skincare assistant powered by AI. Get personalized, evidence-based skincare advice!
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl">
@@ -267,7 +290,7 @@ function App() {
                 >
                   <Search className="w-8 h-8 text-primary-500 mb-3" />
                   <h3 className="font-semibold text-gray-800 mb-2">Smart Search</h3>
-                  <p className="text-sm text-gray-600">Find information instantly across all your documents</p>
+                  <p className="text-sm text-gray-600">Find evidence-based skincare solutions instantly</p>
                 </motion.div>
                 
                 <motion.div 
@@ -276,8 +299,8 @@ function App() {
                   transition={{ duration: 0.2 }}
                 >
                   <FileText className="w-8 h-8 text-accent-500 mb-3" />
-                  <h3 className="font-semibold text-gray-800 mb-2">Document Analysis</h3>
-                  <p className="text-sm text-gray-600">Get insights and summaries from your content</p>
+                  <h3 className="font-semibold text-gray-800 mb-2">Personalized Analysis</h3>
+                  <p className="text-sm text-gray-600">Get tailored skincare recommendations for your skin type</p>
                 </motion.div>
                 
                 <motion.div 
@@ -286,8 +309,8 @@ function App() {
                   transition={{ duration: 0.2 }}
                 >
                   <Bot className="w-8 h-8 text-green-500 mb-3" />
-                  <h3 className="font-semibold text-gray-800 mb-2">AI Assistant</h3>
-                  <p className="text-sm text-gray-600">Natural conversations with your documents</p>
+                  <h3 className="font-semibold text-gray-800 mb-2">AI Skincare Expert</h3>
+                  <p className="text-sm text-gray-600">Get expert skincare advice powered by research</p>
                 </motion.div>
               </div>
             </motion.div>
@@ -322,44 +345,51 @@ function App() {
                         ? 'chat-bubble-user' 
                         : 'chat-bubble-ai'
                     }`}>
-                      <div className="prose prose-sm max-w-none">
-                        {message.content.split('\n').map((line, lineIndex) => {
-                          let formattedLine = line;
-                          
-                          // Headers ### Header (check first)
-                          if (line.trim().startsWith('### ')) {
-                            formattedLine = `<h3 class="text-lg font-semibold mb-3 text-gray-800 border-b border-gray-200 pb-1">${line.trim().substring(4)}</h3>`;
-                          }
-                          // Headers ## Header
-                          else if (line.trim().startsWith('## ')) {
-                            formattedLine = `<h2 class="text-xl font-bold mb-3 text-gray-900">${line.trim().substring(3)}</h2>`;
-                          }
-                          // Headers # Header
-                          else if (line.trim().startsWith('# ')) {
-                            formattedLine = `<h1 class="text-2xl font-bold mb-4 text-gray-900">${line.trim().substring(2)}</h1>`;
-                          }
-                          // Bullet points * item
-                          else if (line.trim().startsWith('* ')) {
-                            formattedLine = `<div class="flex items-start mb-2"><span class="mr-2 text-primary-500 font-bold">•</span><span>${line.trim().substring(2)}</span></div>`;
-                          }
-                          // Numbered lists 1. item
-                          else if (/^\d+\.\s/.test(line.trim())) {
-                            formattedLine = `<div class="flex items-start mb-2"><span class="mr-2 text-primary-500 font-bold">${line.trim().split('.')[0]}.</span><span>${line.trim().substring(line.trim().indexOf(' ') + 1)}</span></div>`;
-                          }
-                          // Bold text **text** (do this last)
-                          else {
-                            formattedLine = formattedLine.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-gray-800">$1</strong>');
-                          }
-                          
-                          return (
-                            <div 
-                              key={lineIndex} 
-                              dangerouslySetInnerHTML={{ __html: formattedLine }}
-                              className={message.isTyping ? 'animate-pulse' : ''}
-                            />
-                          );
-                        })}
-                      </div>
+                      {message.type === 'ai' && typingMessages.has(message.id) ? (
+                        <TypingAnimation 
+                          text={message.content}
+                          speed={20}
+                          onComplete={() => handleTypingComplete(message.id)}
+                        />
+                      ) : (
+                        <div className="prose prose-sm max-w-none">
+                          {message.content.split('\n').map((line, lineIndex) => {
+                            let formattedLine = line;
+                            
+                            // Headers ### Header (check first)
+                            if (line.trim().startsWith('### ')) {
+                              formattedLine = `<h3 class="text-lg font-semibold mb-3 text-gray-800 border-b border-gray-200 pb-1">${line.trim().substring(4)}</h3>`;
+                            }
+                            // Headers ## Header
+                            else if (line.trim().startsWith('## ')) {
+                              formattedLine = `<h2 class="text-xl font-bold mb-3 text-gray-900">${line.trim().substring(3)}</h2>`;
+                            }
+                            // Headers # Header
+                            else if (line.trim().startsWith('# ')) {
+                              formattedLine = `<h1 class="text-2xl font-bold mb-4 text-gray-900">${line.trim().substring(2)}</h1>`;
+                            }
+                            // Bullet points * item
+                            else if (line.trim().startsWith('* ')) {
+                              formattedLine = `<div class="flex items-start mb-2"><span class="mr-2 text-primary-500 font-bold">•</span><span>${line.trim().substring(2)}</span></div>`;
+                            }
+                            // Numbered lists 1. item
+                            else if (/^\d+\.\s/.test(line.trim())) {
+                              formattedLine = `<div class="flex items-start mb-2"><span class="mr-2 text-primary-500 font-bold">${line.trim().split('.')[0]}.</span><span>${line.trim().substring(line.trim().indexOf(' ') + 1)}</span></div>`;
+                            }
+                            // Bold text **text** (do this last)
+                            else {
+                              formattedLine = formattedLine.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-gray-800">$1</strong>');
+                            }
+                            
+                            return (
+                              <div 
+                                key={lineIndex} 
+                                dangerouslySetInnerHTML={{ __html: formattedLine }}
+                              />
+                            );
+                          })}
+                        </div>
+                      )}
                       
 
         {message.sources && message.sources.length > 0 && (
