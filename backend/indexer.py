@@ -1,10 +1,12 @@
 """
 Dedicated Document Indexing Service
 Runs separately from backend, monitors documents folder, indexes only new/changed files
+Now with persistent storage to avoid re-indexing on restart
 """
 import os
 import time
 import hashlib
+import json
 import logging
 from datetime import datetime
 from pathlib import Path
@@ -27,10 +29,40 @@ logger = logging.getLogger(__name__)
 os.makedirs('/app/logs', exist_ok=True)
 
 class DocumentIndexer:
-    def __init__(self, docs_dir: str = "/app/data/documents"):
+    def __init__(self, docs_dir: str = "/app/data/documents", state_dir: str = "/app/indexer_state"):
         self.docs_dir = Path(docs_dir)
+        self.state_dir = Path(state_dir)
+        self.state_file = self.state_dir / "processed_files.json"
         self.processed_files: Dict[str, str] = {}  # filename -> file_hash
         self.supported_exts = {".pdf", ".docx", ".txt", ".md", ".json", ".csv"}
+        
+        # Create state directory if it doesn't exist
+        self.state_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Load previously processed files
+        self.load_processed_files()
+    
+    def load_processed_files(self):
+        """Load previously processed files from persistent storage"""
+        try:
+            if self.state_file.exists():
+                with open(self.state_file, 'r') as f:
+                    self.processed_files = json.load(f)
+                logger.info(f"📁 Loaded {len(self.processed_files)} previously processed files")
+            else:
+                logger.info("📁 No previous state found, starting fresh")
+        except Exception as e:
+            logger.error(f"Error loading processed files state: {e}")
+            self.processed_files = {}
+    
+    def save_processed_files(self):
+        """Save processed files state to persistent storage"""
+        try:
+            with open(self.state_file, 'w') as f:
+                json.dump(self.processed_files, f, indent=2)
+            logger.debug(f"💾 Saved state for {len(self.processed_files)} processed files")
+        except Exception as e:
+            logger.error(f"Error saving processed files state: {e}")
         
     def get_file_hash(self, file_path: Path) -> str:
         """Get MD5 hash of file content"""
@@ -84,6 +116,9 @@ class DocumentIndexer:
             # Update processed files record
             self.processed_files[filename] = file_hash
             
+            # Save state to persistent storage
+            self.save_processed_files()
+            
             logger.info(f"📄 ✅ Indexed {filename}: {stored_count}/{len(chunks)} chunks stored")
             return True
             
@@ -98,6 +133,15 @@ class DocumentIndexer:
             return
         
         logger.info(f"📁 Scanning: {self.docs_dir}")
+        
+        # Check if Qdrant already has data and we have processed files
+        try:
+            point_count = qdrant_client.get_point_count()
+            if point_count > 0 and len(self.processed_files) > 0:
+                logger.info(f"📊 Qdrant already has {point_count} vectors and {len(self.processed_files)} files tracked")
+                logger.info("📁 Checking for new or changed files only...")
+        except Exception as e:
+            logger.warning(f"Could not check Qdrant status: {e}")
         
         # Find all supported files
         files_to_process = []

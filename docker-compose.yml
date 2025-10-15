@@ -64,6 +64,7 @@ services:
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
+      - indexer_state:/app/indexer_state
     restart: unless-stopped
 
   # React Frontend - Building with latest code
@@ -82,3 +83,4 @@ services:
 volumes:
   postgres_data:
   qdrant_data:
+  indexer_state:

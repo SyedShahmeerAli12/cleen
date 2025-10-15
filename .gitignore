@@ -1,6 +1,6 @@
 # Logs
-logs/
-*.log
+logs/indexer.log
+logs/rag_system.log
 
 # Environment files
 .env
