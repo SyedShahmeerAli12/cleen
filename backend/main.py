@@ -736,15 +736,31 @@ Provide a detailed, specific answer with exact product recommendations:"""
                     for result in search_results:
                         url = extract_url_from_content(result["content"])
                         if url and url.startswith('http') and '.' in url.split('://')[1]:
-                            # Validate URL completeness
+                            # Validate URL completeness - must have proper domain structure
                             domain_part = url.split('://')[1].split('/')[0]
                             if '.' in domain_part and len(domain_part.split('.')[0]) > 0:
-                                url_sources.append({
-                                    'url': url,
-                                    'filename': result['filename'],
-                                    'score': result.get('score', 0)
-                                })
-                                logger.info(f"🔍 [QUERY-{query_id}] Valid URL extracted from {result['filename']}: {url}")
+                                # Additional validation: domain must have at least 2 parts (e.g., doi.org, not just doi)
+                                domain_parts = domain_part.split('.')
+                                if len(domain_parts) >= 2 and len(domain_parts[0]) > 0 and len(domain_parts[1]) > 0:
+                                    # Extra validation: DOI URLs must have more than just "/10" - must have actual DOI content
+                                    if 'doi.org' in domain_part:
+                                        # Check if DOI has more than just "/10" - must have actual DOI content
+                                        path_part = url.split('://')[1].split('/', 1)[1] if '/' in url.split('://')[1] else ''
+                                        if len(path_part) > 3:  # More than just "/10"
+                                            url_sources.append({
+                                                'url': url,
+                                                'filename': result['filename'],
+                                                'score': result.get('score', 0)
+                                            })
+                                            logger.info(f"🔍 [QUERY-{query_id}] Valid DOI URL extracted from {result['filename']}: {url}")
+                                    else:
+                                        # Non-DOI URLs - standard validation
+                                        url_sources.append({
+                                            'url': url,
+                                            'filename': result['filename'],
+                                            'score': result.get('score', 0)
+                                        })
+                                        logger.info(f"🔍 [QUERY-{query_id}] Valid URL extracted from {result['filename']}: {url}")
                     
                     # Sort by relevance score and take only top 2 URLs
                     url_sources.sort(key=lambda x: x['score'], reverse=True)

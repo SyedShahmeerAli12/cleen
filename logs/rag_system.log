@@ -453,3 +453,47 @@
 2025-10-15 19:45:29,610 - main - INFO - 🔍 [QUERY-4bdaf4f1] Improved URL extraction completed: 2 valid URLs selected
 2025-10-15 19:45:29,611 - main - INFO - 🔍 [QUERY-4bdaf4f1] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/22565434/', 'https://pubmed.ncbi.nlm.nih.gov/30633393/']
 2025-10-15 19:45:29,612 - main - INFO - 🔍 [QUERY-4bdaf4f1] Query complete in 18.82s
+2025-10-15 19:48:14,897 - main - INFO - 🚀 Backend starting up...
+2025-10-15 19:48:14,899 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-15 19:48:14,916 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:48:14,927 - main - INFO - 📊 Current vector count: 816
+2025-10-15 19:48:14,929 - main - INFO - 💡 Backend ready for queries!
+2025-10-15 19:51:00,525 - httpx - INFO - HTTP Request: GET http://qdrant:6333/collections "HTTP/1.1 200 OK"
+2025-10-15 19:53:13,252 - main - INFO - 🔍 [QUERY-fb77c3a8] Starting query: '"I'm a 35-year-old executive with stress-induced acne flare-ups. What evidence-based, time-efficient routine can I follow that won't interfere with my 12-hour workdays and frequent travel schedule?"' (Session: 404f4b57)
+2025-10-15 19:53:13,255 - main - INFO - 🔍 [QUERY-fb77c3a8] Created new chat session: 404f4b57
+2025-10-15 19:53:13,260 - main - INFO - 🔍 [QUERY-fb77c3a8] Intent Analysis: busy_professionals - functional - Job: save_time (confidence: 0.08)
+2025-10-15 19:53:13,261 - main - INFO - 🔍 [QUERY-fb77c3a8] Should fetch documents: True
+2025-10-15 19:53:13,262 - main - INFO - 🔍 [QUERY-fb77c3a8] Generating query embedding...
+2025-10-15 19:53:15,027 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 19:53:15,034 - main - INFO - 🔍 [QUERY-fb77c3a8] Query embedding generated: 768 dimensions
+2025-10-15 19:53:15,036 - main - INFO - 🔍 [QUERY-fb77c3a8] Performing hybrid search in Qdrant...
+2025-10-15 19:53:15,202 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 19:53:15,503 - main - INFO - 🔍 [QUERY-fb77c3a8] Search completed: 5 results found
+2025-10-15 19:53:15,506 - main - INFO - 🔍 [QUERY-fb77c3a8] Total context length: 6628 characters
+2025-10-15 19:53:15,507 - main - INFO - 🔍 [QUERY-fb77c3a8] Generating segment-specific answer with Gemini LLM...
+2025-10-15 19:53:29,849 - main - INFO - 🔍 [QUERY-fb77c3a8] Segment-specific answer generated: 364 characters
+2025-10-15 19:53:29,850 - main - INFO - 🔍 [QUERY-fb77c3a8] Using improved regex to extract URLs from 5 search results...
+2025-10-15 19:53:29,860 - main - INFO - 🔍 [QUERY-fb77c3a8] Valid URL extracted from 30633393.txt: https://pubmed.ncbi.nlm.nih.gov/30633393/
+2025-10-15 19:53:29,863 - main - INFO - 🔍 [QUERY-fb77c3a8] Valid URL extracted from 22565434.txt: https://pubmed.ncbi.nlm.nih.gov/22565434/
+2025-10-15 19:53:29,865 - main - INFO - 🔍 [QUERY-fb77c3a8] Improved URL extraction completed: 2 valid URLs selected
+2025-10-15 19:53:29,867 - main - INFO - 🔍 [QUERY-fb77c3a8] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/22565434/', 'https://pubmed.ncbi.nlm.nih.gov/30633393/']
+2025-10-15 19:53:29,869 - main - INFO - 🔍 [QUERY-fb77c3a8] Query complete in 16.62s
+2025-10-15 20:00:10,290 - main - INFO - 🔍 [QUERY-8069dbd0] Starting query: '"I'm using 0.025% tretinoin nightly and want to add azelaic acid 20% for post-inflammatory hyperpigmentation. What does the research say about combining these actives? Should I layer them or alternate? What about pH considerations and potential irritation?"' (Session: 158bbf5a)
+2025-10-15 20:00:10,291 - main - INFO - 🔍 [QUERY-8069dbd0] Created new chat session: 158bbf5a
+2025-10-15 20:00:10,293 - main - INFO - 🔍 [QUERY-8069dbd0] Intent Analysis: post_acne_healers - cognitive - Job: fade_scars_marks (confidence: 0.05)
+2025-10-15 20:00:10,294 - main - INFO - 🔍 [QUERY-8069dbd0] Should fetch documents: True
+2025-10-15 20:00:10,295 - main - INFO - 🔍 [QUERY-8069dbd0] Generating query embedding...
+2025-10-15 20:00:11,715 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-15 20:00:11,719 - main - INFO - 🔍 [QUERY-8069dbd0] Query embedding generated: 768 dimensions
+2025-10-15 20:00:11,720 - main - INFO - 🔍 [QUERY-8069dbd0] Performing hybrid search in Qdrant...
+2025-10-15 20:00:11,812 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-15 20:00:11,826 - main - INFO - 🔍 [QUERY-8069dbd0] Search completed: 5 results found
+2025-10-15 20:00:11,826 - main - INFO - 🔍 [QUERY-8069dbd0] Total context length: 7603 characters
+2025-10-15 20:00:11,827 - main - INFO - 🔍 [QUERY-8069dbd0] Generating segment-specific answer with Gemini LLM...
+2025-10-15 20:00:39,185 - main - INFO - 🔍 [QUERY-8069dbd0] Segment-specific answer generated: 325 characters
+2025-10-15 20:00:39,186 - main - INFO - 🔍 [QUERY-8069dbd0] Using improved regex to extract URLs from 5 search results...
+2025-10-15 20:00:39,188 - main - INFO - 🔍 [QUERY-8069dbd0] Valid URL extracted from 27897372.txt: https://pubmed.ncbi.nlm.nih.gov/27897372/
+2025-10-15 20:00:39,188 - main - INFO - 🔍 [QUERY-8069dbd0] Valid URL extracted from topics_azelaic-acid.txt: https://doi.org/10
+2025-10-15 20:00:39,200 - main - INFO - 🔍 [QUERY-8069dbd0] Improved URL extraction completed: 2 valid URLs selected
+2025-10-15 20:00:39,201 - main - INFO - 🔍 [QUERY-8069dbd0] Final sources: ['https://doi.org/10', 'https://pubmed.ncbi.nlm.nih.gov/27897372/']
+2025-10-15 20:00:39,201 - main - INFO - 🔍 [QUERY-8069dbd0] Query complete in 28.91s

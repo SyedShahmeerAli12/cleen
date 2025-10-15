@@ -27848,3 +27848,175 @@
 2025-10-15 19:34:13,585 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
 2025-10-15 19:34:13,586 - INDEXER - INFO - 📁 Checking for new or changed files only...
 2025-10-15 19:34:20,899 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:34:50,926 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:34:50,956 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:34:50,958 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:34:50,959 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:34:58,084 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:35:28,099 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:35:28,128 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:35:28,129 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:35:28,130 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:35:35,485 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:36:05,511 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:36:05,548 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:36:05,553 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:36:05,554 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:36:13,280 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:36:43,308 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:36:43,349 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:36:43,352 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:36:43,354 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:36:54,940 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:37:24,935 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:37:24,974 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:37:24,976 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:37:24,979 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:37:34,126 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:38:04,154 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:38:04,164 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:38:04,165 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:38:04,166 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:38:12,340 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:38:42,372 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:38:42,386 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:38:42,389 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:38:42,391 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:38:50,878 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:39:20,906 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:39:20,920 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:39:20,923 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:39:20,925 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:39:27,565 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:39:57,584 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:39:57,605 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:39:57,608 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:39:57,612 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:40:04,715 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:40:34,742 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:40:34,761 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:40:34,763 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:40:34,765 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:40:42,247 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:41:12,270 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:41:12,298 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:41:12,302 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:41:12,303 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:41:20,375 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:41:50,398 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:41:50,424 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:41:50,428 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:41:50,430 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:42:03,142 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:42:33,173 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:42:33,188 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:42:33,189 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:42:33,190 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:42:40,535 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:43:10,556 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:43:10,572 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:43:10,575 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:43:10,579 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:43:19,057 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:43:49,083 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:43:49,099 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:43:49,104 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:43:49,107 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:43:54,683 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:44:24,710 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:44:24,721 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:44:24,723 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:44:24,726 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:44:32,100 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:45:02,123 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:45:02,137 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:45:02,140 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:45:02,141 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:45:08,891 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:45:38,916 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:45:39,021 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:45:39,023 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:45:39,024 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:45:45,342 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:46:15,354 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:46:15,398 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:46:15,405 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:46:15,408 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:46:24,656 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:46:54,682 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:46:54,708 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:46:54,712 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:46:54,715 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:47:02,588 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:47:32,617 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:47:32,650 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:47:32,655 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:47:32,659 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:47:39,430 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:48:09,427 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:48:09,447 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:48:09,452 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:48:09,454 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:48:18,146 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:49:34,687 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:50:56,654 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:51:26,682 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:51:26,805 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:51:26,825 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:51:26,830 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:51:34,750 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:52:04,773 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:52:04,825 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:52:04,829 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:52:04,831 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:52:09,789 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:52:39,816 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:52:39,862 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:52:39,864 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:52:39,864 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:52:44,720 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:53:14,746 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:53:14,801 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:53:14,803 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:53:14,803 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:53:21,233 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:53:51,261 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:53:51,281 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:53:51,283 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:53:51,284 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:53:56,705 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:54:26,741 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:54:26,833 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:54:26,836 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:54:26,836 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:54:35,284 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:55:05,310 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:55:05,320 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:55:05,322 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:55:05,323 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:55:10,608 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:55:40,637 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:55:40,693 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:55:40,712 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:55:40,729 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:55:54,097 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:56:24,096 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:56:24,127 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:56:24,131 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:56:24,136 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:56:33,310 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:57:03,359 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:57:03,415 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:57:03,419 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:57:03,421 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:57:11,689 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:57:41,721 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:57:41,769 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:57:41,774 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:57:41,776 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:57:47,764 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-15 19:58:17,799 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-15 19:58:17,813 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-15 19:58:17,824 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-15 19:58:17,859 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-15 19:58:26,062 - INDEXER - INFO - 📁 No new or changed files found
