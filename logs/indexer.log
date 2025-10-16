@@ -28020,3 +28020,422 @@
 2025-10-15 19:58:17,824 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
 2025-10-15 19:58:17,859 - INDEXER - INFO - 📁 Checking for new or changed files only...
 2025-10-15 19:58:26,062 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:17:31,496 - INDEXER - INFO - 📁 Loaded 644 previously processed files
+2025-10-16 07:17:31,497 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-16 07:17:31,497 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-16 07:17:31,497 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-16 07:17:31,499 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:17:31,510 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:17:31,512 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:17:31,512 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:17:40,112 - INDEXER - INFO - 📁 Found 5 files to process: ['conditions_acne.txt', 'conditions_acne_causes.txt', 'conditions_acne_complications.txt', 'conditions_acne_diagnosis.txt', 'conditions_acne_treatment.txt']
+2025-10-16 07:17:40,112 - INDEXER - INFO - 📄 Indexing: conditions_acne.txt
+2025-10-16 07:17:40,115 - INDEXER - INFO - 📄 File size: 5048 bytes
+2025-10-16 07:17:40,116 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Starting document processing: conditions_acne.txt
+2025-10-16 07:17:40,116 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] File size: 5048 bytes
+2025-10-16 07:17:40,116 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Extracting text content...
+2025-10-16 07:17:40,117 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Text extracted: 4990 characters
+2025-10-16 07:17:40,117 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Cleaning text...
+2025-10-16 07:17:40,117 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Text cleaned: 4965 characters
+2025-10-16 07:17:40,118 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Starting text chunking...
+2025-10-16 07:17:40,130 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Text chunked: 3 chunks created
+2025-10-16 07:17:40,131 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Chunk 1: 500 tokens, 2322 chars
+2025-10-16 07:17:40,131 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/ Status Code: 200 Scraped on: 2025-10-14 14:23:27 ==========...
+2025-10-16 07:17:40,132 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Chunk 2: 511 tokens, 2456 chars
+2025-10-16 07:17:40,132 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Chunk 2 preview: Wash your hair regularly and try to avoid letting your hair fall across your face Although acne cann...
+2025-10-16 07:17:40,133 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Chunk 3: 44 tokens, 165 chars
+2025-10-16 07:17:40,133 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Chunk 3 preview: In some cases, acne can continue into adult life About 3% of adults have acne over the age of 35 Pag...
+2025-10-16 07:17:40,134 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Generating embeddings...
+2025-10-16 07:17:41,747 - INDEXER - INFO - Generated 3 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:17:41,750 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Embeddings generated: 3 vectors
+2025-10-16 07:17:41,752 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Creating document chunks...
+2025-10-16 07:17:41,754 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Created chunk 1: 500 tokens
+2025-10-16 07:17:41,756 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Created chunk 2: 511 tokens
+2025-10-16 07:17:41,757 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Created chunk 3: 44 tokens
+2025-10-16 07:17:41,757 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Document processing complete!
+2025-10-16 07:17:41,758 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Summary: 3 chunks, 1055 total tokens
+2025-10-16 07:17:41,758 - INDEXER - INFO - 📄 [PROCESS-fd2e5e9e] Processing time: 1.64 seconds
+2025-10-16 07:17:41,759 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-16 07:17:41,783 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:41,790 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:41,797 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:41,798 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne.txt: 3/3 chunks stored
+2025-10-16 07:17:41,799 - INDEXER - INFO - 📄 Indexing: conditions_acne_causes.txt
+2025-10-16 07:17:41,805 - INDEXER - INFO - 📄 File size: 4473 bytes
+2025-10-16 07:17:41,806 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Starting document processing: conditions_acne_causes.txt
+2025-10-16 07:17:41,806 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] File size: 4473 bytes
+2025-10-16 07:17:41,806 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Extracting text content...
+2025-10-16 07:17:41,807 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Text extracted: 4431 characters
+2025-10-16 07:17:41,807 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Cleaning text...
+2025-10-16 07:17:41,808 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Text cleaned: 4411 characters
+2025-10-16 07:17:41,808 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Starting text chunking...
+2025-10-16 07:17:41,816 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Text chunked: 2 chunks created
+2025-10-16 07:17:41,817 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Chunk 1: 437 tokens, 2097 chars
+2025-10-16 07:17:41,817 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/causes/ Status Code: 200 Scraped on: 2025-10-14 14:23:29 ===...
+2025-10-16 07:17:41,818 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Chunk 2: 483 tokens, 2296 chars
+2025-10-16 07:17:41,818 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Chunk 2 preview: These times include:periods – some women have a flare-up of acne just before their periodpregnancy –...
+2025-10-16 07:17:41,819 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Generating embeddings...
+2025-10-16 07:17:42,394 - INDEXER - INFO - Generated 2 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:17:42,395 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Embeddings generated: 2 vectors
+2025-10-16 07:17:42,396 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Creating document chunks...
+2025-10-16 07:17:42,397 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Created chunk 1: 437 tokens
+2025-10-16 07:17:42,398 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Created chunk 2: 483 tokens
+2025-10-16 07:17:42,398 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Document processing complete!
+2025-10-16 07:17:42,399 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Summary: 2 chunks, 920 total tokens
+2025-10-16 07:17:42,399 - INDEXER - INFO - 📄 [PROCESS-cf45bae1] Processing time: 0.59 seconds
+2025-10-16 07:17:42,400 - INDEXER - INFO - 📄 Created 2 chunks
+2025-10-16 07:17:42,438 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:42,455 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:42,459 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_causes.txt: 2/2 chunks stored
+2025-10-16 07:17:42,460 - INDEXER - INFO - 📄 Indexing: conditions_acne_complications.txt
+2025-10-16 07:17:42,482 - INDEXER - INFO - 📄 File size: 5693 bytes
+2025-10-16 07:17:42,483 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Starting document processing: conditions_acne_complications.txt
+2025-10-16 07:17:42,484 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] File size: 5693 bytes
+2025-10-16 07:17:42,485 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Extracting text content...
+2025-10-16 07:17:42,486 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Text extracted: 5657 characters
+2025-10-16 07:17:42,487 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Cleaning text...
+2025-10-16 07:17:42,489 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Text cleaned: 5639 characters
+2025-10-16 07:17:42,490 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Starting text chunking...
+2025-10-16 07:17:42,504 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Text chunked: 3 chunks created
+2025-10-16 07:17:42,505 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Chunk 1: 456 tokens, 2259 chars
+2025-10-16 07:17:42,505 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/complications/ Status Code: 200 Scraped on: 2025-10-14 14:23...
+2025-10-16 07:17:42,506 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Chunk 2: 497 tokens, 2451 chars
+2025-10-16 07:17:42,506 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Chunk 2 preview: There are 2 types of laser treatment:ablative laser treatment – where lasers are used to remove a sm...
+2025-10-16 07:17:42,507 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Chunk 3: 184 tokens, 903 chars
+2025-10-16 07:17:42,507 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Chunk 3 preview: Support for acneThe British Association of Dermatologists is a charity that runs Acne Support It giv...
+2025-10-16 07:17:42,508 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Generating embeddings...
+2025-10-16 07:17:43,066 - INDEXER - INFO - Generated 3 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:17:43,067 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Embeddings generated: 3 vectors
+2025-10-16 07:17:43,068 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Creating document chunks...
+2025-10-16 07:17:43,069 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Created chunk 1: 456 tokens
+2025-10-16 07:17:43,070 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Created chunk 2: 497 tokens
+2025-10-16 07:17:43,070 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Created chunk 3: 184 tokens
+2025-10-16 07:17:43,071 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Document processing complete!
+2025-10-16 07:17:43,071 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Summary: 3 chunks, 1137 total tokens
+2025-10-16 07:17:43,071 - INDEXER - INFO - 📄 [PROCESS-6fd308ba] Processing time: 0.59 seconds
+2025-10-16 07:17:43,072 - INDEXER - INFO - 📄 Created 3 chunks
+2025-10-16 07:17:43,109 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:43,124 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:43,128 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:43,130 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_complications.txt: 3/3 chunks stored
+2025-10-16 07:17:43,130 - INDEXER - INFO - 📄 Indexing: conditions_acne_diagnosis.txt
+2025-10-16 07:17:43,139 - INDEXER - INFO - 📄 File size: 1436 bytes
+2025-10-16 07:17:43,140 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Starting document processing: conditions_acne_diagnosis.txt
+2025-10-16 07:17:43,140 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] File size: 1436 bytes
+2025-10-16 07:17:43,140 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Extracting text content...
+2025-10-16 07:17:43,141 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Text extracted: 1423 characters
+2025-10-16 07:17:43,141 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Cleaning text...
+2025-10-16 07:17:43,142 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Text cleaned: 1407 characters
+2025-10-16 07:17:43,142 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Starting text chunking...
+2025-10-16 07:17:43,144 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Text chunked: 1 chunks created
+2025-10-16 07:17:43,144 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Chunk 1: 318 tokens, 1403 chars
+2025-10-16 07:17:43,145 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/diagnosis/ Status Code: 200 Scraped on: 2025-10-14 14:23:33 ...
+2025-10-16 07:17:43,145 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Generating embeddings...
+2025-10-16 07:17:44,179 - INDEXER - INFO - Generated 1 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:17:44,181 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Embeddings generated: 1 vectors
+2025-10-16 07:17:44,181 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Creating document chunks...
+2025-10-16 07:17:44,182 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Created chunk 1: 318 tokens
+2025-10-16 07:17:44,182 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Document processing complete!
+2025-10-16 07:17:44,183 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Summary: 1 chunks, 318 total tokens
+2025-10-16 07:17:44,183 - INDEXER - INFO - 📄 [PROCESS-0a490c4f] Processing time: 1.04 seconds
+2025-10-16 07:17:44,184 - INDEXER - INFO - 📄 Created 1 chunks
+2025-10-16 07:17:44,189 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:44,190 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_diagnosis.txt: 1/1 chunks stored
+2025-10-16 07:17:44,191 - INDEXER - INFO - 📄 Indexing: conditions_acne_treatment.txt
+2025-10-16 07:17:44,197 - INDEXER - INFO - 📄 File size: 8679 bytes
+2025-10-16 07:17:44,197 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Starting document processing: conditions_acne_treatment.txt
+2025-10-16 07:17:44,197 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] File size: 8679 bytes
+2025-10-16 07:17:44,198 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Extracting text content...
+2025-10-16 07:17:44,198 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Text extracted: 8646 characters
+2025-10-16 07:17:44,198 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Cleaning text...
+2025-10-16 07:17:44,199 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Text cleaned: 8624 characters
+2025-10-16 07:17:44,199 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Starting text chunking...
+2025-10-16 07:17:44,214 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Text chunked: 4 chunks created
+2025-10-16 07:17:44,215 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 1: 487 tokens, 2326 chars
+2025-10-16 07:17:44,216 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 1 preview: URL: https://www nhs uk/conditions/acne/treatment/ Status Code: 200 Scraped on: 2025-10-14 14:23:35 ...
+2025-10-16 07:17:44,216 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 2: 495 tokens, 2376 chars
+2025-10-16 07:17:44,217 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 2 preview: It also makes your face more sensitive to sunlight, so avoid too much sun and sources of ultraviolet...
+2025-10-16 07:17:44,218 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 3: 499 tokens, 2285 chars
+2025-10-16 07:17:44,218 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 3 preview: The medicine does not make your skin sensitive to sunlight, so you do not have to avoid exposure to ...
+2025-10-16 07:17:44,219 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 4: 341 tokens, 1619 chars
+2025-10-16 07:17:44,219 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Chunk 4 preview: The risk is estimated to be around 1 in 2,500 in any given year It's not thought to be safe to take ...
+2025-10-16 07:17:44,220 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Generating embeddings...
+2025-10-16 07:17:45,047 - INDEXER - INFO - Generated 4 real embeddings using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:17:45,049 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Embeddings generated: 4 vectors
+2025-10-16 07:17:45,049 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Creating document chunks...
+2025-10-16 07:17:45,051 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Created chunk 1: 487 tokens
+2025-10-16 07:17:45,052 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Created chunk 2: 495 tokens
+2025-10-16 07:17:45,053 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Created chunk 3: 499 tokens
+2025-10-16 07:17:45,053 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Created chunk 4: 341 tokens
+2025-10-16 07:17:45,054 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Document processing complete!
+2025-10-16 07:17:45,054 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Summary: 4 chunks, 1822 total tokens
+2025-10-16 07:17:45,055 - INDEXER - INFO - 📄 [PROCESS-53df1dc2] Processing time: 0.86 seconds
+2025-10-16 07:17:45,055 - INDEXER - INFO - 📄 Created 4 chunks
+2025-10-16 07:17:45,064 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:45,068 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:45,072 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:45,076 - INDEXER - INFO - HTTP Request: PUT http://qdrant:6333/collections/personal_rag_documents/points?wait=true "HTTP/1.1 200 OK"
+2025-10-16 07:17:45,077 - INDEXER - INFO - 📄 ✅ Indexed conditions_acne_treatment.txt: 4/4 chunks stored
+2025-10-16 07:18:15,103 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:18:15,107 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:18:15,108 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:18:15,108 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:18:16,679 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:18:46,711 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:18:46,722 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:18:46,723 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:18:46,723 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:18:48,192 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:19:18,223 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:19:18,234 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:19:18,234 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:19:18,235 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:19:19,641 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:19:49,666 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:19:49,670 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:19:49,671 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:19:49,671 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:19:57,272 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:20:27,297 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:20:27,302 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:20:27,303 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:20:27,303 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:20:28,830 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:20:58,861 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:20:58,870 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:20:58,871 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:20:58,872 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:21:00,351 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:21:30,380 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:21:30,386 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:21:30,386 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:21:30,387 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:21:31,812 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:22:01,843 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:22:01,847 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:22:01,847 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:22:01,848 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:22:03,324 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:22:23,602 - INDEXER - INFO - 📁 Loaded 644 previously processed files
+2025-10-16 07:22:23,603 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-16 07:22:23,603 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-16 07:22:23,603 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-16 07:22:23,605 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:22:23,608 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:22:23,609 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:22:23,610 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:22:25,526 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:22:55,553 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:22:55,557 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:22:55,558 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:22:55,558 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:22:57,457 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:23:27,486 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:23:27,494 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:23:27,495 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:23:27,496 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:23:29,178 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:23:59,178 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:23:59,181 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:23:59,182 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:23:59,182 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:24:00,649 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:24:30,681 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:24:30,689 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:24:30,690 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:24:30,690 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:24:32,139 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:25:02,170 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:25:02,176 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:25:02,178 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:25:02,178 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:25:03,744 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:25:33,773 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:25:33,776 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:25:33,777 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:25:33,777 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:25:35,253 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:26:05,267 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:26:05,272 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:26:05,273 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:26:05,273 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:26:06,809 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:26:36,814 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:26:36,817 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:26:36,818 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:26:36,819 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:26:38,346 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:27:08,366 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:27:08,369 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:27:08,370 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:27:08,370 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:27:09,957 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:27:39,975 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:27:39,979 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:27:39,980 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:27:39,981 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:27:41,530 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:28:11,545 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:28:11,548 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:28:11,548 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:28:11,549 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:28:13,146 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:28:43,148 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:28:43,153 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:28:43,154 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:28:43,155 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:28:45,060 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:29:15,089 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:29:15,094 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:29:15,095 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:29:15,096 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:29:17,070 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:29:47,104 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:29:47,113 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:29:47,115 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:29:47,115 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:29:48,777 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:30:18,806 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:30:18,808 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:30:18,809 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:30:18,809 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:30:20,270 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:30:50,299 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:30:50,305 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:30:50,307 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:30:50,308 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:30:52,228 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:31:22,259 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:31:22,264 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:31:22,265 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:31:22,265 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:31:24,461 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:31:54,490 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:31:54,493 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:31:54,494 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:31:54,494 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:31:56,190 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:32:26,202 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:32:26,208 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:32:26,209 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:32:26,209 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:32:27,859 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:32:57,883 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:32:57,893 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:32:57,894 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:32:57,894 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:32:59,490 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:33:29,501 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:33:29,507 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:33:29,508 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:33:29,509 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:33:31,490 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:34:01,512 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:34:01,516 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:34:01,516 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:34:01,517 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:34:03,145 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:34:52,314 - INDEXER - INFO - 📁 Loaded 644 previously processed files
+2025-10-16 07:34:52,314 - INDEXER - INFO - 🚀 Starting continuous document indexing service
+2025-10-16 07:34:52,315 - INDEXER - INFO - 📁 Monitoring: /app/data/documents
+2025-10-16 07:34:52,315 - INDEXER - INFO - ⏰ Scan interval: 30 seconds
+2025-10-16 07:34:52,316 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:34:52,319 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:34:52,320 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:34:52,321 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:34:54,061 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:35:24,071 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:35:24,081 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:35:24,082 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:35:24,083 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:35:25,652 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:35:55,685 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:35:55,696 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:35:55,697 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:35:55,697 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:35:57,098 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:36:27,130 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:36:27,135 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:36:27,136 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:36:27,137 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:36:28,839 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:36:58,872 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:36:58,883 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:36:58,884 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:36:58,884 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:37:00,300 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:37:30,332 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:37:30,346 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:37:30,349 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:37:30,350 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:37:31,865 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:38:01,894 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:38:01,899 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:38:01,899 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:38:01,900 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:38:03,454 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:38:33,483 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:38:33,491 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:38:33,492 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:38:33,492 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:38:35,567 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:39:05,599 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:39:05,609 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:39:05,610 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:39:05,611 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:39:07,439 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:39:37,468 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:39:37,473 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:39:37,474 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:39:37,474 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:39:38,879 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:40:08,893 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:40:08,900 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:40:08,901 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:40:08,902 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:40:10,933 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:40:40,953 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:40:40,956 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:40:40,956 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:40:40,957 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:40:42,564 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:41:12,595 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:41:12,599 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:41:12,600 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:41:12,600 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:41:14,362 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:41:44,395 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:41:44,403 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:41:44,405 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:41:44,406 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:41:45,872 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:42:15,896 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:42:15,904 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:42:15,906 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:42:15,907 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:42:17,365 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:42:47,397 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:42:47,402 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:42:47,404 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:42:47,405 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:42:49,010 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:43:19,039 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:43:19,041 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:43:19,042 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:43:19,042 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:43:20,551 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:43:50,553 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:43:50,557 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:43:50,557 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:43:50,558 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:43:52,088 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:44:22,119 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:44:22,124 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:44:22,126 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:44:22,127 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:44:23,960 - INDEXER - INFO - 📁 No new or changed files found
+2025-10-16 07:44:53,979 - INDEXER - INFO - 📁 Scanning: /app/data/documents
+2025-10-16 07:44:53,984 - INDEXER - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:44:53,985 - INDEXER - INFO - 📊 Qdrant already has 816 vectors and 644 files tracked
+2025-10-16 07:44:53,985 - INDEXER - INFO - 📁 Checking for new or changed files only...
+2025-10-16 07:44:55,766 - INDEXER - INFO - 📁 No new or changed files found

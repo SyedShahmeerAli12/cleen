@@ -377,26 +377,55 @@ def extract_url_from_content(content: str) -> str:
     return None
 
 def should_fetch_documents(query: str, session: Dict) -> bool:
-    """Determine if we should fetch new documents or use chat context"""
+    """Use LLM to intelligently decide whether to fetch documents or use chat context"""
     # Always fetch for first message
     if not session["messages"]:
         return True
     
-    # Check if query seems like a follow-up question
-    follow_up_indicators = [
-        "what about", "tell me more", "explain", "how about", "also", "additionally",
-        "can you", "could you", "please", "?", "more", "further", "elaborate"
-    ]
+    # Build context about the conversation
+    conversation_context = ""
+    if session["messages"]:
+        recent_messages = session["messages"][-3:]  # Last 3 messages
+        conversation_context = "\n".join([
+            f"{msg['role']}: {msg['content'][:200]}..." 
+            for msg in recent_messages
+        ])
     
-    query_lower = query.lower()
-    is_follow_up = any(indicator in query_lower for indicator in follow_up_indicators)
+    # Use LLM to decide
+    decision_prompt = f"""
+You are a smart assistant that decides whether to fetch new documents or use existing chat context.
+
+CONVERSATION CONTEXT:
+{conversation_context}
+
+CURRENT QUESTION:
+{query}
+
+DECISION RULES:
+- Fetch documents if: asking for new research, literature, specific facts, or topics not covered in recent conversation
+- Use chat context if: asking follow-up questions, clarifications, or elaborations on recent topics
+
+Respond with only: FETCH_DOCUMENTS or USE_CHAT_CONTEXT
+"""
     
-    # If it's a follow-up and we have recent context, use chat memory
-    if is_follow_up and len(session["messages"]) >= 2:
-        return False
-    
-    # For new topics or specific questions, fetch documents
-    return True
+    try:
+        decision = gemini_llm.generate_answer(decision_prompt, [])
+        decision = decision.strip().upper()
+        
+        logger.info(f"🤖 LLM Decision: {decision}")
+        
+        if "FETCH_DOCUMENTS" in decision:
+            return True
+        elif "USE_CHAT_CONTEXT" in decision:
+            return False
+        else:
+            # Default to fetching documents if unclear
+            logger.warning(f"Unclear LLM decision: {decision}, defaulting to fetch documents")
+            return True
+            
+    except Exception as e:
+        logger.warning(f"LLM decision failed: {e}, defaulting to fetch documents")
+        return True
 
 def extract_url_from_content(content: str) -> str:
     """Extract clean URL from document content"""
@@ -839,8 +868,8 @@ Provide a detailed, specific answer with exact product recommendations:"""
             answer = gemini_llm.generate_answer(request.query, chat_context)
             logger.info(f"🔍 [QUERY-{query_id}] Answer generated from chat context: {len(answer)} characters")
             
-            # Add assistant response to session
-            add_message_to_session(session_id, "assistant", answer, session.get("sources", []))
+            # Add assistant response to session (no sources for chat context)
+            add_message_to_session(session_id, "assistant", answer, [])
             
             end_time = datetime.now()
             duration = (end_time - start_time).total_seconds()
@@ -848,7 +877,7 @@ Provide a detailed, specific answer with exact product recommendations:"""
             
             return {
                 "answer": answer,
-                "sources": session.get("sources", []),
+                "sources": [],  # No sources when using chat context - normal conversation
                 "search_results": [],
                 "session_id": session_id,
                 "used_documents": False,

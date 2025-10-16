@@ -497,3 +497,128 @@
 2025-10-15 20:00:39,200 - main - INFO - 🔍 [QUERY-8069dbd0] Improved URL extraction completed: 2 valid URLs selected
 2025-10-15 20:00:39,201 - main - INFO - 🔍 [QUERY-8069dbd0] Final sources: ['https://doi.org/10', 'https://pubmed.ncbi.nlm.nih.gov/27897372/']
 2025-10-15 20:00:39,201 - main - INFO - 🔍 [QUERY-8069dbd0] Query complete in 28.91s
+2025-10-16 07:17:32,404 - main - INFO - 🚀 Backend starting up...
+2025-10-16 07:17:32,404 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-16 07:17:32,407 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:17:32,409 - main - INFO - 📊 Current vector count: 816
+2025-10-16 07:17:32,409 - main - INFO - 💡 Backend ready for queries!
+2025-10-16 07:22:24,596 - main - INFO - 🚀 Backend starting up...
+2025-10-16 07:22:24,600 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-16 07:22:24,602 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:22:24,604 - main - INFO - 📊 Current vector count: 816
+2025-10-16 07:22:24,604 - main - INFO - 💡 Backend ready for queries!
+2025-10-16 07:23:13,527 - main - INFO - 🔍 [QUERY-a29284cb] Starting query: 'I'm using 0.025% tretinoin nightly and want to add azelaic acid 20% for post-inflammatory hyperpigmentation. What does the research say about combining these actives? Should I layer them or alternate? What about pH considerations and potential irritation?' (Session: 82945d75)
+2025-10-16 07:23:13,528 - main - INFO - 🔍 [QUERY-a29284cb] Created new chat session: 82945d75
+2025-10-16 07:23:13,528 - main - INFO - 🔍 [QUERY-a29284cb] Intent Analysis: post_acne_healers - cognitive - Job: fade_scars_marks (confidence: 0.05)
+2025-10-16 07:23:13,529 - main - INFO - 🔍 [QUERY-a29284cb] Should fetch documents: True
+2025-10-16 07:23:13,530 - main - INFO - 🔍 [QUERY-a29284cb] Generating query embedding...
+2025-10-16 07:23:14,696 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:23:14,697 - main - INFO - 🔍 [QUERY-a29284cb] Query embedding generated: 768 dimensions
+2025-10-16 07:23:14,698 - main - INFO - 🔍 [QUERY-a29284cb] Performing hybrid search in Qdrant...
+2025-10-16 07:23:14,712 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-16 07:23:14,716 - main - INFO - 🔍 [QUERY-a29284cb] Search completed: 5 results found
+2025-10-16 07:23:14,716 - main - INFO - 🔍 [QUERY-a29284cb] Total context length: 7603 characters
+2025-10-16 07:23:14,716 - main - INFO - 🔍 [QUERY-a29284cb] Generating segment-specific answer with Gemini LLM...
+2025-10-16 07:23:26,484 - main - INFO - 🔍 [QUERY-a29284cb] Segment-specific answer generated: 420 characters
+2025-10-16 07:23:26,486 - main - INFO - 🔍 [QUERY-a29284cb] Using improved regex to extract URLs from 5 search results...
+2025-10-16 07:23:26,487 - main - INFO - 🔍 [QUERY-a29284cb] Valid URL extracted from 27897372.txt: https://pubmed.ncbi.nlm.nih.gov/27897372/
+2025-10-16 07:23:26,487 - main - INFO - 🔍 [QUERY-a29284cb] Improved URL extraction completed: 1 valid URLs selected
+2025-10-16 07:23:26,488 - main - INFO - 🔍 [QUERY-a29284cb] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/27897372/']
+2025-10-16 07:23:26,488 - main - INFO - 🔍 [QUERY-a29284cb] Query complete in 12.96s
+2025-10-16 07:24:40,809 - main - INFO - 🔍 [QUERY-910e9bc6] Starting query: 'I'm a 32-year-old man who's never used skincare products. I have acne on my face, razor burn on my neck, and ingrown hairs on my jawline. I shave daily for work and work out 5 times a week. What's the minimal routine that addresses all these issues without making me look 'overdone'?' (Session: 82945d75)
+2025-10-16 07:24:40,809 - main - INFO - 🔍 [QUERY-910e9bc6] Using existing chat session: 82945d75 (2 messages)
+2025-10-16 07:24:40,810 - main - INFO - 🔍 [QUERY-910e9bc6] Intent Analysis: mens_skincare_beginners - functional - Job: adopt_minimal_routine (confidence: 0.02)
+2025-10-16 07:24:40,810 - main - INFO - 🔍 [QUERY-910e9bc6] Should fetch documents: False
+2025-10-16 07:24:40,811 - main - INFO - 🔍 [QUERY-910e9bc6] Using chat context instead of fetching documents
+2025-10-16 07:24:40,811 - main - INFO - 🔍 [QUERY-910e9bc6] Using chat context: 6 context pieces
+2025-10-16 07:24:50,851 - main - INFO - 🔍 [QUERY-910e9bc6] Answer generated from chat context: 567 characters
+2025-10-16 07:24:50,853 - main - INFO - 🔍 [QUERY-910e9bc6] Query complete in 10.04s
+2025-10-16 07:34:56,269 - main - INFO - 🚀 Backend starting up...
+2025-10-16 07:34:56,270 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-16 07:34:56,273 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:34:56,275 - main - INFO - 📊 Current vector count: 816
+2025-10-16 07:34:56,275 - main - INFO - 💡 Backend ready for queries!
+2025-10-16 07:35:28,844 - main - INFO - 🔍 [QUERY-36cecd20] Starting query: 'I'm using 0.025% tretinoin nightly and want to add azelaic acid 20% for post-inflammatory hyperpigmentation. What does the research say about combining these actives? Should I layer them or alternate? What about pH considerations and potential irritation?' (Session: d2826597)
+2025-10-16 07:35:28,845 - main - INFO - 🔍 [QUERY-36cecd20] Created new chat session: d2826597
+2025-10-16 07:35:28,846 - main - INFO - 🔍 [QUERY-36cecd20] Intent Analysis: post_acne_healers - cognitive - Job: fade_scars_marks (confidence: 0.05)
+2025-10-16 07:35:28,846 - main - INFO - 🔍 [QUERY-36cecd20] Should fetch documents: True
+2025-10-16 07:35:28,847 - main - INFO - 🔍 [QUERY-36cecd20] Generating query embedding...
+2025-10-16 07:35:30,108 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:35:30,110 - main - INFO - 🔍 [QUERY-36cecd20] Query embedding generated: 768 dimensions
+2025-10-16 07:35:30,111 - main - INFO - 🔍 [QUERY-36cecd20] Performing hybrid search in Qdrant...
+2025-10-16 07:35:30,120 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-16 07:35:30,126 - main - INFO - 🔍 [QUERY-36cecd20] Search completed: 5 results found
+2025-10-16 07:35:30,126 - main - INFO - 🔍 [QUERY-36cecd20] Total context length: 7603 characters
+2025-10-16 07:35:30,127 - main - INFO - 🔍 [QUERY-36cecd20] Generating segment-specific answer with Gemini LLM...
+2025-10-16 07:35:41,290 - main - INFO - 🔍 [QUERY-36cecd20] Segment-specific answer generated: 375 characters
+2025-10-16 07:35:41,291 - main - INFO - 🔍 [QUERY-36cecd20] Using improved regex to extract URLs from 5 search results...
+2025-10-16 07:35:41,296 - main - INFO - 🔍 [QUERY-36cecd20] Valid URL extracted from 27897372.txt: https://pubmed.ncbi.nlm.nih.gov/27897372/
+2025-10-16 07:35:41,297 - main - INFO - 🔍 [QUERY-36cecd20] Improved URL extraction completed: 1 valid URLs selected
+2025-10-16 07:35:41,298 - main - INFO - 🔍 [QUERY-36cecd20] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/27897372/']
+2025-10-16 07:35:41,298 - main - INFO - 🔍 [QUERY-36cecd20] Query complete in 12.45s
+2025-10-16 07:36:16,198 - main - INFO - 🔍 [QUERY-48566a2d] Starting query: 'explain more a little bit' (Session: d2826597)
+2025-10-16 07:36:16,198 - main - INFO - 🔍 [QUERY-48566a2d] Using existing chat session: d2826597 (2 messages)
+2025-10-16 07:36:16,199 - main - INFO - 🔍 [QUERY-48566a2d] Intent Analysis: acne_prone_consumers - functional - Job: identify_acne_cause (confidence: 0.00)
+2025-10-16 07:36:16,199 - main - INFO - 🔍 [QUERY-48566a2d] Should fetch documents: False
+2025-10-16 07:36:16,200 - main - INFO - 🔍 [QUERY-48566a2d] Using chat context instead of fetching documents
+2025-10-16 07:36:16,200 - main - INFO - 🔍 [QUERY-48566a2d] Using chat context: 6 context pieces
+2025-10-16 07:36:20,441 - main - INFO - 🔍 [QUERY-48566a2d] Answer generated from chat context: 574 characters
+2025-10-16 07:36:20,442 - main - INFO - 🔍 [QUERY-48566a2d] Query complete in 4.24s
+2025-10-16 07:37:28,613 - main - INFO - 🔍 [QUERY-7cae9cc3] Starting query: 'What does the current dermatology literature say about the relationship between gut microbiome, hormonal acne in adult women, and the efficacy of topical treatments versus systemic approaches? Include mechanism of action and treatment protocols.' (Session: d2826597)
+2025-10-16 07:37:28,613 - main - INFO - 🔍 [QUERY-7cae9cc3] Using existing chat session: d2826597 (4 messages)
+2025-10-16 07:37:28,613 - main - INFO - 🔍 [QUERY-7cae9cc3] Intent Analysis: busy_professionals - functional - Job: quick_identification (confidence: 0.03)
+2025-10-16 07:37:28,614 - main - INFO - 🔍 [QUERY-7cae9cc3] Should fetch documents: False
+2025-10-16 07:37:28,614 - main - INFO - 🔍 [QUERY-7cae9cc3] Using chat context instead of fetching documents
+2025-10-16 07:37:28,614 - main - INFO - 🔍 [QUERY-7cae9cc3] Using chat context: 7 context pieces
+2025-10-16 07:37:32,691 - main - INFO - 🔍 [QUERY-7cae9cc3] Answer generated from chat context: 662 characters
+2025-10-16 07:37:32,691 - main - INFO - 🔍 [QUERY-7cae9cc3] Query complete in 4.08s
+2025-10-16 07:41:03,301 - main - INFO - 🚀 Backend starting up...
+2025-10-16 07:41:03,302 - main - INFO - 📊 Document indexing handled by separate indexer service
+2025-10-16 07:41:03,305 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/count "HTTP/1.1 200 OK"
+2025-10-16 07:41:03,307 - main - INFO - 📊 Current vector count: 816
+2025-10-16 07:41:03,308 - main - INFO - 💡 Backend ready for queries!
+2025-10-16 07:41:31,381 - main - INFO - 🔍 [QUERY-a4289d4a] Starting query: 'What does literature say about gut microbiome?' (Session: bbfab507)
+2025-10-16 07:41:31,382 - main - INFO - 🔍 [QUERY-a4289d4a] Created new chat session: bbfab507
+2025-10-16 07:41:31,382 - main - INFO - 🔍 [QUERY-a4289d4a] Intent Analysis: acne_prone_consumers - functional - Job: identify_acne_cause (confidence: 0.00)
+2025-10-16 07:41:35,896 - main - INFO - 🤖 LLM Decision: FETCH_DOCUMENTS
+2025-10-16 07:41:35,898 - main - INFO - 🔍 [QUERY-a4289d4a] Should fetch documents: True
+2025-10-16 07:41:35,899 - main - INFO - 🔍 [QUERY-a4289d4a] Generating query embedding...
+2025-10-16 07:41:37,091 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:41:37,093 - main - INFO - 🔍 [QUERY-a4289d4a] Query embedding generated: 768 dimensions
+2025-10-16 07:41:37,093 - main - INFO - 🔍 [QUERY-a4289d4a] Performing hybrid search in Qdrant...
+2025-10-16 07:41:37,100 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-16 07:41:37,102 - main - INFO - 🔍 [QUERY-a4289d4a] Search completed: 5 results found
+2025-10-16 07:41:37,102 - main - INFO - 🔍 [QUERY-a4289d4a] Total context length: 4857 characters
+2025-10-16 07:41:37,102 - main - INFO - 🔍 [QUERY-a4289d4a] Generating segment-specific answer with Gemini LLM...
+2025-10-16 07:41:53,657 - main - INFO - 🔍 [QUERY-a4289d4a] Segment-specific answer generated: 360 characters
+2025-10-16 07:41:53,657 - main - INFO - 🔍 [QUERY-a4289d4a] Using improved regex to extract URLs from 5 search results...
+2025-10-16 07:41:53,658 - main - INFO - 🔍 [QUERY-a4289d4a] Valid URL extracted from 28513546.txt: https://pubmed.ncbi.nlm.nih.gov/28513546/
+2025-10-16 07:41:53,659 - main - INFO - 🔍 [QUERY-a4289d4a] Improved URL extraction completed: 1 valid URLs selected
+2025-10-16 07:41:53,659 - main - INFO - 🔍 [QUERY-a4289d4a] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/28513546/']
+2025-10-16 07:41:53,660 - main - INFO - 🔍 [QUERY-a4289d4a] Query complete in 22.28s
+2025-10-16 07:42:16,824 - main - INFO - 🔍 [QUERY-17f44528] Starting query: 'tell me more about that' (Session: bbfab507)
+2025-10-16 07:42:16,824 - main - INFO - 🔍 [QUERY-17f44528] Using existing chat session: bbfab507 (2 messages)
+2025-10-16 07:42:16,825 - main - INFO - 🔍 [QUERY-17f44528] Intent Analysis: acne_prone_consumers - functional - Job: identify_acne_cause (confidence: 0.00)
+2025-10-16 07:42:17,827 - main - INFO - 🤖 LLM Decision: USE_CHAT_CONTEXT
+2025-10-16 07:42:17,828 - main - INFO - 🔍 [QUERY-17f44528] Should fetch documents: False
+2025-10-16 07:42:17,828 - main - INFO - 🔍 [QUERY-17f44528] Using chat context instead of fetching documents
+2025-10-16 07:42:17,829 - main - INFO - 🔍 [QUERY-17f44528] Using chat context: 6 context pieces
+2025-10-16 07:42:24,566 - main - INFO - 🔍 [QUERY-17f44528] Answer generated from chat context: 563 characters
+2025-10-16 07:42:24,566 - main - INFO - 🔍 [QUERY-17f44528] Query complete in 7.74s
+2025-10-16 07:42:56,860 - main - INFO - 🔍 [QUERY-fc189c80] Starting query: 'I have oily T-zone, dry cheeks, sensitive skin, hormonal acne, and I'm starting to see fine lines. I also have post-inflammatory hyperpigmentation from previous breakouts. What evidence-based routine addresses all these concerns without causing irritation or making any condition worse?' (Session: bbfab507)
+2025-10-16 07:42:56,860 - main - INFO - 🔍 [QUERY-fc189c80] Using existing chat session: bbfab507 (4 messages)
+2025-10-16 07:42:56,860 - main - INFO - 🔍 [QUERY-fc189c80] Intent Analysis: acne_prone_consumers - functional - Job: build_simple_routine (confidence: 0.03)
+2025-10-16 07:42:58,460 - main - INFO - 🤖 LLM Decision: FETCH_DOCUMENTS
+2025-10-16 07:42:58,461 - main - INFO - 🔍 [QUERY-fc189c80] Should fetch documents: True
+2025-10-16 07:42:58,462 - main - INFO - 🔍 [QUERY-fc189c80] Generating query embedding...
+2025-10-16 07:42:59,640 - document_processor - INFO - Generated query embedding using nomic-ai/nomic-embed-text-v1
+2025-10-16 07:42:59,642 - main - INFO - 🔍 [QUERY-fc189c80] Query embedding generated: 768 dimensions
+2025-10-16 07:42:59,642 - main - INFO - 🔍 [QUERY-fc189c80] Performing hybrid search in Qdrant...
+2025-10-16 07:42:59,655 - httpx - INFO - HTTP Request: POST http://qdrant:6333/collections/personal_rag_documents/points/search "HTTP/1.1 200 OK"
+2025-10-16 07:42:59,656 - main - INFO - 🔍 [QUERY-fc189c80] Search completed: 5 results found
+2025-10-16 07:42:59,657 - main - INFO - 🔍 [QUERY-fc189c80] Total context length: 11000 characters
+2025-10-16 07:42:59,657 - main - INFO - 🔍 [QUERY-fc189c80] Generating segment-specific answer with Gemini LLM...
+2025-10-16 07:43:11,442 - main - INFO - 🔍 [QUERY-fc189c80] Segment-specific answer generated: 365 characters
+2025-10-16 07:43:11,442 - main - INFO - 🔍 [QUERY-fc189c80] Using cached sources for follow-up question: 1 URLs
+2025-10-16 07:43:11,442 - main - INFO - 🔍 [QUERY-fc189c80] Final sources: ['https://pubmed.ncbi.nlm.nih.gov/28513546/']
+2025-10-16 07:43:11,443 - main - INFO - 🔍 [QUERY-fc189c80] Query complete in 14.58s
